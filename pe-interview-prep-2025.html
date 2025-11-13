@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Equity Analyst: Interview Ready | Finance-able</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Brand Colors */
+            --deep-finance-blue: #0A2647;
+            --deep-finance-blue-light: #0D2F59;
+            --growth-green: #10B981;
+            --warm-coral: #FF6B6B;
+            --premium-gold: #F59E0B;
+            --mocha-bg: #FAF9F6;
+            --charcoal: #1F2937;
+            --slate-gray: #64748B;
+            --light-gray: #E5E7EB;
+            --error-red: #DC2626;
+            --info-blue: #3B82F6;
+            
+            /* Spacing (8px grid) */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 32px;
+            --space-2xl: 48px;
+            --space-3xl: 64px;
+            --space-4xl: 96px;
+            
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background: #FFFFFF;
+        }
+
+        /* Typography System */
+        h1 {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        h5 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+        }
+
+        .body-large {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
+
+        .container-narrow {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
+
+        .container-reading {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
+
+        /* Section Spacing */
+        section {
+            padding: var(--space-4xl) 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            font-family: var(--font-primary);
+            font-size: 16px;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all 200ms ease-out;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--warm-coral);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #FF5252;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--deep-finance-blue);
+            border: 2px solid var(--deep-finance-blue);
+        }
+
+        .btn-secondary:hover {
+            background: var(--deep-finance-blue);
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .btn-large {
+            padding: 16px 32px;
+            font-size: 18px;
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-xs { margin-top: var(--space-xs); }
+        .mt-sm { margin-top: var(--space-sm); }
+        .mt-md { margin-top: var(--space-md); }
+        .mt-lg { margin-top: var(--space-lg); }
+        .mt-xl { margin-top: var(--space-xl); }
+        .mt-2xl { margin-top: var(--space-2xl); }
+        .mt-3xl { margin-top: var(--space-3xl); }
+
+        .mb-xs { margin-bottom: var(--space-xs); }
+        .mb-sm { margin-bottom: var(--space-sm); }
+        .mb-md { margin-bottom: var(--space-md); }
+        .mb-lg { margin-bottom: var(--space-lg); }
+        .mb-xl { margin-bottom: var(--space-xl); }
+        .mb-2xl { margin-bottom: var(--space-2xl); }
+        .mb-3xl { margin-bottom: var(--space-3xl); }
+
+        /* Urgency Section */
+        .urgency-section {
+            background: linear-gradient(135deg, var(--error-red) 0%, #B91C1C 100%);
+            color: white;
+            padding: var(--space-2xl);
+            border-radius: 12px;
+            text-align: center;
+            margin: var(--space-3xl) auto;
+            max-width: 900px;
+        }
+
+        .urgency-section h3 {
+            color: white;
+            margin-bottom: var(--space-md);
+            font-size: 28px;
+        }
+
+        .urgency-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: var(--space-lg);
+        }
+
+        .urgency-section .timeline-list {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: var(--space-lg);
+            margin: var(--space-lg) 0;
+            text-align: left;
+        }
+
+        .urgency-section .timeline-list li {
+            padding: var(--space-sm) 0;
+            font-size: 16px;
+        }
+
+        .urgency-section .timeline-list strong {
+            color: white;
+            font-weight: 700;
+        }
+
+        .urgency-section .btn {
+            margin-top: var(--space-md);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--deep-finance-blue) 0%, var(--deep-finance-blue-light) 100%);
+            color: white;
+            padding: var(--space-4xl) 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: var(--space-lg);
+        }
+
+        .hero .subheadline {
+            font-size: 24px;
+            font-weight: 400;
+            opacity: 0.95;
+            margin-bottom: var(--space-2xl);
+            line-height: 1.5;
+        }
+
+        .hero .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-2xl);
+            flex-wrap: wrap;
+            margin-top: var(--space-2xl);
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Results Bar */
+        .results-bar {
+            background: var(--mocha-bg);
+            padding: var(--space-2xl) 0;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-xl);
+            text-align: center;
+        }
+
+        .result-stat {
+            padding: var(--space-lg);
+        }
+
+        .result-stat .number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--deep-finance-blue);
+            line-height: 1;
+            margin-bottom: var(--space-sm);
+        }
+
+        .result-stat .label {
+            font-size: 16px;
+            color: var(--slate-gray);
+        }
+
+        /* Comparison Table */
+        .comparison-section {
+            background: white;
+        }
+
+        .comparison-table {
+            max-width: 900px;
+            margin: var(--space-2xl) auto 0;
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .comparison-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: var(--mocha-bg);
+        }
+
+        .comparison-header div {
+            padding: var(--space-lg);
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .comparison-header div:first-child {
+            background: var(--deep-finance-blue);
+            color: white;
+        }
+
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-top: 1px solid var(--light-gray);
+        }
+
+        .comparison-row div {
+            padding: var(--space-lg);
+        }
+
+        .comparison-row div:first-child {
+            background: rgba(16, 185, 129, 0.05);
+            font-weight: 600;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .feature-card {
+            background: white;
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: var(--space-xl);
+            transition: all 200ms ease-out;
+        }
+
+        .feature-card:hover {
+            border-color: var(--deep-finance-blue);
+            box-shadow: 0 4px 12px rgba(10, 38, 71, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: var(--space-md);
+        }
+
+        .feature-card h4 {
+            color: var(--deep-finance-blue);
+            margin-bottom: var(--space-md);
+        }
+
+        /* Course Map Section */
+        .course-map {
+            background: var(--mocha-bg);
+        }
+
+        .phase-section {
+            margin-bottom: var(--space-3xl);
+        }
+
+        .phase-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .phase-header {
+            background: var(--deep-finance-blue);
+            color: white;
+            padding: var(--space-lg) var(--space-xl);
+            border-radius: 8px;
+            margin-bottom: var(--space-xl);
+        }
+
+        .phase-header h3 {
+            color: white;
+            margin-bottom: var(--space-sm);
+        }
+
+        .phase-header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .course-grid {
+            display: grid;
+            gap: var(--space-lg);
+        }
+
+        .course-item {
+            background: white;
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: var(--space-lg);
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: var(--space-lg);
+            align-items: start;
+            transition: all 200ms ease-out;
+        }
+
+        .course-item:hover {
+            border-color: var(--growth-green);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+        }
+
+        .course-badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .badge-beginner {
+            background: #DBEAFE;
+            color: #1E40AF;
+        }
+
+        .badge-intermediate {
+            background: #FEF3C7;
+            color: #92400E;
+        }
+
+        .badge-advanced {
+            background: #FEE2E2;
+            color: #991B1B;
+        }
+
+        .badge-included {
+            background: #D1FAE5;
+            color: #059669;
+        }
+
+        .course-content h5 {
+            color: var(--deep-finance-blue);
+            margin-bottom: var(--space-sm);
+        }
+
+        .course-content p {
+            margin: 0;
+            font-size: 16px;
+            color: var(--slate-gray);
+        }
+
+        .course-price {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .course-price .original {
+            color: var(--slate-gray);
+            margin-bottom: 4px;
+        }
+
+        .course-price .included {
+            color: var(--growth-green);
+            font-weight: 600;
+        }
+
+        .course-actions {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+        }
+
+        .btn-preview {
+            background: transparent;
+            color: var(--info-blue);
+            border: 2px solid var(--info-blue);
+            padding: 6px 16px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 200ms ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+
+        .btn-preview:hover {
+            background: var(--info-blue);
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        /* Video Modal */
+        .video-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(4px);
+            animation: fadeIn 200ms ease-out;
+        }
+
+        .video-modal.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-modal-content {
+            background: white;
+            border-radius: 16px;
+            padding: var(--space-xl);
+            width: 90%;
+            max-width: 900px;
+            position: relative;
+            animation: scaleIn 200ms ease-out;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .video-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .video-modal-header h3 {
+            color: var(--deep-finance-blue);
+            margin: 0;
+        }
+
+        .modal-close {
+            background: transparent;
+            border: none;
+            font-size: 32px;
+            cursor: pointer;
+            color: var(--slate-gray);
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: all 200ms ease-out;
+        }
+
+        .modal-close:hover {
+            background: var(--light-gray);
+            color: var(--charcoal);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .value-callout {
+            background: linear-gradient(135deg, var(--premium-gold) 0%, var(--warm-coral) 100%);
+            color: white;
+            padding: var(--space-2xl);
+            border-radius: 12px;
+            margin-top: var(--space-3xl);
+            text-align: center;
+        }
+
+        .value-callout h3 {
+            color: white;
+            margin-bottom: var(--space-lg);
+        }
+
+        .value-callout .price-comparison {
+            font-size: 24px;
+            font-weight: 700;
+            margin: var(--space-lg) 0;
+        }
+
+        .value-callout .savings {
+            font-size: 32px;
+            font-weight: 800;
+            margin: var(--space-md) 0;
+        }
+
+        /* Guarantee Section */
+        .guarantee-section {
+            background: white;
+            border-top: 4px solid var(--growth-green);
+        }
+
+        .guarantee-badge {
+            background: var(--growth-green);
+            color: white;
+            padding: var(--space-lg) var(--space-xl);
+            border-radius: 12px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: var(--space-2xl);
+            display: inline-block;
+        }
+
+        .guarantee-badge::before {
+            content: "✅";
+            margin-right: var(--space-md);
+            font-size: 32px;
+        }
+
+        .guarantee-benefits {
+            background: var(--mocha-bg);
+            border-left: 4px solid var(--growth-green);
+            padding: var(--space-xl);
+            border-radius: 8px;
+            margin-top: var(--space-2xl);
+        }
+
+        .guarantee-benefits h4 {
+            color: var(--deep-finance-blue);
+            margin-bottom: var(--space-md);
+        }
+
+        .guarantee-benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .guarantee-benefits li {
+            padding: var(--space-sm) 0;
+            padding-left: var(--space-xl);
+            position: relative;
+        }
+
+        .guarantee-benefits li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--growth-green);
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        /* AI Assistant Section */
+        .ai-assistant-section {
+            background: linear-gradient(135deg, var(--info-blue) 0%, var(--deep-finance-blue) 100%);
+            color: white;
+        }
+
+        .ai-assistant-section h2,
+        .ai-assistant-section h3,
+        .ai-assistant-section h4 {
+            color: white;
+        }
+
+        .ai-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-2xl) 0;
+        }
+
+        .ai-feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--space-lg);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .ai-feature h5 {
+            color: white;
+            margin-bottom: var(--space-sm);
+        }
+
+        .ai-feature p {
+            margin: 0;
+            opacity: 0.95;
+        }
+
+        .expectations-box {
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: var(--space-xl);
+            border-radius: 12px;
+            margin-top: var(--space-2xl);
+        }
+
+        .expectations-box h4 {
+            color: white;
+            margin-bottom: var(--space-lg);
+        }
+
+        .expectations-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .expectations-box li {
+            padding: var(--space-sm) 0;
+            opacity: 0.95;
+        }
+
+        .expectations-box strong {
+            color: white;
+            font-weight: 700;
+        }
+
+        /* Certificate Section */
+        .certificate-section {
+            background: var(--mocha-bg);
+        }
+
+        .certificate-visual {
+            background: white;
+            border: 4px solid var(--premium-gold);
+            border-radius: 12px;
+            padding: var(--space-3xl);
+            text-align: center;
+            margin: var(--space-2xl) auto;
+            max-width: 700px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .certificate-visual h3 {
+            color: var(--deep-finance-blue);
+            margin-bottom: var(--space-md);
+        }
+
+        .certificate-seal {
+            font-size: 64px;
+            margin: var(--space-lg) 0;
+        }
+
+        .why-matters {
+            background: white;
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .why-matters h4 {
+            color: var(--deep-finance-blue);
+            margin-bottom: var(--space-lg);
+        }
+
+        .benefit-item {
+            padding: var(--space-md) 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .benefit-item:last-child {
+            border-bottom: none;
+        }
+
+        .benefit-item strong {
+            color: var(--deep-finance-blue);
+        }
+
+        .usage-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .usage-card {
+            background: white;
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: var(--space-lg);
+        }
+
+        .usage-card h5 {
+            color: var(--deep-finance-blue);
+            margin-bottom: var(--space-sm);
+        }
+
+        /* Visual Examples */
+        .example-image {
+            background: var(--light-gray);
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: var(--space-3xl);
+            text-align: center;
+            color: var(--slate-gray);
+            margin: var(--space-lg) 0;
+        }
+
+        /* Testimonials */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .testimonial-card {
+            background: white;
+            border: 2px solid var(--light-gray);
+            border-left: 4px solid var(--growth-green);
+            border-radius: 12px;
+            padding: var(--space-xl);
+        }
+
+        .testimonial-quote {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--charcoal);
+            margin-bottom: var(--space-lg);
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--deep-finance-blue);
+            margin-bottom: 4px;
+        }
+
+        .testimonial-position {
+            font-size: 14px;
+            color: var(--slate-gray);
+        }
+
+        /* Pricing */
+        .pricing-section {
+            background: var(--mocha-bg);
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .pricing-card {
+            background: white;
+            border: 3px solid var(--light-gray);
+            border-radius: 16px;
+            padding: var(--space-2xl);
+            position: relative;
+            transition: all 200ms ease-out;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(10, 38, 71, 0.12);
+        }
+
+        .pricing-card.recommended {
+            border-color: var(--warm-coral);
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
+        }
+
+        .recommended-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--warm-coral);
+            color: white;
+            padding: 4px 16px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .pricing-header h3 {
+            color: var(--deep-finance-blue);
+            margin-bottom: var(--space-sm);
+        }
+
+        .price {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--deep-finance-blue);
+            line-height: 1;
+            margin: var(--space-lg) 0;
+        }
+
+        .price-period {
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--slate-gray);
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: var(--space-xl) 0;
+        }
+
+        .pricing-features li {
+            padding: var(--space-sm) 0;
+            padding-left: var(--space-lg);
+            position: relative;
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--growth-green);
+            font-weight: 700;
+        }
+
+        .roi-callout {
+            background: linear-gradient(135deg, var(--growth-green) 0%, #059669 100%);
+            color: white;
+            padding: var(--space-2xl);
+            border-radius: 12px;
+            margin-top: var(--space-2xl);
+            text-align: center;
+        }
+
+        .roi-callout .stat {
+            font-size: 20px;
+            font-weight: 700;
+            margin: var(--space-sm) 0;
+        }
+
+        .trust-bar {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-xl);
+            flex-wrap: wrap;
+            padding: var(--space-lg);
+            background: var(--mocha-bg);
+            border-radius: 8px;
+            font-size: 14px;
+            color: var(--slate-gray);
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: white;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: var(--space-xl);
+            margin-bottom: var(--space-lg);
+        }
+
+        .faq-question {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--deep-finance-blue);
+            margin-bottom: var(--space-md);
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* About Mike */
+        .about-mike-section {
+            background: var(--mocha-bg);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--space-3xl);
+            margin-top: var(--space-2xl);
+        }
+
+        .mike-photo-placeholder {
+            background: var(--light-gray);
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: var(--space-4xl) var(--space-xl);
+            text-align: center;
+            color: var(--slate-gray);
+        }
+
+        .career-timeline {
+            margin-top: var(--space-xl);
+        }
+
+        .timeline-item {
+            padding: var(--space-lg);
+            border-left: 4px solid var(--deep-finance-blue);
+            margin-bottom: var(--space-lg);
+            padding-left: var(--space-xl);
+        }
+
+        .timeline-item h5 {
+            color: var(--deep-finance-blue);
+            margin-bottom: var(--space-sm);
+        }
+
+        .timeline-item p {
+            margin: 0;
+            color: var(--slate-gray);
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, var(--deep-finance-blue) 0%, var(--deep-finance-blue-light) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            color: white;
+            margin-bottom: var(--space-lg);
+        }
+
+        .final-cta p {
+            font-size: 20px;
+            opacity: 0.95;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .final-cta .trust-bar {
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .final-cta .trust-bar a {
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: rgba(255, 255, 255, 0.8);
+            padding: var(--space-2xl) 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: var(--space-3xl) 0;
+            }
+
+            .hero .subheadline {
+                font-size: 18px;
+            }
+
+            .hero .trust-indicators {
+                flex-direction: column;
+                gap: var(--space-md);
+            }
+
+            .comparison-header,
+            .comparison-row {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-header div:first-child {
+                border-bottom: 2px solid var(--light-gray);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
+            }
+
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .course-item {
+                grid-template-columns: 1fr;
+                gap: var(--space-md);
+            }
+
+            .urgency-section {
+                padding: var(--space-xl) var(--space-lg);
+                margin: var(--space-xl) var(--space-md);
+            }
+
+            .urgency-section h3 {
+                font-size: 24px;
+            }
+
+            .urgency-section p {
+                font-size: 16px;
+            }
+
+            .video-modal-content {
+                width: 95%;
+                padding: var(--space-lg);
+            }
+
+            .video-modal-header h3 {
+                font-size: 20px;
+            }
+
+            .btn-preview {
+                font-size: 13px;
+                padding: 6px 12px;
+            }
+
+            .course-actions {
+                margin-top: var(--space-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container-reading">
+            <h1>Break Into Private Equity<br>from Any Background</h1>
+            <p class="subheadline">Master the technical skills, mental math frameworks, and case interview formats you need to land offers at KKR, Blackstone, Apollo, and other top-tier PE firms—even if you're from a non-target school.</p>
+            <a href="#pricing" class="btn btn-primary btn-large">Get Interview-Ready</a>
+            <div class="trust-indicators">
+                <span>✅ 10,000+ students trained</span>
+                <span>🏆 ~90% success rate</span>
+                <span>🎓 Taught by Columbia Prof</span>
+                <span>💼 15+ years IB/PE/HF experience</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Bar -->
+    <section class="results-bar">
+        <div class="container">
+            <div class="results-grid">
+                <div class="result-stat">
+                    <div class="number">$150K+</div>
+                    <div class="label">Average Starting Salary</div>
+                </div>
+                <div class="result-stat">
+                    <div class="number">90%</div>
+                    <div class="label">Success Rate Landing Top Roles</div>
+                </div>
+                <div class="result-stat">
+                    <div class="number">11</div>
+                    <div class="label">Comprehensive Courses</div>
+                </div>
+                <div class="result-stat">
+                    <div class="number">24/7</div>
+                    <div class="label">AI Interview Assistant</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where Do You Fit Section -->
+    <section>
+        <div class="container">
+            <h2 class="text-center mb-2xl">Where Do You Fit In This?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>✅ Perfect For You If:</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: var(--space-sm) 0;">• You're recruiting for <strong>PE Analyst roles</strong> (post-undergrad, not MBA Associate)</li>
+                        <li style="padding: var(--space-sm) 0;">• You come from a <strong>non-target school</strong> and need to catch up technically</li>
+                        <li style="padding: var(--space-sm) 0;">• You're <strong>currently in IB</strong> and want to transition buy-side</li>
+                        <li style="padding: var(--space-sm) 0;">• You have <strong>8-12 weeks before interviews</strong> start (ideal timeline)</li>
+                        <li style="padding: var(--space-sm) 0;">• You learn best through <strong>visual, animated content</strong>—not boring slides</li>
+                        <li style="padding: var(--space-sm) 0;">• You want <strong>desk-ready skills</strong>, not just interview prep</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>❌ Not Right For You If:</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: var(--space-sm) 0;">• You're recruiting for <strong>MBA-level Associate positions</strong> (we have a separate program for that)</li>
+                        <li style="padding: var(--space-sm) 0;">• Your interviews are in <strong>less than 2 weeks</strong> (you need more runway—start now if recruiting soon)</li>
+                        <li style="padding: var(--space-sm) 0;">• You prefer <strong>in-person bootcamps</strong> over self-paced online learning</li>
+                        <li style="padding: var(--space-sm) 0;">• You're looking for <strong>job placement guarantees</strong> (we prepare you exceptionally well, but outcomes depend on many factors)</li>
+                        <li style="padding: var(--space-sm) 0;">• You want <strong>just theory</strong> without practical application</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Us vs Them -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="text-center">Us vs. The Competition</h2>
+            <p class="text-center" style="font-size: 18px; color: var(--slate-gray); margin-bottom: var(--space-2xl);">Let's face it—most PE prep programs are built for MBAs, not analysts. Here's how we're different:</p>
+            
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div>Finance-able</div>
+                    <div>Legacy Competitors</div>
+                </div>
+                <div class="comparison-row">
+                    <div>✅ Built specifically for PE <strong>Analyst</strong> roles (post-undergrad)</div>
+                    <div>❌ Focus on MBA-level Associate positions or generic "finance"</div>
+                </div>
+                <div class="comparison-row">
+                    <div>✅ Includes <strong>mental math frameworks</strong> and all <strong>4 case formats</strong></div>
+                    <div>❌ Skip analyst-specific challenges like mental math tests</div>
+                </div>
+                <div class="comparison-row">
+                    <div>✅ <strong>Visual, animated learning</strong> with concepts in motion</div>
+                    <div>❌ Painful audio-only voiceovers over static slides (late 90s vibe)</div>
+                </div>
+                <div class="comparison-row">
+                    <div>✅ <strong>Curated content</strong> — skip the fluff, zero in on what matters</div>
+                    <div>❌ Information overload with 20+ hour courses that continue to baffle us</div>
+                </div>
+                <div class="comparison-row">
+                    <div>✅ Real instructor videos (Mike on camera explaining)</div>
+                    <div>❌ Slide deck voiceovers with no human connection</div>
+                </div>
+                <div class="comparison-row">
+                    <div>✅ <strong>Desk-ready</strong> focus—prep for interviews <em>and</em> the job</div>
+                    <div>❌ Interview-only prep that leaves you scrambling day one</div>
+                </div>
+                <div class="comparison-row">
+                    <div>✅ <strong>Dynamic frameworks</strong> that work for any company</div>
+                    <div>❌ Static models built around single company examples</div>
+                </div>
+                <div class="comparison-row">
+                    <div>✅ <strong>24/7 AI tutor</strong> for unlimited practice interviews</div>
+                    <div>❌ Limited or no AI support; office hours only</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section style="background: white;">
+        <div class="container">
+            <h2 class="text-center mb-2xl">What's Included in Your Bundle</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h4>11 Comprehensive Courses</h4>
+                    <p>From Accounting Fundamentals to Advanced LBO Modeling—everything you need to go from ground zero to interview-ready.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h4>Doyla AI Interview Assistant</h4>
+                    <p>Unlimited mock interviews, instant answers to questions 24/7, trained on our proprietary database of real PE interview questions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧮</div>
+                    <h4>Mental Math Frameworks</h4>
+                    <p>Proprietary shortcuts for calculations under pressure—critical for analyst-level interviews (MBA programs skip this).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h4>All 4 Case Interview Formats</h4>
+                    <p>Master paper LBOs, growth equity cases, market sizing, and full financial models—be ready for anything they throw at you.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Interview Fine-Tuning Module</h4>
+                    <p>Actual PE Analyst interview questions with walkthrough frameworks. Practice with the exact questions firms ask.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h4>Professional Certificate</h4>
+                    <p>LinkedIn-ready completion certificate showing you completed structured prep from a Columbia professor—stand out from 97% of candidates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Map Section -->
+    <section class="course-map">
+        <div class="container">
+            <h2 class="text-center mb-md">Your Complete Roadmap from Zero to Interview-Ready</h2>
+            <p class="text-center body-large" style="color: var(--slate-gray); margin-bottom: var(--space-3xl);">11 comprehensive courses designed to take you from ground floor to pro-level—whether you're starting from scratch or already have some finance background. Here's exactly what you're getting.</p>
+
+            <!-- Phase 1 -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h3>PHASE 1: Build Your Foundation</h3>
+                    <p>Start here if you're new to finance</p>
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-beginner">Beginner</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>Accounting Fundamentals</h5>
+                            <p>Master the three financial statements and how they connect. You can't model what you don't understand—this is where it all begins.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('Accounting Fundamentals')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Individual: $89 lifetime</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-beginner">Beginner</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>M&A Fundamentals</h5>
+                            <p>Understand merger and acquisition processes, accretion/dilution analysis, and deal structures. PE firms live and breathe M&A—you need to speak the language.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('M&A Fundamentals')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Individual: $89 lifetime</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-beginner">Beginner</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>Valuation Fundamentals</h5>
+                            <p>Learn DCF, comps, and precedent transactions—the three valuation methods you'll use in every interview and on the desk.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('Valuation Fundamentals')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Individual: $105 lifetime</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-beginner">Beginner</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>PE Analyst: Start Here</h5>
+                            <p>Get oriented with the program structure and understand what PE analysts actually do day-to-day. Start here to know where you're headed.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('PE Analyst: Start Here')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Free intro course</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h3>PHASE 2: Develop Technical Mastery</h3>
+                    <p>Build the skills you'll use daily</p>
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-intermediate">Intermediate</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>Accounting Deep Dive</h5>
+                            <p>Go beyond basics into complex accounting concepts you'll need for advanced modeling. When interviewers ask tough technical questions, you'll have answers.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('Accounting Deep Dive')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Individual: $105 lifetime</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-intermediate">Intermediate</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>Business Mechanics</h5>
+                            <p>Understand how businesses actually work beyond just the financial statements. This is what separates analysts who "get it" from those who just push numbers.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('Business Mechanics')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Individual: $149 lifetime</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-intermediate">Intermediate</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>Excel Survival Kit</h5>
+                            <p>Master keyboard shortcuts and techniques to work 3x faster than analysts who use their mouse. Your seniors will notice.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('Excel Survival Kit')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Individual: $119 lifetime</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-intermediate">Intermediate</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>Financial Modeling</h5>
+                            <p>Build integrated three-statement models from scratch with confidence. This is the foundation for everything else in PE.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('Financial Modeling')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Individual: $119 lifetime</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h3>PHASE 3: Master PE-Specific Skills</h3>
+                    <p>This is what sets you apart</p>
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-advanced">Advanced</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>LBO Modeling</h5>
+                            <p>Master leveraged buyout models—the centerpiece of PE interviews. You'll build these from blank spreadsheets, not templates.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('LBO Modeling')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Individual: $119 lifetime</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-intermediate">Intermediate</span>
+                            <span class="course-badge badge-included">Included</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>Private Equity In Real Life</h5>
+                            <p>See what actually happens inside a $15B PE fund day-to-day. Real deal documents, investment memos, IC materials—not theoretical cases.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('Private Equity In Real Life')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Individual: $250 lifetime</div>
+                            <div class="included">Included in bundle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <h3>PHASE 4: Nail Your Interviews</h3>
+                    <p>Bring it all together</p>
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <div>
+                            <span class="course-badge badge-intermediate">Intermediate</span>
+                            <span class="course-badge badge-included">Bundle Exclusive</span>
+                        </div>
+                        <div class="course-content">
+                            <h5>PE Analyst: Interview Fine-Tuning</h5>
+                            <p>Practice with actual PE Analyst interview questions, mental math frameworks, and all four case interview formats. This is where everything clicks.</p>
+                            <div class="course-actions">
+                                <button class="btn-preview" onclick="openVideoModal('PE Analyst: Interview Fine-Tuning')">
+                                    <span>▶</span> Watch Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <div class="original">Not sold separately</div>
+                            <div class="included">Bundle exclusive</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="value-callout">
+                <h3>The Value Breakdown</h3>
+                <p class="price-comparison">If you bought these courses individually: <strong>$1,242</strong></p>
+                <p class="price-comparison">Your bundle price: <strong>$625 lifetime</strong> (or $435/year)</p>
+                <p class="savings">That's a 50% savings</p>
+                <p>Plus, you get our proprietary mental math frameworks and case interview strategies you can't find anywhere else.</p>
+                <p style="margin-top: var(--space-lg);"><strong>And here's the thing:</strong> You're getting lifetime updates—as we add new courses and content (like our AI Interview Prep Assistant upgrades), you get access at no additional cost.</p>
+                <hr style="border: none; border-top: 2px solid rgba(255,255,255,0.3); margin: var(--space-xl) 0;">
+                <h4 style="color: white; font-size: 20px;">The Bottom Line:</h4>
+                <p style="margin-bottom: 0;">You're not just buying courses. You're getting a complete system that takes you from "I'm interested in PE" to "I'm ready to compete with target school candidates"—regardless of your starting point.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Section -->
+    <section class="ai-assistant-section">
+        <div class="container">
+            <h2 class="text-center mb-md">Exclusive Bonus: AI-Powered Interview Prep Assistant</h2>
+            <p class="text-center body-large" style="margin-bottom: var(--space-3xl);">Practice unlimited mock interviews and get instant answers—24/7</p>
+
+            <p class="body-large">Here's something most interview prep programs don't give you: <strong>unlimited practice with instant feedback.</strong></p>
+            
+            <p class="body-large">We're excited to give you early access to our <strong>IB/PE Interview Prep Assistant</strong>—an AI tutor trained specifically on Finance-able's proprietary database of real interview questions from Goldman Sachs, Blackstone, KKR, and other top-tier firms.</p>
+
+            <h3 style="margin-top: var(--space-2xl); margin-bottom: var(--space-lg);">What this means for you:</h3>
+
+            <div class="ai-features">
+                <div class="ai-feature">
+                    <h5>🤖 Ask questions as you learn</h5>
+                    <p>Stuck on a DCF concept at 2am? Don't wait for office hours or forum responses. Ask the AI and get explanations in plain English, instantly.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <h5>🎤 Unlimited mock interviews</h5>
+                    <p>Practice technical questions, behavioral responses, and case studies as many times as you want. Get feedback on your approach without burning through real networking contacts.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <h5>📊 Trained on real interviews</h5>
+                    <p>This isn't generic AI trained on random internet content. It learned from our proprietary database of actual PE interview questions—the same database Mike built over 15+ years.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <h5>⚡ Available 24/7</h5>
+                    <p>Whether you're prepping at 6am before class or reviewing at midnight, your AI tutor is always available. No scheduling, no waiting.</p>
+                </div>
+
+                <div class="ai-feature">
+                    <h5>🎯 Personalized feedback</h5>
+                    <p>The assistant identifies patterns in your responses and suggests areas where you need more practice. It adapts to your learning style.</p>
+                </div>
+            </div>
+
+            <div class="expectations-box">
+                <h4>A few things you should know (we believe in transparency):</h4>
+                <ul>
+                    <li><strong>This is beta</strong> – The assistant is in early release, which means response times may be slightly slower than you'd expect. We're continuously optimizing performance, and we appreciate your patience.</li>
+                    <li><strong>Even more powerful than our first AI tutor</strong> – This is the upgraded version of Doyla (our original AI assistant). We've trained it on even more interview data and improved its ability to provide relevant, actionable feedback.</li>
+                    <li><strong>We want your input</strong> – As a beta user, you're helping us make this better. If you have feedback on how we can improve the assistant, please send it to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e2919792928d9096a2848b8c838c8187cf83808e87cc818d8f">[email&#160;protected]</a>. We actually read and implement student suggestions.</li>
+                </ul>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); padding: var(--space-2xl); border-radius: 12px; margin-top: var(--space-2xl); text-align: center;">
+                <h4>What this is worth:</h4>
+                <p style="font-size: 20px; margin-bottom: var(--space-md);">One-on-one tutoring with a former PE professional typically costs <strong>$200-500/hour</strong>. Mock interviews with interview coaches run <strong>$150-300 per session</strong>.</p>
+                <h4>What you're paying:</h4>
+                <p style="font-size: 32px; font-weight: 800; color: var(--premium-gold); margin: var(--space-md) 0;">$0 extra</p>
+                <p style="margin-bottom: 0;">It's included free with your bundle. You're getting early access to a tool that future students will likely pay separately for—at no additional cost.</p>
+            </div>
+
+            <p class="body-large" style="text-align: center; margin-top: var(--space-2xl); margin-bottom: 0;"><strong>Think of this as having a finance tutor in your pocket</strong> who's available 24/7, never gets tired, and has seen thousands of interview questions. Use it as much or as little as you want—there are no limits.</p>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section class="certificate-section">
+        <div class="container">
+            <h2 class="text-center mb-md">Earn Your Professional Certificate</h2>
+            <p class="text-center body-large" style="color: var(--slate-gray); margin-bottom: var(--space-3xl);">Showcase your achievement on LinkedIn and your resume</p>
+
+            <div class="certificate-visual">
+                <div class="certificate-seal">🏆</div>
+                <h3>Certificate of Completion</h3>
+                <p style="font-size: 20px; margin: var(--space-lg) 0;">Private Equity Analyst: Interview Ready</p>
+                <p style="color: var(--slate-gray);">Finance-able | Instructed by Mike Kimpel</p>
+            </div>
+
+            <p class="body-large">Upon completing the PE Analyst: Interview Ready program, you'll receive a professional completion certificate you can display on LinkedIn, add to your resume, and reference in interviews.</p>
+
+            <div class="why-matters">
+                <h4>Why this matters:</h4>
+                <p style="font-size: 16px; color: var(--slate-gray); margin-bottom: var(--space-xl);">Let's face it—PE recruiting is brutally competitive. Firms accept 2-3% of applicants. You need every advantage.</p>
+                
+                <p style="font-size: 16px; margin-bottom: var(--space-lg);">A Finance-able certificate signals to recruiters and hiring managers that you:</p>
+
+                <div class="benefit-item">
+                    <p><strong>✅ Invested in structured preparation</strong> (not just random YouTube videos)<br>
+                    <span style="color: var(--slate-gray); font-size: 14px;">Completing 11 comprehensive courses from a Columbia Business School professor demonstrates serious commitment.</span></p>
+                </div>
+
+                <div class="benefit-item">
+                    <p><strong>✅ Learned from a practitioner, not just a recent grad</strong><br>
+                    <span style="color: var(--slate-gray); font-size: 14px;">Mike's 15+ years across IB, PE, and hedge funds—plus 9 years teaching at Columbia—gives you credibility by association.</span></p>
+                </div>
+
+                <div class="benefit-item">
+                    <p><strong>✅ Mastered both interviews and desk-ready skills</strong><br>
+                    <span style="color: var(--slate-gray); font-size: 14px;">Unlike programs that only prep you for interviews, you've learned the skills you'll actually use day one on the job.</span></p>
+                </div>
+
+                <div class="benefit-item">
+                    <p><strong>✅ Have documented technical training</strong><br>
+                    <span style="color: var(--slate-gray); font-size: 14px;">When you're competing against target school candidates with finance club access and alumni networks, this certificate shows you closed that gap through initiative.</span></p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: var(--space-3xl); margin-bottom: var(--space-lg);">How to Use Your Certificate</h3>
+
+            <div class="usage-examples">
+                <div class="usage-card">
+                    <h5>On LinkedIn:</h5>
+                    <p>Add it to your "Licenses & Certifications" section. Include the credential URL so recruiters can verify it's legitimate.</p>
+                </div>
+
+                <div class="usage-card">
+                    <h5>On Your Resume:</h5>
+                    <p>Include under "Professional Development" or "Certifications" section—especially valuable for career switchers or non-finance majors.</p>
+                </div>
+
+                <div class="usage-card">
+                    <h5>In Networking Emails:</h5>
+                    <p>Reference it when reaching out to PE professionals: "I recently completed Finance-able's PE Analyst program to ensure I'm technically prepared for the desk, not just interviews."</p>
+                </div>
+
+                <div class="usage-card">
+                    <h5>In Interviews:</h5>
+                    <p>Use it as a conversation starter: "I completed Mike Kimpel's PE Analyst program at Finance-able—that's where I learned the LBO framework I just walked you through."</p>
+                </div>
+            </div>
+
+            <div style="background: white; border: 2px solid var(--light-gray); border-left: 4px solid var(--growth-green); padding: var(--space-xl); border-radius: 12px; margin-top: var(--space-3xl);">
+                <h4 style="color: var(--deep-finance-blue); margin-bottom: var(--space-md);">Real Student Example</h4>
+                <p style="font-style: italic; color: var(--charcoal);">"When I mentioned my Finance-able certificate in networking calls, every analyst asked about it. It immediately positioned me as someone who took preparation seriously. One VP at Blackstone said, 'Most candidates just watch YouTube videos—it's refreshing to see structured training.' That conversation led to my interview."</p>
+                <p style="margin-bottom: 0; font-weight: 600; color: var(--slate-gray);">— Sarah M., Now at Vista Equity Partners</p>
+            </div>
+
+            <div style="text-align: center; margin-top: var(--space-3xl); padding: var(--space-2xl); background: linear-gradient(135deg, var(--deep-finance-blue) 0%, var(--deep-finance-blue-light) 100%); border-radius: 12px; color: white;">
+                <h4 style="color: white; margin-bottom: var(--space-md);">The Bottom Line</h4>
+                <p class="body-large" style="margin-bottom: 0;">This isn't just a PDF you download and forget. It's a credibility signal that opens doors, starts conversations, and demonstrates you're serious about PE.</p>
+                <p class="body-large" style="margin-top: var(--space-md);">And unlike most certifications, you don't need to maintain it with annual fees or continuing education. <strong>Once you earn it, it's yours for life.</strong></p>
+                <p style="font-size: 20px; font-weight: 700; margin-top: var(--space-xl); margin-bottom: 0;">Complete the program. Earn the certificate. Stand out from 97% of other candidates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Visual Learning Section -->
+    <section style="background: white;">
+        <div class="container">
+            <h2 class="text-center mb-2xl">Why Visual Learning Changes Everything</h2>
+            <p class="text-center body-large" style="color: var(--slate-gray); margin-bottom: var(--space-3xl);">Most finance courses are built like textbooks. We're different.</p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h4>Concepts in Motion</h4>
+                    <p>We don't just show you static slides with voiceovers. Every concept is <strong>animated and visualized</strong>—you see exactly how the three statements connect, how cash flows through an LBO, how enterprise value builds up.</p>
+                    <p style="font-weight: 600; color: var(--growth-green);">Result: You actually understand, not just memorize.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h4>How Your Brain Actually Learns</h4>
+                    <p>Research shows people retain <strong>80% of what they see and do</strong> versus 10% of what they read. Our visual approach leverages dual coding theory—you're processing information through both visual and verbal channels simultaneously.</p>
+                    <p style="font-weight: 600; color: var(--growth-green);">Result: Concepts stick, even under interview pressure.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Zero Time Wasted</h4>
+                    <p>We've taught 10,000+ students. We know exactly which concepts trip people up and which are intuitive. Every module is <strong>ruthlessly curated</strong>—skip the fluff, zero in on what actually matters for interviews and the desk.</p>
+                    <p style="font-weight: 600; color: var(--growth-green);">Result: You learn faster without information overload.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section #1 -->
+    <section style="background: white;">
+        <div class="container">
+            <div class="urgency-section">
+                <h3>⏰ Don't Let Timing Cost You Your Dream Role</h3>
+                <p>Here's something most candidates don't realize until it's too late: PE recruiting moves fast.</p>
+                
+                <div class="timeline-list">
+                    <p style="color: white; font-weight: 700; margin-bottom: var(--space-md);">The Timeline:</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>September-October:</strong> Firms start reaching out to top candidates (often from target schools)</li>
+                        <li><strong>November-January:</strong> First-round interviews begin</li>
+                        <li><strong>January-March:</strong> Peak recruiting season—most interviews and offers happen in this window</li>
+                        <li><strong>April-May:</strong> Final offers extended, roles filled</li>
+                        <li><strong>June onwards:</strong> You missed the cycle. See you next year.</li>
+                    </ul>
+                </div>
+
+                <p><strong>What this means for you:</strong></p>
+                <p>If you're planning to recruit this academic year, you need to start prep <em>now</em>—not "in a few weeks" or "after finals."</p>
+
+                <p style="font-size: 16px; margin-top: var(--space-lg);">The candidates who land offers? They started prepping 2-3 months before interviews. They're confident, polished, and fluent in finance concepts.</p>
+                <p style="font-size: 16px;">The candidates who struggle? They started two weeks before interviews. They're cramming, stressed, and their lack of preparation shows.</p>
+
+                <p style="font-size: 20px; font-weight: 700; margin-top: var(--space-xl); margin-bottom: 0;">The next recruiting wave starts in 8 weeks. Give yourself the runway you need.</p>
+                
+                <a href="#pricing" class="btn btn-primary btn-large">Start Prep Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Examples Section -->
+    <section style="background: var(--mocha-bg);">
+        <div class="container">
+            <h2 class="text-center mb-2xl">See The Difference: Static vs. Visual</h2>
+            <p class="text-center body-large" style="color: var(--slate-gray); margin-bottom: var(--space-3xl);">Here's what we mean by "concepts in motion"</p>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h3 style="text-align: center; color: var(--error-red); margin-bottom: var(--space-lg);">❌ How Competitors Teach</h3>
+                <div class="example-image">
+                    [Static slide deck screenshot: Wall of text explaining DCF methodology]<br><br>
+                    Text-heavy slide<br>
+                    No visual hierarchy<br>
+                    Audio voiceover only<br>
+                    Like reading a textbook
+                </div>
+
+                <h3 style="text-align: center; color: var(--growth-green); margin-top: var(--space-3xl); margin-bottom: var(--space-lg);">✅ How Finance-able Teaches</h3>
+                <div class="example-image">
+                    [Animated visual: Cash flows moving through DCF framework with color-coded connections]<br><br>
+                    Animated diagrams<br>
+                    Step-by-step progression<br>
+                    Mike on camera explaining<br>
+                    Visual + verbal dual coding
+                </div>
+
+                <div style="text-align: center; margin-top: var(--space-3xl); padding: var(--space-2xl); background: white; border-radius: 12px; border: 2px solid var(--growth-green);">
+                    <h4 style="color: var(--deep-finance-blue); margin-bottom: var(--space-md);">What Students Say:</h4>
+                    <p style="font-style: italic; font-size: 18px;">"I tried three other programs before Finance-able. They all felt like reading textbooks. Mike's visual approach finally made LBOs click. I could see the cash flows moving through the model—it became intuitive instead of memorized."</p>
+                    <p style="font-weight: 600; color: var(--slate-gray);">— James T., University of Texas → KKR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Success Stories -->
+    <section style="background: white;">
+        <div class="container">
+            <h2 class="text-center mb-2xl">From Non-Target to Top-Tier: Real Student Outcomes</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "I went to Case Western (super non-target) with a 3.4 GPA. After Finance-able's program, I networked like crazy and landed Morgan Stanley. Mike's visual approach to LBOs and his mental math frameworks were game-changers. I could hold my own with Wharton kids in interviews."
+                    </div>
+                    <div class="testimonial-author">Sarah M.</div>
+                    <div class="testimonial-position">Case Western Reserve → Incoming Analyst, Morgan Stanley IB</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "Before Finance-able, I failed two PE interviews badly—couldn't answer basic questions about enterprise value or walk through an LBO under pressure. Mike's program built my confidence from zero. Three months later, I had offers from KKR and Apollo. Chose KKR."
+                    </div>
+                    <div class="testimonial-author">James T.</div>
+                    <div class="testimonial-position">University of Texas → Incoming Associate, KKR</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "As an international student from Nigeria, I faced massive disadvantages—no alumni network, visa concerns, limited target school access. Finance-able leveled the playing field. The structured approach and visual learning style helped me compete. Now I'm at Goldman."
+                    </div>
+                    <div class="testimonial-author">Alex O.</div>
+                    <div class="testimonial-position">International Student → Incoming Analyst, Goldman Sachs</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "I'm a liberal arts major (English lit) who decided junior year I wanted finance. Everyone said I was too late and needed an MBA first. Finance-able proved them wrong. Started from accounting basics, finished interview-ready in 10 weeks. Just accepted Blackstone's offer."
+                    </div>
+                    <div class="testimonial-author">Rachel K.</div>
+                    <div class="testimonial-position">Middlebury College → Incoming Analyst, Blackstone</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "I was in IB for two years but felt lost technically—just followed templates without understanding. Mike's program finally made me understand the 'why' behind every model. Interviewed at five PE funds, got four offers. The desk-ready focus made all the difference."
+                    </div>
+                    <div class="testimonial-author">David L.</div>
+                    <div class="testimonial-position">Barclays IB Analyst → Incoming Associate, Vista Equity Partners</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        "Most interview prep focuses on memorizing answers. Mike's approach is different—he teaches you to think like an investor. When I got a curveball question about distressed investing in my Apollo interview, I could actually reason through it because I understood the fundamentals."
+                    </div>
+                    <div class="testimonial-author">Michael C.</div>
+                    <div class="testimonial-position">University of Michigan → Incoming Analyst, Apollo Global Management</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: var(--space-3xl); padding: var(--space-2xl); background: var(--mocha-bg); border-radius: 12px;">
+                <h3 style="color: var(--deep-finance-blue); margin-bottom: var(--space-md);">The Pattern Is Clear:</h3>
+                <p class="body-large" style="max-width: 800px; margin: 0 auto;">Non-target schools. Liberal arts majors. International students. Career switchers. IB analysts looking to level up. <strong>They all succeeded because they gave themselves the runway to prep properly.</strong></p>
+                <p class="body-large" style="max-width: 800px; margin: var(--space-md) auto 0;">The question isn't whether this program works. It's whether you'll start early enough to give yourself the same advantage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2 class="text-center mb-md">Choose Your Access Level</h2>
+            <p class="text-center body-large" style="color: var(--slate-gray); margin-bottom: var(--space-3xl);">All plans include the complete 11-course program, AI tutor, mental math frameworks, case interview prep, and professional certificate.</p>
+
+            <div class="pricing-cards">
+                <!-- Yearly Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Yearly Access</h3>
+                        <p style="color: var(--slate-gray);">Perfect for this recruiting cycle</p>
+                    </div>
+                    <div class="price">
+                        $435
+                        <span class="price-period">/year</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Complete 11-course program</li>
+                        <li>Doyla AI Interview Assistant (24/7)</li>
+                        <li>Mental math frameworks</li>
+                        <li>All 4 case interview formats</li>
+                        <li>Professional certificate</li>
+                        <li>12 months of access</li>
+                        <li>Can upgrade to Lifetime anytime</li>
+                    </ul>
+                    <p style="color: var(--slate-gray); font-size: 14px; margin-top: var(--space-lg);"><strong>Why Yearly?</strong></p>
+                    <ul style="list-style: none; padding: 0; margin-top: var(--space-sm); font-size: 14px; color: var(--slate-gray);">
+                        <li>• Lower upfront investment</li>
+                        <li>• Covers full recruiting season</li>
+                        <li>• Upgrade path to Lifetime available</li>
+                        <li>• Test the program risk-free</li>
+                    </ul>
+                    <p class="mt-lg" style="color: var(--slate-gray);"><strong>Perfect for:</strong> Current students recruiting this year</p>
+                    <a href="http://app.finance-able.com/enroll?price_id=price_1PcLWHBossYdHpFZi2tUHYLm" class="btn btn-secondary mt-lg" style="display: block;">Start with Yearly</a>
+                </div>
+
+                <!-- Lifetime Plan - RECOMMENDED -->
+                <div class="pricing-card recommended">
+                    <div class="recommended-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Lifetime Access</h3>
+                        <p style="color: var(--slate-gray);">Best long-term value</p>
+                    </div>
+                    <div class="price">
+                        $625
+                        <span class="price-period">one-time</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><strong>Everything in Yearly, plus:</strong></li>
+                        <li>Lifetime access (never expires)</li>
+                        <li>All future content updates free</li>
+                        <li>New courses added at no cost</li>
+                        <li>Reference material for entire career</li>
+                        <li>Better price per year ($156/year over 4 years)</li>
+                        <li>Keep access even after landing role</li>
+                        <li>Use for on-the-job learning</li>
+                    </ul>
+                    <p class="mt-lg" style="color: var(--slate-gray);"><strong>Perfect for:</strong> Serious candidates who want long-term reference material</p>
+                    <a href="http://app.finance-able.com/enroll?price_id=price_1PcLWHBossYdHpFZEKyOB9Y9" class="btn btn-primary mt-lg" style="display: block;">Get Lifetime Access</a>
+                </div>
+            </div>
+
+            <div class="roi-callout">
+                <div class="stat">💰 PE Analyst Year 1 Comp: $150K average</div>
+                <div class="stat">📊 Investment: $625 one-time</div>
+                <div class="stat">📈 ROI: 240x in Year 1 alone</div>
+                <p class="mt-md" style="font-size: 18px; font-weight: 600;">With a 100x+ return in Year 1 of PE, this might be the best investment you ever make!</p>
+            </div>
+
+            <div class="trust-bar mt-xl">
+                <span>✅ 10,000+ students trained</span>
+                <span>🔒 Secure checkout</span>
+                <span>💳 All major cards accepted</span>
+                <span>↩️ 30-day money-back guarantee</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+        <div class="container-reading">
+            <div style="text-align: center;">
+                <div class="guarantee-badge">30-Day Money-Back Guarantee</div>
+            </div>
+            
+            <h2 style="text-align: center; margin-bottom: var(--space-lg);">The Finance-able Promise™</h2>
+
+            <p class="body-large">Let's face it—you've probably been burned by online courses before. Big promises, underwhelming content, no real results.</p>
+
+            <p class="body-large">We get it. That's why we're giving you <strong>30 full days</strong> to go through the material, practice with our AI Interview Prep Assistant, work through the frameworks, and see if this actually works for you.</p>
+
+            <h3 style="color: var(--deep-finance-blue); margin: var(--space-2xl) 0 var(--space-lg);">Here's the deal:</h3>
+
+            <p class="body-large">If you're not completely satisfied—if the visual learning doesn't click, if the mental math frameworks don't help, if you don't feel dramatically more prepared for PE interviews—<strong>just email us within 30 days.</strong></p>
+
+            <p class="body-large" style="font-size: 20px; font-weight: 700; color: var(--deep-finance-blue);">We'll refund every penny. No questions asked. No hoops to jump through. No "but you have to complete X modules first" nonsense.</p>
+
+            <div class="guarantee-benefits">
+                <h4>Why we can offer this:</h4>
+                <p>Because we've trained 10,000+ students over the past decade, and we know this program works. Our ~90% success rate landing top-tier roles isn't luck—it's the result of practitioner-taught, visual, desk-ready training that actually prepares you for what you'll face.</p>
+                
+                <p style="margin-top: var(--space-lg);">We're confident that once you see the difference between our animated, intuitive approach and the boring slide decks offered by competitors, you won't want a refund. You'll want to finish every module.</p>
+
+                <p style="font-weight: 600; margin-top: var(--space-lg);">But if for any reason it's not right for you? We've got you covered.</p>
+            </div>
+
+            <div style="text-align: center; margin-top: var(--space-3xl); padding: var(--space-2xl); background: linear-gradient(135deg, var(--growth-green) 0%, #059669 100%); border-radius: 12px; color: white;">
+                <h3 style="color: white; margin-bottom: var(--space-md);">That's the Finance-able Promise™:</h3>
+                <p style="font-size: 20px; font-weight: 600; margin-bottom: 0;">30 days to try everything, risk-free. Either this transforms your interview prep, or you get your money back. Simple as that.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="text-center mb-xl">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What's the difference between Yearly Access and Lifetime Access?</div>
+                    <div class="faq-answer">
+                        <p><strong>Yearly Access ($435/year):</strong> You get full access to all 11 courses, the AI tutor, mental math frameworks, case interview prep, and your professional certificate for 12 months. Perfect if you're recruiting this cycle and want a lower upfront investment. After your year expires, you can renew or upgrade to Lifetime.</p>
+                        <p><strong>Lifetime Access ($625 one-time):</strong> Everything in Yearly, but you <em>never lose access</em>. You can reference materials throughout your entire career, get all future content updates at no additional cost, and use it for on-the-job learning once you land your role. Over 4 years, Lifetime works out to just $156/year—way better value if you plan to use this as a long-term resource.</p>
+                        <p><strong>Which should you choose?</strong> If you're recruiting this year and want to test the program first, start with Yearly (you can always upgrade later for just the difference). If you know you'll want this as a career-long reference and want the best value, go Lifetime. Most serious candidates choose Lifetime because the PE skills you learn here apply throughout your career, not just for interviews.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">I'm at a non-target school. Will this actually help me compete?</div>
+                    <div class="faq-answer">
+                        <p>Absolutely. Many of our most successful students came from non-target schools and are now at Goldman Sachs, Blackstone, KKR, and other top-tier firms. The visual learning approach and proprietary frameworks level the playing field—you'll demonstrate the same technical mastery and strategic thinking as target school candidates, just through structured prep instead of finance club advantages.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How is this different from other PE interview prep programs?</div>
+                    <div class="faq-answer">
+                        <p>Three major differences: (1) Built specifically for PE Analyst (post-undergrad) roles, not MBA-level Associate positions, (2) Includes mental math frameworks and all four case interview formats that other programs skip, (3) Visual/animated learning approach versus boring static slides. Most programs either assume you're an MBA or don't prepare you for analyst-specific challenges like mental math tests.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">I don't have any finance background. Is this too advanced for me?</div>
+                    <div class="faq-answer">
+                        <p>Not at all! We start with Accounting Fundamentals and build from ground zero. Whether you're a liberal arts major or a non-finance business student, the program is designed to take you from complete beginner to interview-ready. The visual learning approach makes complex concepts much easier to grasp than traditional textbook-style courses.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How much time should I budget per week?</div>
+                    <div class="faq-answer">
+                        <p>Plan for 6-10 hours per week over 8-12 weeks if you're starting from scratch. If you have IB internship experience, you can move faster (4-6 hours/week for 6-8 weeks). All content is self-paced, so you can adjust based on your schedule and recruiting timeline. The key is consistency—daily practice beats weekend cramming.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What's included with the Doyla AI Tutor?</div>
+                    <div class="faq-answer">
+                        <p>Doyla gives you unlimited practice interviews, instant answers to questions as you learn, and personalized feedback—all trained on Finance-able's proprietary database of real PE interview questions. Think of it as having a 24/7 tutor who knows exactly what you'll be asked. It's currently in beta (so response times may be slightly slower), but you're getting free access to a tool future students will pay extra for.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I upgrade from Yearly to Lifetime later?</div>
+                    <div class="faq-answer">
+                        <p>Yes! Purchase Yearly now, and if you want to upgrade to Lifetime later, you'll only pay the difference. Your progress carries over completely.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is the certificate recognized by employers?</div>
+                    <div class="faq-answer">
+                        <p>The certificate demonstrates you completed structured PE interview prep from a Columbia Business School professor with 15+ years in IB/PE/HF. While it's not a professional certification like CFA, it's a credibility signal on your resume and a conversation starter in networking—showing you took preparation seriously rather than just watching random YouTube videos. Several students have mentioned recruiters asking about it positively.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What if I don't land a role? Can I get a refund?</div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day money-back guarantee (The Finance-able Promise™) so you can try the program risk-free. However, we don't guarantee job outcomes—recruiting success depends on many factors beyond interview prep (GPA, networking, target vs. non-target school, market conditions). What we do guarantee: you'll be dramatically better prepared than 90% of candidates. Our students have a ~90% success rate landing top-tier roles, but individual results vary based on effort and circumstances.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Mike Section -->
+    <section class="about-mike-section">
+        <div class="container">
+            <h2 class="text-center mb-2xl">Why Mike Kimpel is Uniquely Qualified to Teach This</h2>
+            <div class="about-grid">
+                <div>
+                    <div class="mike-photo-placeholder">Mike Kimpel Photo</div>
+                    <div style="margin-top: var(--space-xl);">
+                        <h4 style="margin-bottom: var(--space-md);">By the Numbers</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: var(--space-sm) 0; opacity: 0.9;">📊 $49B+ combined AUM across former firms</li>
+                            <li style="padding: var(--space-sm) 0; opacity: 0.9;">🎓 15+ years IB/PE/HF experience</li>
+                            <li style="padding: var(--space-sm) 0; opacity: 0.9;">🏫 9 years Columbia Business School Professor</li>
+                            <li style="padding: var(--space-sm) 0; opacity: 0.9;">👥 10,000+ students trained personally</li>
+                            <li style="padding: var(--space-sm) 0; opacity: 0.9;">🏆 Wall Street Prep Managing Partner</li>
+                            <li style="padding: var(--space-sm) 0; opacity: 0.9;">💼 Trained Fortune 500, BB/EB banks, mega PE funds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-size: 18px; line-height: 1.7; margin-bottom: var(--space-lg);">Most PE interview prep is taught by recent graduates—people who landed <em>one</em> role and immediately started teaching. Mike brings something completely different.</p>
+                    
+                    <div class="career-timeline">
+                        <div class="timeline-item">
+                            <h5>Investment Banking</h5>
+                            <p>UBS LA (Ken Moelis' group) – where he trained incoming analysts as a second-year</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Private Equity</h5>
+                            <p>Golden Gate Capital ($15B AUM) as Associate, then HIG Capital ($42B AUM) as Vice President after his Columbia MBA</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Hedge Fund</h5>
+                            <p>5 years at a long/short fund that grew to nearly $2B AUM during his tenure</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Teaching</h5>
+                            <p>9 years as Columbia Business School Adjunct Professor in the highly selective Value Investing Program</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Wall Street Prep</h5>
+                            <p>Top-rated instructor (trained 5,000+ students in 2 years), then Managing Partner leading content development</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Finance-able</h5>
+                            <p>Founded to democratize access to elite finance careers through visual, intuitive, practitioner-taught training</p>
+                        </div>
+                    </div>
+                    
+                    <p style="font-size: 18px; line-height: 1.7; margin-top: var(--space-xl);">This isn't theory. This is what <em>actually works</em> from someone who's sat on <strong>both sides of the table</strong>—as a candidate and as someone evaluating candidates.</p>
+                    
+                    <p style="font-size: 18px; line-height: 1.7; font-weight: 600; color: var(--growth-green);">Mike's unique path gives him the rare ability to teach from buy-side, sell-side, <em>and</em> operating perspectives simultaneously—connecting dots that other instructors simply can't.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section #2 -->
+    <section style="background: white;">
+        <div class="container">
+            <div class="urgency-section">
+                <h3>⏰ The Timeline Is Clear. The Stakes Are High.</h3>
+                <p>You've seen the program. You understand the value. You've read the testimonials from students just like you who landed Goldman, KKR, Blackstone.</p>
+
+                <p style="font-size: 20px; font-weight: 700; margin-top: var(--space-xl);">The question isn't "if" you need structured prep—it's whether you'll give yourself enough time to do it right.</p>
+
+                <div class="timeline-list">
+                    <p style="color: white; font-weight: 700; margin-bottom: var(--space-md);">Why 8-12 Weeks Matters:</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✓ Build foundational knowledge (accounting, valuation, modeling)</li>
+                        <li>✓ Develop technical mastery (LBOs, three-statement models)</li>
+                        <li>✓ Practice mental math until it's second nature</li>
+                        <li>✓ Work through case interview frameworks multiple times</li>
+                        <li>✓ Do mock interviews with our AI assistant</li>
+                        <li>✓ Let concepts sink in (retention happens over time, not overnight)</li>
+                    </ul>
+                </div>
+
+                <p style="font-size: 18px; margin-top: var(--space-lg);">You can't cram PE interviews like a college exam. Candidates who start early land offers. Candidates who wait struggle.</p>
+
+                <p style="font-size: 24px; font-weight: 800; margin-top: var(--space-xl); margin-bottom: var(--space-md);">Which candidate will you be?</p>
+                
+                <a href="#pricing" class="btn btn-primary btn-large">Get Interview-Ready Now</a>
+                
+                <p style="font-size: 14px; margin-top: var(--space-lg); margin-bottom: 0; opacity: 0.9;">Remember: 30-day money-back guarantee. Zero risk to start today.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container-reading">
+            <h2>Ready to Break Into Private Equity?</h2>
+            <p>Join 10,000+ students who've used Finance-able to break into top-tier finance careers. Don't let lack of preparation cost you your dream role.</p>
+            <a href="#pricing" class="btn btn-primary btn-large">Start Your Prep Journey</a>
+            <div class="trust-bar mt-2xl">
+                <span>🔒 Secure checkout</span>
+                <span>↩️ 30-day money-back guarantee</span>
+                <span>✉️ Questions? <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71020401011e03053117181f101f12145c10131d145f121e1c">[email&#160;protected]</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Finance-able. All rights reserved.</p>
+            <p style="margin-top: var(--space-sm);"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Accessibility Statement</a></p>
+        </div>
+    </footer>
+
+    <!-- Video Preview Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <div class="video-modal-header">
+                <h3 id="modalCourseTitle">Course Preview</h3>
+                <button class="modal-close" onclick="closeVideoModal()" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="video-container">
+                <iframe id="videoFrame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div style="margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid var(--light-gray);">
+                <p style="color: var(--slate-gray); margin-bottom: var(--space-md);">See how Finance-able's visual learning approach makes complex concepts intuitive. This is just a preview—the full course includes step-by-step instruction, practice exercises, and instant AI tutor support.</p>
+                <a href="#pricing" class="btn btn-primary" onclick="closeVideoModal()">Get Full Access to All Courses</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Video Modal Functions
+        function openVideoModal(courseTitle) {
+            const modal = document.getElementById('videoModal');
+            const titleElement = document.getElementById('modalCourseTitle');
+            const videoFrame = document.getElementById('videoFrame');
+            
+            // Set the course title
+            titleElement.textContent = courseTitle + ' - Preview';
+            
+            // Set the YouTube video URL with autoplay
+            const videoId = 'N3cpCOmnMow';
+            videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+            
+            // Show the modal
+            modal.classList.add('active');
+            
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const videoFrame = document.getElementById('videoFrame');
+            
+            // Stop the video by removing the src
+            videoFrame.src = '';
+            
+            // Hide the modal
+            modal.classList.remove('active');
+            
+            // Re-enable body scroll
+            document.body.style.overflow = '';
+        }
+
+        // Close modal when clicking outside the content
+        document.getElementById('videoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVideoModal();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeVideoModal();
+            }
+        });
+    </script>
+</body>
+</html>
