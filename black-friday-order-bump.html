@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Friday Special - Upgrade to All-Access | Finance-able</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito:wght@800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #FFFFFF;
+      color: #1F2937;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+
+    /* Header/Navigation */
+    .header {
+      background: #2D2D2D;
+      padding: 16px 24px;
+      border-radius: 0 0 24px 24px;
+      margin-bottom: 48px;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: 600;
+      gap: 8px;
+    }
+
+    .logo-link img {
+      height: 32px;
+      width: auto;
+    }
+
+    .logo-text {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 580px;
+      margin: 0 auto;
+      padding: 0 20px 48px;
+    }
+
+    /* Headline Styles */
+    .headline {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      color: #1E3A5F;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .subheadline {
+      font-size: 18px;
+      font-weight: 500;
+      color: #4B5563;
+      margin-bottom: 32px;
+    }
+
+    /* Body Copy */
+    .body-copy {
+      font-size: 16px;
+      color: #1F2937;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .body-copy:last-of-type {
+      margin-bottom: 32px;
+    }
+
+    /* Price Box */
+    .price-box {
+      background: #FFFFFF;
+      border: 1px solid #E5E7EB;
+      border-top: 1px solid #0A2647;
+      border-radius: 0 0 12px 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .price-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .price-label {
+      font-size: 15px;
+      color: #6B7280;
+    }
+
+    .price-value {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1F2937;
+    }
+
+    .price-value.strikethrough {
+      text-decoration: line-through;
+      color: #9CA3AF;
+    }
+
+    .price-value.highlight {
+      font-size: 24px;
+      font-weight: 700;
+      color: #2ECC71;
+    }
+
+    .price-value.savings {
+      color: #FF6B6B;
+      font-weight: 600;
+    }
+
+    /* Button Area */
+    .button-area {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 48px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: #10B981;
+      color: #FFFFFF;
+      padding: 14px 24px;
+      font-weight: 600;
+      font-size: 16px;
+      box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3), 0 4px 6px -2px rgba(16, 185, 129, 0.3);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: #0D9668;
+      transform: translateY(-2px);
+      box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.4), 0 10px 10px -5px rgba(16, 185, 129, 0.2);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3), 0 4px 6px -2px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-secondary {
+      background: #FFFFFF;
+      color: #1F2937;
+      padding: 12px 20px;
+      font-weight: 500;
+      font-size: 15px;
+      border: 2px solid #E5E7EB;
+    }
+
+    .btn-secondary:hover {
+      background: #F9FAFB;
+      border-color: #D1D5DB;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .btn-secondary:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    /* Below Buttons Section */
+    .below-section {
+      background: #FAFBFC;
+      border-top: 1px solid #E5E7EB;
+      padding: 48px 0;
+      margin-top: 48px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1E3A5F;
+      margin-bottom: 20px;
+    }
+
+    .section-content {
+      font-size: 15px;
+      color: #4B5563;
+      margin-bottom: 32px;
+    }
+
+    .section-content:last-child {
+      margin-bottom: 0;
+    }
+
+    .checklist {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+
+    .checklist li {
+      font-size: 15px;
+      color: #1F2937;
+      margin-bottom: 12px;
+      padding-left: 28px;
+      position: relative;
+    }
+
+    .checklist li:before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #2ECC71;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .testimonial {
+      background: #FFFFFF;
+      border-left: 3px solid #2ECC71;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .testimonial:last-child {
+      margin-bottom: 0;
+    }
+
+    .testimonial-text {
+      font-size: 15px;
+      color: #1F2937;
+      font-style: italic;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .testimonial-author {
+      font-size: 14px;
+      color: #6B7280;
+      font-weight: 600;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .header {
+        padding: 12px 16px;
+        border-radius: 0 0 16px 16px;
+        margin-bottom: 32px;
+      }
+
+      .header-content {
+        justify-content: center;
+      }
+
+      .container {
+        padding: 0 16px 32px;
+      }
+
+      .headline {
+        font-size: 28px;
+      }
+
+      .subheadline {
+        font-size: 16px;
+      }
+
+      .button-area {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+      }
+
+      .below-section {
+        padding: 32px 0;
+      }
+
+      /* Accordion for mobile */
+      .accordion-toggle {
+        display: none;
+      }
+
+      .accordion-content {
+        display: none;
+      }
+
+      .accordion-toggle:checked + .accordion-label + .accordion-content {
+        display: block;
+      }
+
+      .accordion-label {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1E3A5F;
+        padding: 16px;
+        background: #FFFFFF;
+        border: 1px solid #E5E7EB;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 16px;
+        position: relative;
+      }
+
+      .accordion-label:after {
+        content: '+';
+        position: absolute;
+        right: 16px;
+        font-size: 24px;
+        font-weight: 300;
+        color: #1E3A5F;
+      }
+
+      .accordion-toggle:checked + .accordion-label:after {
+        content: '−';
+      }
+
+      .accordion-content {
+        padding: 0 16px 16px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .accordion-toggle,
+      .accordion-label {
+        display: none;
+      }
+
+      .accordion-content {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Logo -->
+  <header class="header">
+    <div class="header-content">
+      <a href="https://finance-able.com/" class="logo-link">
+        <img src="https://cdn-cakli.nitrocdn.com/tPWroFPPCbHctVuRmyRSUFBgFveYsqEw/assets/images/optimized/rev-5f91361/cdn.prod.website-files.com/659ba95301424df0c0d7e970/65cb317d93fe98e2bbb9112a_footer-white-logo.png" alt="Finance-able">
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Above the Fold Section -->
+    <div class="above-fold">
+      <h1 class="headline">Wait, Unlock Everything for 50% Off This Week Only</h1>
+      
+      <p class="subheadline">Get all 18 Finance-able courses for half price. This week only until Monday, December 1, 2025.</p>
+
+      <div class="body-copy" style="text-align: center; font-size: 18px; font-weight: 600; color: #1E3A5F; margin-bottom: 32px;">
+        Want to upgrade to the Sitewide Pass?
+      </div>
+
+      <!-- First Set of Buttons -->
+      <div class="button-area" style="margin-bottom: 32px;">
+        <a href="#" class="btn btn-primary">Yes, Upgrade Me to Sitewide Pass</a>
+        <a href="#" class="btn btn-secondary">No Thanks, Continue with [Course Name] Only</a>
+      </div>
+
+      <div class="body-copy">
+        You just chose <strong>[Course Name]</strong>. Great choice!
+      </div>
+
+      <div class="body-copy">
+        Before you checkout, we wanted to offer you the option to upgrade to the All-Access Sitewide Pass and get every course we offer for 50% off this week only.
+      </div>
+
+      <div class="body-copy">
+        That's IB, PE, modeling, Excel, filings, deal mechanics and all the Finance-able courses. Interview and desk-ready training from Mike's 15+ years on the street.
+      </div>
+
+      <div class="body-copy" style="font-style: italic; color: #6B7280; font-size: 15px;">
+        This is completely optional, you can continue with just [Course Name] if you prefer.
+      </div>
+
+      <!-- Upgrade Header -->
+      <div style="background: #0A2647; color: #FFFFFF; padding: 20px 24px; border-radius: 12px 12px 0 0; text-align: center; margin-bottom: 0;">
+        <h2 style="font-size: 22px; font-weight: 700; color: #FFFFFF; margin: 0;">Upgrade to Sitewide Pass</h2>
+      </div>
+
+      <div class="price-box" style="border-radius: 0 0 12px 12px; margin-top: 0;">
+        <div class="price-row">
+          <span class="price-label">Regular:</span>
+          <span class="price-value strikethrough">$925/year</span>
+        </div>
+        <div class="price-row">
+          <span class="price-label">Today:</span>
+          <span class="price-value highlight">$462.50/year</span>
+        </div>
+        <div class="price-row">
+          <span class="price-label">You save:</span>
+          <span class="price-value savings">$462.50</span>
+        </div>
+      </div>
+
+      <div style="font-size: 14px; color: #78350F; margin-bottom: 32px; text-align: center; padding: 16px; background: #FEF3C7; border: 2px solid #FCD34D; border-radius: 8px; box-shadow: 0 2px 4px rgba(245, 158, 11, 0.1);">
+        <strong style="color: #92400E;">Note:</strong> Purchasing all 18 courses individually would normally cost over $1,600. The Sitewide Pass gives you everything for a fraction of that price.
+      </div>
+
+      <div style="font-size: 14px; color: #6B7280; margin-bottom: 32px; text-align: center;">
+        Expires when Cyber Monday ends December 1, 2025
+      </div>
+
+      <!-- Button Area -->
+      <div style="text-align: center; margin-bottom: 24px; font-size: 15px; color: #6B7280; font-weight: 500;">
+        Choose your option:
+      </div>
+      <div class="button-area">
+        <a href="#" class="btn btn-primary">Yes, Upgrade Me to Sitewide Pass</a>
+        <a href="#" class="btn btn-secondary">No Thanks, Continue with [Course Name] Only</a>
+      </div>
+
+
+    <!-- Below Buttons Section -->
+    <div class="below-section">
+      <!-- Mobile Accordion Toggle -->
+      <input type="checkbox" id="details-toggle" class="accordion-toggle">
+      <label for="details-toggle" class="accordion-label">View Additional Details</label>
+      
+      <div class="accordion-content">
+        <!-- What's Included -->
+        <div class="section-content">
+          <h2 class="section-title">What's included in All-Access:</h2>
+          <ul class="checklist">
+            <li>All 18 courses (Concepts, Tools & Applications)</li>
+            <li>Visual, animated learning: No boring slides</li>
+            <li>Dynamic frameworks that work for any company</li>
+            <li>Lifetime updates as new courses launch</li>
+            <li>Learn at your own pace, forever</li>
+          </ul>
+        </div>
+
+        <!-- The ROI -->
+        <div class="section-content">
+          <h2 class="section-title">The ROI:</h2>
+          <p style="font-size: 15px; color: #1F2937; line-height: 1.6;">
+            With a first-year IB salary of $150-200K+, this is probably the highest-return investment you'll make this year. Purchasing all 18 courses individually would cost over $1,600, the Sitewide Pass gives you everything for just $462.50.
+          </p>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="section-content">
+          <h2 class="section-title">What students say:</h2>
+          
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "The Site Pass was the best decision I made. Got my return offer and now I'm outperforming analysts who've been here longer."
+            </p>
+            <p class="testimonial-author">— Matt S., Goldman Sachs</p>
+          </div>
+
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "I went from overwhelmed to confident in weeks. The visual approach just clicks."
+            </p>
+            <p class="testimonial-author">— Sarah K., Incoming Analyst, J.P. Morgan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
