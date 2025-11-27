@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment Banking Analyst: Get Interview & Desk Ready | Finance-able</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Nunito:wght@800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'deep-blue': '#0A2647',
+            'deep-blue-light': '#0D3A6F',
+            'growth-green': '#10B981',
+            'warm-coral': '#FF6B6B',
+            'premium-gold': '#F59E0B',
+            'mocha': '#FAF9F6',
+            'charcoal': '#1F2937',
+            'slate': '#64748B',
+            'light-gray': '#E5E7EB',
+            'error-red': '#DC2626',
+            'info-blue': '#3B82F6',
+            'ink': '#0F172A'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            heading: ['"Nunito"', 'ui-sans-serif']
+          },
+          boxShadow: {
+            brand: '0 20px 60px rgba(10, 38, 71, 0.18)',
+            glow: '0 12px 40px rgba(16, 185, 129, 0.22)',
+            'soft': '0 4px 20px rgba(0, 0, 0, 0.08)'
+          },
+          borderRadius: {
+            'brand': '18px'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #FAF9F6;
+      color: #1F2937;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-heading {
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 800;
+    }
+
+    .glass {
+      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    /* Image placeholder styles */
+    .img-placeholder {
+      background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+      border: 2px dashed #cbd5e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .img-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, transparent 48%, rgba(255,255,255,0.3) 50%, transparent 52%);
+      background-size: 20px 20px;
+    }
+
+    .img-placeholder-text {
+      position: relative;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 90%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Floating CTA */
+    .floating-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 50;
+      animation: float-cta 3s ease-in-out infinite;
+    }
+
+    @keyframes float-cta {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Star rating */
+    .star-rating {
+      display: inline-flex;
+      gap: 2px;
+    }
+  </style>
+</head>
+<body class="antialiased text-charcoal">
+  <!-- Floating CTA Button -->
+  <div class="floating-cta hidden lg:block">
+    <a href="#pricing" class="group flex items-center gap-3 rounded-full bg-warm-coral px-6 py-4 text-white shadow-2xl transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
+      <i data-lucide="rocket" class="h-5 w-5"></i>
+      <span class="font-semibold">Start Your Prep</span>
+      <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-1"></i>
+    </a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <header class="relative overflow-hidden bg-gradient-to-br from-deep-blue to-deep-blue-light text-white">
+    <div class="absolute inset-0">
+      <div class="absolute -left-20 top-16 h-72 w-72 rounded-full bg-growth-green/30 blur-3xl"></div>
+      <div class="absolute bottom-0 right-[-60px] h-96 w-96 rounded-full bg-warm-coral/25 blur-3xl"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-[88rem] px-6 pb-28 pt-28 lg:px-16">
+      <div class="flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-20">
+        <div class="max-w-3xl lg:flex-1 lg:max-w-none">
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2.5 text-sm font-semibold uppercase tracking-[0.22em] text-white/80 backdrop-blur-sm">
+            <i data-lucide="sparkles" class="h-4 w-4 text-premium-gold"></i>
+            Investment Banking Analyst • Get Interview & Desk Ready
+          </span>
+          <h1 class="mt-8 max-w-3xl font-heading text-4xl leading-tight sm:text-5xl lg:text-6xl lg:leading-[1.05]">
+            Break Into Investment Banking. Learn From Someone Who's Actually Been There.
+          </h1>
+          <p class="mt-8 max-w-2xl text-lg leading-relaxed text-white/90 sm:text-xl">
+            Learn from someone who's actually built pitch books at UBS and closed deals at Golden Gate Capital, not someone who's just taught from slides. Visual frameworks, mental models, and desk-ready training. 15+ years of real experience, delivered in Plain English.
+          </p>
+
+          <!-- Mike's credibility -->
+          <div class="mt-8 flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+            <img src="https://cdn-cakli.nitrocdn.com/tPWroFPPCbHctVuRmyRSUFBgFveYsqEw/assets/images/optimized/rev-85df6b6/finance-able.com/wp-content/uploads/2022/05/MK-Photo-12345.jpg" alt="Mike Kimpel" class="h-16 w-16 rounded-full border-2 border-white/40 object-cover shadow-lg" loading="lazy">
+            <div>
+              <p class="font-semibold text-white text-base">Mike Kimpel</p>
+              <p class="text-sm text-white/70 mt-0.5">Founder, Finance-able • Columbia Business School Faculty</p>
+            </div>
+          </div>
+
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a href="#pricing" class="group inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-8 py-4 text-base font-semibold text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
+              Start Your Prep Journey
+              <i data-lucide="arrow-right" class="h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+            </a>
+            <a href="#preview" class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-8 py-4 text-base font-semibold text-white/90 backdrop-blur-sm transition hover:border-white hover:bg-white/10">
+              <i data-lucide="play-circle" class="h-5 w-5"></i>
+              Watch a preview
+            </a>
+          </div>
+        </div>
+
+        <div class="relative w-full lg:flex-1 lg:max-w-xl">
+          <div class="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-growth-green/40 blur-2xl lg:-left-12 lg:-top-12 lg:h-32 lg:w-32"></div>
+          <div class="absolute -right-4 bottom-0 h-32 w-32 rounded-full bg-warm-coral/40 blur-2xl lg:-right-12 lg:h-40 lg:w-40"></div>
+          <div class="relative overflow-hidden rounded-[32px] border border-white/20 bg-black/40 shadow-2xl shadow-black/40">
+            <div class="aspect-video">
+              <!-- IMAGE PLACEHOLDER: Hero Video Thumbnail -->
+              <div class="img-placeholder h-full w-full">
+                <div class="img-placeholder-text">
+                  <i data-lucide="video" class="mx-auto h-12 w-12 text-slate/40 mb-2"></i>
+                  <p class="text-xs font-semibold text-slate/70 uppercase tracking-wider">Hero Video Thumbnail</p>
+                  <p class="text-[10px] text-slate/50 mt-1 leading-relaxed">Mike teaching with animated graphics overlay</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <dl class="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow">
+          <div class="flex items-start gap-4">
+            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-premium-gold/20 text-premium-gold">
+              <i data-lucide="dollar-sign" class="h-7 w-7"></i>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60">Average ROI in Year 1</dt>
+              <dd class="mt-2 text-3xl font-bold text-white">$150K+</dd>
+            </div>
+          </div>
+        </div>
+
+        <div class="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow">
+          <div class="flex items-start gap-4">
+            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-growth-green/20 text-growth-green">
+              <i data-lucide="check-circle" class="h-7 w-7"></i>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60">Placement Rate</dt>
+              <dd class="mt-2 text-3xl font-bold text-white">~90%</dd>
+            </div>
+          </div>
+        </div>
+
+        <div class="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow">
+          <div class="flex items-start gap-4">
+            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-warm-coral/20 text-warm-coral">
+              <i data-lucide="clock" class="h-7 w-7"></i>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60">Course Hours</dt>
+              <dd class="mt-2 text-3xl font-bold text-white">15-20</dd>
+            </div>
+          </div>
+        </div>
+
+        <div class="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow">
+          <div class="flex items-start gap-4">
+            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-info-blue/20 text-info-blue">
+              <i data-lucide="users" class="h-7 w-7"></i>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60">Students Trained</dt>
+              <dd class="mt-2 text-3xl font-bold text-white">10,000+</dd>
+            </div>
+          </div>
+        </div>
+      </dl>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+    <!-- COMPANY LOGOS SECTION -->
+    <section class="bg-white py-20">
+      <div class="mx-auto max-w-6xl px-6 lg:px-8">
+        <div class="text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-deep-blue">
+            <i data-lucide="building-2" class="h-4 w-4"></i>
+            Student Success
+          </span>
+          <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl">Where Our Students Work</h2>
+        </div>
+
+        <div class="mt-12 grid gap-12">
+          <!-- Row 1 - Bulge Bracket -->
+          <div>
+            <div class="mb-6 flex items-center justify-center gap-2">
+              <i data-lucide="star" class="h-4 w-4 text-premium-gold"></i>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate">Bulge Bracket</p>
+            </div>
+            <!-- IMAGE PLACEHOLDER: Bulge Bracket Bank Logos -->
+            <div class="img-placeholder mx-auto h-20 max-w-5xl rounded-2xl">
+              <div class="img-placeholder-text">
+                <i data-lucide="building" class="mx-auto h-8 w-8 text-slate/40 mb-2"></i>
+                <p class="text-xs font-semibold text-slate/70">BULGE BRACKET LOGOS</p>
+                <p class="text-[10px] text-slate/50 mt-1">Goldman • Morgan Stanley • JP Morgan • Citi • BofA</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 - Elite Boutique -->
+          <div>
+            <div class="mb-6 flex items-center justify-center gap-2">
+              <i data-lucide="award" class="h-4 w-4 text-info-blue"></i>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate">Elite Boutique</p>
+            </div>
+            <!-- IMAGE PLACEHOLDER: Elite Boutique Logos -->
+            <div class="img-placeholder mx-auto h-20 max-w-5xl rounded-2xl">
+              <div class="img-placeholder-text">
+                <i data-lucide="award" class="mx-auto h-8 w-8 text-slate/40 mb-2"></i>
+                <p class="text-xs font-semibold text-slate/70">ELITE BOUTIQUE LOGOS</p>
+                <p class="text-[10px] text-slate/50 mt-1">Evercore • Lazard • Moelis • Centerview • Qatalyst</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3 - Middle Market -->
+          <div>
+            <div class="mb-6 flex items-center justify-center gap-2">
+              <i data-lucide="trending-up" class="h-4 w-4 text-growth-green"></i>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate">Middle Market</p>
+            </div>
+            <!-- IMAGE PLACEHOLDER: Middle Market Logos -->
+            <div class="img-placeholder mx-auto h-20 max-w-5xl rounded-2xl">
+              <div class="img-placeholder-text">
+                <i data-lucide="trending-up" class="mx-auto h-8 w-8 text-slate/40 mb-2"></i>
+                <p class="text-xs font-semibold text-slate/70">MIDDLE MARKET LOGOS</p>
+                <p class="text-[10px] text-slate/50 mt-1">Houlihan • William Blair • Baird • Jefferies • Piper Sandler</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-12 text-center text-sm text-slate">These are firms where Finance-able students have received offers.</p>
+      </div>
+    </section>
+
+    <!-- THE PROBLEM SECTION -->
+    <section class="bg-gradient-to-b from-light-gray to-white py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-error-red/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-error-red">
+            <i data-lucide="alert-triangle" class="h-4 w-4"></i>
+            The Challenge
+          </span>
+          <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl lg:text-5xl">The Wall Street Recruiting Game<br class="hidden sm:block">Is Rigged Against You</h2>
+          <p class="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate">
+            Let's face it—breaking into investment banking feels impossible when you're staring down the competition. You're from a non-target school. You've got 6 weeks until recruiting starts. And every finance course out there promises to "prepare you for IB"...then buries you in problems you didn't know existed.
+          </p>
+        </div>
+
+        <div class="mt-16 grid gap-8 lg:grid-cols-3">
+          <!-- Problem #1 -->
+          <div class="group relative overflow-hidden rounded-3xl border-2 border-light-gray bg-white p-8 shadow-soft transition hover:-translate-y-2 hover:border-warm-coral/20 hover:shadow-brand">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-warm-coral/20 to-warm-coral/5 blur-xl"></div>
+              <div class="relative flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-warm-coral/10 to-warm-coral/5 border border-warm-coral/20">
+                <i data-lucide="layers" class="h-10 w-10 text-warm-coral"></i>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-deep-blue">Problem #1: Information Overload</h3>
+            <div class="mt-4 space-y-3 text-base leading-relaxed text-charcoal">
+              <p>Competitors bury you in 70-90 hour courses with every edge case scenario imaginable.</p>
+              <p>Wall Street Prep teaches you 200 Excel functions. You'll use maybe 15 on the job.</p>
+              <p>By the time you finish their 5-hour accounting course, you've forgotten where you started. Your brain is fried. And you still can't explain how the three statements connect without looking at your notes.</p>
+            </div>
+          </div>
+
+          <!-- Problem #2 -->
+          <div class="group relative overflow-hidden rounded-3xl border-2 border-light-gray bg-white p-8 shadow-soft transition hover:-translate-y-2 hover:border-info-blue/20 hover:shadow-brand">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-info-blue/20 to-info-blue/5 blur-xl"></div>
+              <div class="relative flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-info-blue/10 to-info-blue/5 border border-info-blue/20">
+                <i data-lucide="zap-off" class="h-10 w-10 text-info-blue"></i>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-deep-blue">Problem #2: Static, Boring Learning</h3>
+            <div class="mt-4 space-y-3 text-base leading-relaxed text-charcoal">
+              <p>Nobody learns well from text-heavy slides with late-90s audio voiceovers.</p>
+              <p>You can't "see" how the three statements connect by reading bullet points. You can't internalize accretion/dilution by staring at formulas. Your brain needs to SEE concepts in motion, not memorize static definitions.</p>
+              <p>And god forbid the interviewer asks a curveball question that's not in the 400-question guide everyone memorized.</p>
+            </div>
+          </div>
+
+          <!-- Problem #3 -->
+          <div class="group relative overflow-hidden rounded-3xl border-2 border-light-gray bg-white p-8 shadow-soft transition hover:-translate-y-2 hover:border-slate/20 hover:shadow-brand">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-slate/20 to-slate/5 blur-xl"></div>
+              <div class="relative flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-slate/10 to-slate/5 border border-slate/20">
+                <i data-lucide="help-circle" class="h-10 w-10 text-slate"></i>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-deep-blue">Problem #3: Interview-Only Training</h3>
+            <div class="mt-4 space-y-3 text-base leading-relaxed text-charcoal">
+              <p>Most courses get you through the interview...then you hit the desk with zero clue how banking actually works.</p>
+              <p>Nobody teaches you what a pitch book is. Nobody shows you how to run a bake-off. Nobody explains what to do when the VP hands you a CIM and says "turn this around by Monday."</p>
+              <p>You end up looking lost on Day 1. Your peers who interned at the same bank are flying, and you're just trying to figure out what "strategic alternatives" even means.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 text-center">
+          <div class="inline-flex items-center gap-3 rounded-full border border-deep-blue/20 bg-deep-blue/5 px-6 py-3">
+            <i data-lucide="arrow-down" class="h-5 w-5 text-deep-blue"></i>
+            <p class="text-lg font-semibold text-deep-blue">That's exactly why Mike built the Investment Banking Pro Package differently.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE SOLUTION: IB FOUNDATIONS TRIFECTA -->
+    <section class="relative overflow-hidden bg-white py-24">
+      <div class="absolute inset-0 opacity-[0.03]">
+        <div class="absolute left-0 top-1/4 h-96 w-96 rounded-full bg-growth-green blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-info-blue blur-3xl"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-growth-green/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-growth-green">
+            <i data-lucide="lightbulb" class="h-4 w-4"></i>
+            The Solution
+          </span>
+          <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl lg:text-5xl">One Visual System. Three Core Frameworks.<br class="hidden sm:block">90% of IB Interview Questions Answered.</h2>
+          <p class="mt-6 text-lg font-semibold text-slate">The IB Foundations Trifecta™ is Finance-able's proprietary approach to IB mastery</p>
+        </div>
+
+        <div class="mx-auto mt-12 max-w-4xl space-y-4 text-center text-base leading-relaxed text-charcoal">
+          <p class="text-lg">Here's what most courses get wrong: they teach you <strong class="text-deep-blue">WHAT</strong> to know, but not <strong class="text-deep-blue">HOW</strong> to think.</p>
+          <div class="grid gap-4 sm:grid-cols-3 text-left mt-8">
+            <div class="rounded-2xl border border-light-gray bg-mocha p-6">
+              <i data-lucide="x-circle" class="h-6 w-6 text-error-red mb-3"></i>
+              <p class="text-sm"><strong>They give you</strong> formulas to memorize</p>
+            </div>
+            <div class="rounded-2xl border-2 border-growth-green bg-growth-green/5 p-6">
+              <i data-lucide="check-circle" class="h-6 w-6 text-growth-green mb-3"></i>
+              <p class="text-sm"><strong>We give you</strong> frameworks to internalize</p>
+            </div>
+            <div class="rounded-2xl border border-light-gray bg-mocha p-6">
+              <i data-lucide="repeat" class="h-6 w-6 text-info-blue mb-3"></i>
+              <p class="text-sm"><strong>Dynamic models</strong> that work for ANY company</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Three Frameworks - WITH IMAGES -->
+        <div class="mt-20 grid gap-12 lg:grid-cols-3">
+          <!-- Framework #1 -->
+          <div class="group relative">
+            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-growth-green/10 to-growth-green/5 opacity-0 transition-opacity group-hover:opacity-100"></div>
+
+            <div class="relative rounded-3xl border-2 border-light-gray bg-white p-8 shadow-soft transition hover:shadow-brand">
+              <div class="mb-6">
+                <!-- IMAGE PLACEHOLDER: 3-Statement Motion System Diagram -->
+                <div class="img-placeholder aspect-[4/3] w-full rounded-2xl">
+                  <div class="img-placeholder-text">
+                    <i data-lucide="git-branch" class="mx-auto h-10 w-10 text-growth-green mb-2"></i>
+                    <p class="text-xs font-semibold text-slate/70">3-STATEMENT MOTION DIAGRAM</p>
+                    <p class="text-[10px] text-slate/50 mt-1 leading-relaxed">Three stacked statements with flowing arrows</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4 flex items-center gap-2">
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-growth-green/10">
+                  <i data-lucide="activity" class="h-5 w-5 text-growth-green"></i>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wider text-growth-green">Framework #1</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-deep-blue leading-tight">The 3-Statement Motion System™<br><span class="text-base font-semibold text-slate">(Accounting)</span></h3>
+
+              <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal">
+                <p>Forget memorizing journal entries. Our accounting course shows you debits and credits flying across the screen in real-time animations.</p>
+                <p>You'll <strong>SEE</strong> how a revenue transaction flows through all three statements. You'll <strong>BUILD</strong> the mental model of the "accounting machine" in your head. And you'll master it in 2 hours 15 minutes—not 5+ hours of static slides that put you to sleep.</p>
+              </div>
+
+              <div class="mt-6 rounded-xl border border-growth-green/20 bg-growth-green/5 p-4">
+                <p class="text-xs italic leading-relaxed text-slate">When the interviewer asks how depreciation flows through the statements? You'll see the motion in your head. You won't fumble. You won't panic. You'll answer with confidence.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Framework #2 -->
+          <div class="group relative">
+            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-info-blue/10 to-info-blue/5 opacity-0 transition-opacity group-hover:opacity-100"></div>
+
+            <div class="relative rounded-3xl border-2 border-light-gray bg-white p-8 shadow-soft transition hover:shadow-brand">
+              <div class="mb-6">
+                <!-- IMAGE PLACEHOLDER: Accretion Scale Framework -->
+                <div class="img-placeholder aspect-[4/3] w-full rounded-2xl">
+                  <div class="img-placeholder-text">
+                    <i data-lucide="scale" class="mx-auto h-10 w-10 text-info-blue mb-2"></i>
+                    <p class="text-xs font-semibold text-slate/70">ACCRETION SCALE DIAGRAM</p>
+                    <p class="text-[10px] text-slate/50 mt-1 leading-relaxed">Balance scale showing benefits vs costs</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4 flex items-center gap-2">
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-info-blue/10">
+                  <i data-lucide="scale" class="h-5 w-5 text-info-blue"></i>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wider text-info-blue">Framework #2</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-deep-blue leading-tight">The Accretion Scale Framework™<br><span class="text-base font-semibold text-slate">(M&A)</span></h3>
+
+              <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal">
+                <p>Stop memorizing 47 different scenarios for when deals are accretive or dilutive.</p>
+                <p>Our M&A course teaches you to see every deal as a visual scale: benefits on one side (earnings added), costs on the other side (price paid). When benefits outweigh costs, the scale tips toward accretion. When costs outweigh benefits, it tips toward dilution.</p>
+              </div>
+
+              <div class="mt-6 rounded-xl border border-info-blue/20 bg-info-blue/5 p-4">
+                <p class="text-xs italic leading-relaxed text-slate">One mental model. Any deal structure. Cash, stock, debt-financed—doesn't matter. See the scale, solve the deal.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Framework #3 -->
+          <div class="group relative">
+            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-warm-coral/10 to-warm-coral/5 opacity-0 transition-opacity group-hover:opacity-100"></div>
+
+            <div class="relative rounded-3xl border-2 border-light-gray bg-white p-8 shadow-soft transition hover:shadow-brand">
+              <div class="mb-6">
+                <!-- IMAGE PLACEHOLDER: Decision Tree Framework -->
+                <div class="img-placeholder aspect-[4/3] w-full rounded-2xl">
+                  <div class="img-placeholder-text">
+                    <i data-lucide="git-branch-plus" class="mx-auto h-10 w-10 text-warm-coral mb-2"></i>
+                    <p class="text-xs font-semibold text-slate/70">DECISION TREE DIAGRAM</p>
+                    <p class="text-[10px] text-slate/50 mt-1 leading-relaxed">Flowchart from DCF to Comps to Precedents</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4 flex items-center gap-2">
+                <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-warm-coral/10">
+                  <i data-lucide="git-branch" class="h-5 w-5 text-warm-coral"></i>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wider text-warm-coral">Framework #3</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-deep-blue leading-tight">The Asset vs. Cash Flow Decision Tree™<br><span class="text-base font-semibold text-slate">(Valuation)</span></h3>
+
+              <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal">
+                <p>How do practitioners actually think about valuation?</p>
+                <p>They start with one question: Is cash flow value greater than asset value?</p>
+                <p>From there, our visual decision tree walks you through DCF vs. comps vs. precedent transactions. You'll learn WHEN to use each method—not just HOW to calculate them.</p>
+              </div>
+
+              <div class="mt-6 rounded-xl border border-warm-coral/20 bg-warm-coral/5 p-4">
+                <p class="text-xs italic leading-relaxed text-slate">This is how Mike valued companies at Golden Gate Capital. This is how real investors think. And this is what separates students who pass interviews from students who nail them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why This Works -->
+        <div class="mx-auto mt-16 max-w-4xl">
+          <div class="rounded-3xl border-2 border-deep-blue/20 bg-gradient-to-br from-deep-blue/5 to-info-blue/5 p-10">
+            <div class="flex items-center gap-3 mb-6">
+              <i data-lucide="zap" class="h-8 w-8 text-premium-gold"></i>
+              <h3 class="text-2xl font-bold text-deep-blue">Why This Works:</h3>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-3">
+              <div class="flex items-start gap-3">
+                <i data-lucide="brain" class="h-5 w-5 mt-0.5 flex-shrink-0 text-deep-blue"></i>
+                <p class="text-sm leading-relaxed text-charcoal">Wall Street Prep will teach you the formulas. We teach you how to <strong>THINK</strong> like a banker.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <i data-lucide="repeat" class="h-5 w-5 mt-0.5 flex-shrink-0 text-deep-blue"></i>
+                <p class="text-sm leading-relaxed text-charcoal">Most courses build around one company case. Our dynamic frameworks work for <strong>ANY</strong> company—tech, healthcare, industrials, doesn't matter.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <i data-lucide="target" class="h-5 w-5 mt-0.5 flex-shrink-0 text-deep-blue"></i>
+                <p class="text-sm leading-relaxed text-charcoal">You'll hold these mental maps in your head during interviews. You won't fumble through memorized facts when the VP twists the question. You'll think dynamically, answer confidently, and land the offer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA after Solution Section -->
+        <div class="mt-16 text-center">
+          <a href="#pricing" class="group inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
+            Start Mastering These Frameworks
+            <i data-lucide="arrow-right" class="h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+          </a>
+          <p class="mt-4 text-sm text-slate">15-20 hours • 7 Complete Courses • 30-Day Guarantee</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- US VS THEM COMPARISON -->
+    <section class="bg-mocha py-24">
+      <div class="mx-auto max-w-6xl px-6 lg:px-8">
+        <div class="text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-deep-blue">
+            <i data-lucide="git-compare" class="h-4 w-4"></i>
+            Comparison
+          </span>
+          <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl">How Finance-able Compares to Legacy Training</h2>
+        </div>
+
+        <div class="mt-12 overflow-hidden rounded-3xl border border-light-gray bg-white shadow-brand">
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead>
+                <tr class="bg-deep-blue text-white">
+                  <th class="px-6 py-5 text-left text-sm font-semibold uppercase tracking-[0.14em]">Feature</th>
+                  <th class="bg-growth-green/20 px-6 py-5 text-center text-sm font-semibold uppercase tracking-[0.14em]">
+                    <div class="flex items-center justify-center gap-2">
+                      <i data-lucide="check-circle" class="h-4 w-4"></i>
+                      Finance-able IB Pro
+                    </div>
+                  </th>
+                  <th class="px-6 py-5 text-center text-sm font-semibold uppercase tracking-[0.14em]">Wall Street Prep</th>
+                  <th class="px-6 py-5 text-center text-sm font-semibold uppercase tracking-[0.14em]">Breaking Into Wall Street</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-light-gray text-sm">
+                <tr class="transition hover:bg-mocha/50">
+                  <td class="px-6 py-5 font-semibold text-deep-blue">
+                    <div class="flex items-center gap-2">
+                      <i data-lucide="monitor" class="h-4 w-4 text-info-blue"></i>
+                      Learning Method
+                    </div>
+                  </td>
+                  <td class="bg-growth-green/5 px-6 py-5 text-center font-medium text-charcoal">Motion-based visual systems</td>
+                  <td class="px-6 py-5 text-center text-slate">Static slides + audio</td>
+                  <td class="px-6 py-5 text-center text-slate">Text-heavy screenshots</td>
+                </tr>
+                <tr class="transition hover:bg-mocha/50">
+                  <td class="px-6 py-5 font-semibold text-deep-blue">
+                    <div class="flex items-center gap-2">
+                      <i data-lucide="clock" class="h-4 w-4 text-warm-coral"></i>
+                      Time Investment
+                    </div>
+                  </td>
+                  <td class="bg-growth-green/5 px-6 py-5 text-center font-medium text-charcoal">15-20 hours total</td>
+                  <td class="px-6 py-5 text-center text-slate">70-90 hours total</td>
+                  <td class="px-6 py-5 text-center text-slate">40+ hours per course</td>
+                </tr>
+                <tr class="transition hover:bg-mocha/50">
+                  <td class="px-6 py-5 font-semibold text-deep-blue">
+                    <div class="flex items-center gap-2">
+                      <i data-lucide="brain" class="h-4 w-4 text-premium-gold"></i>
+                      Mental Models
+                    </div>
+                  </td>
+                  <td class="bg-growth-green/5 px-6 py-5 text-center font-medium text-charcoal">Visual frameworks you hold in your head</td>
+                  <td class="px-6 py-5 text-center text-slate">Formula memorization</td>
+                  <td class="px-6 py-5 text-center text-slate">Step-by-step replication</td>
+                </tr>
+                <tr class="transition hover:bg-mocha/50">
+                  <td class="px-6 py-5 font-semibold text-deep-blue">
+                    <div class="flex items-center gap-2">
+                      <i data-lucide="message-circle" class="h-4 w-4 text-info-blue"></i>
+                      Interview Prep
+                    </div>
+                  </td>
+                  <td class="bg-growth-green/5 px-6 py-5 text-center font-medium text-charcoal">Embedded after every chapter + psychology tactics</td>
+                  <td class="px-6 py-5 text-center text-slate">Technical only</td>
+                  <td class="px-6 py-5 text-center text-slate">Technical + strategy</td>
+                </tr>
+                <tr class="transition hover:bg-mocha/50">
+                  <td class="px-6 py-5 font-semibold text-deep-blue">
+                    <div class="flex items-center gap-2">
+                      <i data-lucide="briefcase" class="h-4 w-4 text-growth-green"></i>
+                      Desk-Ready Focus
+                    </div>
+                  </td>
+                  <td class="bg-growth-green/5 px-6 py-5 text-center font-medium text-charcoal">First 5-10 years on job</td>
+                  <td class="px-6 py-5 text-center text-slate">Interview-focused</td>
+                  <td class="px-6 py-5 text-center text-slate">Interview-focused</td>
+                </tr>
+                <tr class="transition hover:bg-mocha/50">
+                  <td class="px-6 py-5 font-semibold text-deep-blue">
+                    <div class="flex items-center gap-2">
+                      <i data-lucide="video" class="h-4 w-4 text-warm-coral"></i>
+                      Teaching Style
+                    </div>
+                  </td>
+                  <td class="bg-growth-green/5 px-6 py-5 text-center font-medium text-charcoal">Real person on camera (Mike)</td>
+                  <td class="px-6 py-5 text-center text-slate">Audio voiceover on slides</td>
+                  <td class="px-6 py-5 text-center text-slate">Mix of both</td>
+                </tr>
+                <tr class="transition hover:bg-mocha/50">
+                  <td class="px-6 py-5 font-semibold text-deep-blue">
+                    <div class="flex items-center gap-2">
+                      <i data-lucide="repeat" class="h-4 w-4 text-info-blue"></i>
+                      Company Cases
+                    </div>
+                  </td>
+                  <td class="bg-growth-green/5 px-6 py-5 text-center font-medium text-charcoal">Dynamic frameworks (any company)</td>
+                  <td class="px-6 py-5 text-center text-slate">Single company nuances</td>
+                  <td class="px-6 py-5 text-center text-slate">Multiple companies</td>
+                </tr>
+                <tr class="transition hover:bg-mocha/50">
+                  <td class="px-6 py-5 font-semibold text-deep-blue">
+                    <div class="flex items-center gap-2">
+                      <i data-lucide="dollar-sign" class="h-4 w-4 text-premium-gold"></i>
+                      Price
+                    </div>
+                  </td>
+                  <td class="bg-growth-green/5 px-6 py-5 text-center font-medium text-charcoal">$830 lifetime / $475 year</td>
+                  <td class="px-6 py-5 text-center text-slate">$497-$697</td>
+                  <td class="px-6 py-5 text-center text-slate">$397-$497</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Mark Twain Quote -->
+        <div class="mx-auto mt-12 max-w-3xl">
+          <div class="rounded-3xl border-2 border-light-gray bg-white p-8 shadow-soft">
+            <div class="flex items-start gap-4">
+              <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-premium-gold/10">
+                <i data-lucide="quote" class="h-6 w-6 text-premium-gold"></i>
+              </div>
+              <div>
+                <p class="text-lg italic leading-relaxed text-charcoal">"We continue to be baffled by financial analyst programs that boast about 10-20+ hours of content...in a world where attention spans are shrinking by the minute."</p>
+                <p class="mt-4 text-base leading-relaxed text-slate">As Mark Twain said: <span class="italic">"I apologize for such a long letter—I didn't have time to write a short one."</span></p>
+                <p class="mt-4 text-base font-medium leading-relaxed text-charcoal">Don't worry, you won't need 70+ hours to master IB fundamentals with our courses. We've done the hard work of distilling what actually matters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA after Comparison -->
+        <div class="mt-16 text-center">
+          <a href="#pricing" class="group inline-flex items-center justify-center gap-2 rounded-full bg-deep-blue px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:-translate-y-1 hover:bg-deep-blue-light hover:shadow-xl">
+            See What's Included
+            <i data-lucide="arrow-right" class="h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        lucide.createIcons();
+      });
+    </script>
+  </main>
+</body>
+</html>
