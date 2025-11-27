@@ -55,7 +55,13 @@
 
     .font-heading {
       font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-weight: 800;
+      font-weight: 500;
+    }
+
+    /* Apply Nunito Medium to all headings */
+    h1, h2, h3 {
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 500;
     }
 
     /* Mobile optimizations */
@@ -183,7 +189,7 @@
         <a href="https://finance-able.com/" class="flex items-center justify-center text-white transition hover:text-white/80" aria-label="Return Home">
           <i data-lucide="home" class="h-5 w-5"></i>
         </a>
-        <a href="#" class="flex items-center">
+        <a href="https://finance-able.com/" class="flex items-center">
           <img src="https://cdn-cakli.nitrocdn.com/tPWroFPPCbHctVuRmyRSUFBgFveYsqEw/assets/images/optimized/rev-5f91361/cdn.prod.website-files.com/659ba95301424df0c0d7e970/65cb317d93fe98e2bbb9112a_footer-white-logo.png" alt="Finance-able" class="h-8 w-auto" loading="lazy">
         </a>
       </div>
@@ -204,7 +210,7 @@
 
       <!-- Right: CTA Button -->
       <div>
-        <a href="#pricing" class="inline-flex items-center justify-center rounded-full bg-warm-coral px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl" style="font-family: 'Inter', sans-serif;">
+        <a href="#pricing" class="inline-flex items-center justify-center rounded-full bg-warm-coral px-6 py-2.5 text-sm font-medium text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl" style="font-family: 'Inter', sans-serif;">
           Get Started
         </a>
       </div>
@@ -233,7 +239,7 @@
         </button>
         
         <!-- CTA Button - Always Visible -->
-        <a href="#pricing" class="inline-flex items-center justify-center rounded-full bg-warm-coral px-4 py-2 text-xs font-semibold text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl" style="font-family: 'Inter', sans-serif;">
+        <a href="#pricing" class="inline-flex items-center justify-center rounded-full bg-warm-coral px-4 py-2 text-xs font-medium text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl" style="font-family: 'Inter', sans-serif;">
           Get Started
         </a>
       </div>
@@ -260,125 +266,103 @@
 
   <!-- HERO SECTION -->
   <header class="relative overflow-hidden bg-gradient-to-br from-deep-blue to-deep-blue-light text-white pt-12 lg:pt-16">
-    <div class="absolute inset-0">
-      <div class="absolute -left-20 top-16 h-72 w-72 rounded-full bg-growth-green/30 blur-3xl"></div>
+    <!-- Subtle background gradient overlay -->
+    <div class="absolute inset-0 opacity-[0.02]">
+      <div class="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white blur-3xl"></div>
     </div>
 
-    <div class="relative mx-auto max-w-[88rem] px-4 sm:px-6 pb-16 sm:pb-20 lg:pb-28 pt-12 sm:pt-16 lg:px-16 lg:pt-20">
-      <div class="flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-20">
-        <div class="max-w-3xl lg:flex-1 lg:max-w-none">
-          <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2.5 text-sm font-semibold uppercase tracking-[0.22em] text-white/80 backdrop-blur-sm">
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 pb-16 sm:pb-20 lg:pb-24 pt-12 sm:pt-16 lg:px-8 lg:pt-20">
+      <!-- Centered Content Container -->
+      <div class="mx-auto max-w-5xl">
+        <!-- Badge - Centered -->
+        <div class="flex justify-center">
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2.5 text-sm font-medium uppercase tracking-[0.22em] text-white/80 backdrop-blur-sm">
             <i data-lucide="briefcase" class="h-4 w-4 text-premium-gold"></i>
-            Investment Banking Pro Package: Interview & Desk Ready
+            Investment Banking Pro Package: Interview + Desk Ready
           </span>
-          <h1 class="mt-8 max-w-3xl font-heading text-4xl leading-tight sm:text-5xl lg:text-6xl lg:leading-[1.05]">
-            <span class="text-white">Break Into Investment Banking.</span>
-            <span class="block mt-2 text-3xl font-bold text-premium-gold sm:text-4xl lg:text-[2.625rem]">Learn From Someone Who's Actually Been There.</span>
-          </h1>
-          <p class="mt-8 max-w-2xl text-lg leading-relaxed text-white/90 sm:text-xl">
-           Stop memorizing formulas and start thinking like a banker. <strong class="text-white">Get Interview and Desk Ready</strong> with visual frameworks from a veteran of UBS LA (now Moelis LA), Golden Gate Capital, HIG, and a $2B hedge fund. No academic theory, just 15+ years of deal experience delivered in plain English.</strong>
-
-          <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <a href="#pricing" class="group inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-6 py-3.5 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
-              Start Your IB Prep Journey
-              <i data-lucide="arrow-right" class="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1"></i>
-            </a>
-            <a href="#preview" class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-6 py-3.5 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold text-white/90 backdrop-blur-sm transition hover:border-white hover:bg-white/10">
-              <i data-lucide="play-circle" class="h-4 w-4 sm:h-5 sm:w-5"></i>
-              Watch a preview
-            </a>
-          </div>
         </div>
 
-        <div class="relative w-full lg:flex-1 lg:max-w-xl">
-          <div class="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-growth-green/40 blur-2xl lg:-left-12 lg:-top-12 lg:h-32 lg:w-32"></div>
-          <div class="absolute -right-4 bottom-0 h-32 w-32 rounded-full bg-warm-coral/40 blur-2xl lg:-right-12 lg:h-40 lg:w-40"></div>
-          <div class="relative overflow-hidden rounded-[32px] border border-white/20 bg-black/40 shadow-2xl shadow-black/40">
+        <!-- Headline - Centered -->
+        <h1 class="mt-8 text-center font-heading text-4xl leading-tight sm:text-5xl lg:text-6xl lg:leading-[1.05]">
+          <span class="text-white">Break Into Investment Banking.</span>
+          <span class="block mt-3 text-3xl font-medium text-premium-gold sm:text-4xl lg:text-[2.625rem]">Learn From Someone Who's Actually Been There.</span>
+        </h1>
+
+        <!-- Description - Centered -->
+        <p class="mx-auto mt-8 max-w-3xl text-center text-lg leading-relaxed text-white/90 sm:text-xl">
+          Stop memorizing formulas and start thinking like a banker. <strong class="text-white">Get Interview and Desk Ready</strong> with visual frameworks from a veteran of UBS LA (now Moelis LA), Golden Gate Capital, HIG, and a $2B hedge fund. No academic theory, just 15+ years of deal experience delivered in plain English.
+        </p>
+
+        <!-- CTA Buttons - Centered -->
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="#pricing" class="group inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-8 py-4 text-base font-medium text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
+            Start Your IB Prep Journey
+            <i data-lucide="arrow-right" class="h-5 w-5 transition-transform group-hover:translate-x-1"></i>
+          </a>
+          <a href="#preview" class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-8 py-4 text-base font-medium text-white/90 backdrop-blur-sm transition hover:border-white hover:bg-white/10">
+            <i data-lucide="play-circle" class="h-5 w-5"></i>
+            Watch a preview
+          </a>
+        </div>
+
+        <!-- Video - Centered with max width -->
+        <div class="mx-auto mt-12 max-w-4xl">
+          <div class="relative overflow-hidden rounded-2xl border border-white/20 bg-black/40 shadow-2xl shadow-black/40 backdrop-blur-sm">
             <div class="aspect-video">
-              <!-- IMAGE PLACEHOLDER #1: Hero Video Thumbnail
-                   DETAILED SPECS:
-                   - Dimensions: 16:9 aspect ratio, minimum 1920x1080px
-                   - Primary subject: Mike Kimpel in professional setting (Columbia classroom or modern office)
-                   - Background: Blurred classroom/office with warm lighting
-                   - Foreground overlays: Semi-transparent animated financial graphics
-                     * Balance sheet flowing into income statement (left side)
-                     * Cash flow waterfall (right side)
-                     * Subtle animated arrows showing connections
-                   - Center: Large play button icon with glow effect (white/premium gold)
-                   - Color grading: Professional blue tones matching brand (deep-blue to deep-blue-light gradient)
-                   - Lighting: Soft, professional 3-point lighting on Mike
-                   - Graphics opacity: 20-30% so Mike remains focus
-                   - Bottom third: Text overlay "IB Pro Package Preview" in white
-                   - Overall feel: Premium educational content, modern, trustworthy
-                   - File format: JPG or PNG with transparency for overlays -->
-              <div class="img-placeholder h-full w-full">
-                <div class="img-placeholder-text">
-                  <i data-lucide="video" class="mx-auto h-12 w-12 text-slate/40 mb-2"></i>
-                  <p class="text-xs font-semibold text-slate/70 uppercase tracking-wider">Hero Video Thumbnail</p>
-                  <p class="text-[10px] text-slate/50 mt-1 leading-relaxed">Mike in professional setting<br>+ semi-transparent financial graphics overlay<br>Play button with glow effect center</p>
-                </div>
-              </div>
+              <iframe class="embedly-embed w-full h-full" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1028025239%3Fh%3D607df603f8%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1028025239%2F607df603f8&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1948104257-30a22c497a4e56bec8e85e4388ccce9bef4678ebfed14decf6f62f80a0d3bf48-d_1280&amp;type=text%2Fhtml&amp;schema=vimeo" scrolling="no" title="Vimeo embed" frameborder="0" allow="autoplay; fullscreen; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
             </div>
           </div>
           
-          <!-- Mike's credibility -->
-          <div class="mt-6 flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
-            <img src="https://cdn-cakli.nitrocdn.com/tPWroFPPCbHctVuRmyRSUFBgFveYsqEw/assets/images/optimized/rev-85df6b6/finance-able.com/wp-content/uploads/2022/05/MK-Photo-12345.jpg" alt="Mike Kimpel" class="h-16 w-16 rounded-full border-2 border-white/40 object-covershadow-lg" loading="lazy">
-            <div>
-              <p class="font-semibold text-white text-base">Mike Kimpel</p>
-              <p class="text-sm text-white/70 mt-0.5">Founder, Finance-able • Columbia Business School Faculty</p>
+          <!-- Mike's credibility - Centered below video -->
+          <div class="mx-auto mt-6 flex max-w-md items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+            <img src="https://cdn-cakli.nitrocdn.com/tPWroFPPCbHctVuRmyRSUFBgFveYsqEw/assets/images/optimized/rev-85df6b6/finance-able.com/wp-content/uploads/2022/05/MK-Photo-12345.jpg" alt="Mike Kimpel" class="h-16 w-16 rounded-full border-2 border-white/40 object-cover shadow-lg" loading="lazy">
+            <div class="text-center sm:text-left">
+              <p class="font-medium text-white text-base">Mike Kimpel</p>
+              <p class="text-sm text-white/70 mt-0.5">Founder, Finance|able • Columbia Business School Faculty</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Stats Grid - Redesigned with icons -->
-      <dl class="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
-        <div class="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow">
-          <div class="flex items-start gap-4">
-            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-growth-green/20 text-growth-green">
-              <i data-lucide="dollar-sign" class="h-7 w-7"></i>
+      <!-- Stats Grid - Centered and uniform -->
+      <dl class="mx-auto mt-16 max-w-5xl grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="group rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow text-center">
+          <div class="flex flex-col items-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-growth-green/20 text-growth-green mb-3">
+              <i data-lucide="dollar-sign" class="h-6 w-6"></i>
             </div>
-            <div>
-              <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60">Average IB Analyst Salary</dt>
-              <dd class="mt-2 text-3xl font-bold text-white">$150K-200K+</dd>
-            </div>
+            <dt class="text-xs font-medium uppercase tracking-[0.14em] text-white/60">Average IB Analyst Salary</dt>
+            <dd class="mt-2 text-2xl font-medium text-white">$150K-200K+</dd>
           </div>
         </div>
 
-        <div class="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow">
-          <div class="flex items-start gap-4">
-            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-info-blue/20 text-info-blue">
-              <i data-lucide="clock" class="h-7 w-7"></i>
+        <div class="group rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow text-center">
+          <div class="flex flex-col items-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-info-blue/20 text-info-blue mb-3">
+              <i data-lucide="clock" class="h-6 w-6"></i>
             </div>
-            <div>
-              <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60">Course Hours</dt>
-              <dd class="mt-2 text-3xl font-bold text-white">40+</dd>
-            </div>
+            <dt class="text-xs font-medium uppercase tracking-[0.14em] text-white/60">Course Hours</dt>
+            <dd class="mt-2 text-2xl font-medium text-white">40+</dd>
           </div>
         </div>
 
-        <div class="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow">
-          <div class="flex items-start gap-4">
-            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-growth-green/20 text-growth-green">
-              <i data-lucide="book-open" class="h-7 w-7"></i>
+        <div class="group rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow text-center">
+          <div class="flex flex-col items-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-growth-green/20 text-growth-green mb-3">
+              <i data-lucide="book-open" class="h-6 w-6"></i>
             </div>
-            <div>
-              <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60">Lessons</dt>
-              <dd class="mt-2 text-3xl font-bold text-white">200+</dd>
-            </div>
+            <dt class="text-xs font-medium uppercase tracking-[0.14em] text-white/60">Lessons</dt>
+            <dd class="mt-2 text-2xl font-medium text-white">200+</dd>
           </div>
         </div>
 
-        <div class="group rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow">
-          <div class="flex items-start gap-4">
-            <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-info-blue/20 text-info-blue">
-              <i data-lucide="users" class="h-7 w-7"></i>
+        <div class="group rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-xl transition hover:bg-white/15 hover:shadow-glow text-center">
+          <div class="flex flex-col items-center">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-info-blue/20 text-info-blue mb-3">
+              <i data-lucide="users" class="h-6 w-6"></i>
             </div>
-            <div>
-              <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60">Students Trained</dt>
-              <dd class="mt-2 text-3xl font-bold text-white">10,000+</dd>
-            </div>
+            <dt class="text-xs font-medium uppercase tracking-[0.14em] text-white/60">Students Trained</dt>
+            <dd class="mt-2 text-2xl font-medium text-white">10,000+</dd>
           </div>
         </div>
       </dl>
@@ -390,15 +374,15 @@
     <section class="bg-white py-12 lg:py-20">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-deep-blue">
+          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-deep-blue">
             <i data-lucide="building-2" class="h-4 w-4"></i>
             Student Success
           </span>
           <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl">Where Our Students Work</h2>
         </div>
 
-        <div class="mt-12 w-full lg:w-10/12 mx-auto">
-          <img src="https://cdn-cakli.nitrocdn.com/tPWroFPPCbHctVuRmyRSUFBgFveYsqEw/assets/images/optimized/rev-5f91361/finance-able.com/wp-content/uploads/2022/05/Past-Student-Logos-v1-1.png" alt="Companies where Finance-able students work" class="w-full h-auto rounded-2xl shadow-soft" loading="lazy">
+        <div class="mt-12 w-full lg:w-9/12 mx-auto">
+          <img src="https://cdn-cakli.nitrocdn.com/tPWroFPPCbHctVuRmyRSUFBgFveYsqEw/assets/images/optimized/rev-5f91361/finance-able.com/wp-content/uploads/2022/05/Past-Student-Logos-v1-1.png" alt="Companies where Financ|eable students work" class="w-full h-auto border-0" loading="lazy">
         </div>
 
       </div>
@@ -408,14 +392,14 @@
     <section class="bg-gradient-to-b from-light-gray to-white py-12 lg:py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-error-red/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-error-red">
+          <span class="inline-flex items-center gap-2 rounded-full bg-error-red/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-error-red">
             <i data-lucide="alert-triangle" class="h-4 w-4"></i>
             The Challenge
           </span>
           <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl lg:text-5xl">The Wall Street Recruiting Game<br class="hidden sm:block">Is Rigged Against You</h2>
           <p class="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate">
-            Breaking into investment banking can feel impossible. You're competing with candidates who have perfect GPAs and test scores and the acceptance rates are 1-3% best. </p>
-            <p class="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate">And legacy finance training from large Wall Street training firms promise to "prepare you for IB"...then bury you in problems you didn't know existed.</p>
+            Breaking into investment banking can feel impossible. You're competing with candidates who have perfect GPAs and test scores and the acceptance rates are 1-3% at best. </p>
+            <p class="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate">Legacy finance training from large Wall Street training firms promise to 'prepare you for IB'...then buries you in problems you didn't know existed.</p>
 
        
         </div>
@@ -426,7 +410,7 @@
             <div class="relative mb-6">
               <!-- Meme Image -->
               <div class="relative w-full overflow-visible rounded-2xl">
-                <img src="images/problems/problem-1-Math_Lady_meme.jpg" alt="Information Overload Meme" class="w-full h-auto object-cover rounded-2xl" loading="lazy">
+                <img src="images/problems/juggling-too-much.jpeg" alt="Information Overload Meme" class="w-full h-auto object-cover rounded-2xl" loading="lazy">
                 <!-- Icon Overlay - Bottom Left -->
                 <div class="absolute bottom-[-10px] left-[-10px] flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-warm-coral/95 to-warm-coral/90 border-2 border-white/80 shadow-lg backdrop-blur-sm">
                   <i data-lucide="layers" class="h-8 w-8 text-white"></i>
@@ -434,9 +418,9 @@
               </div>
             </div>
 
-            <h3 class="text-xl font-bold text-deep-blue">Problem #1: Information Overload</h3>
+            <h3 class="text-xl font-medium text-deep-blue">Problem #1: Information Overload</h3>
             <div class="mt-4 space-y-3 text-base leading-relaxed text-charcoal">
-              <p>Legacy training firms sell you on sheer volume, burying you in "comprehensive" content, which is really just aa bloated curriculum padded with arcane edge-case scenarios you'll never encounter. By the time you’re reaching for an advil, your $500 in and it’s too late. </p><ul class="mt-4 space-y-3 list-none">
+              <p>Legacy training firms sell you on sheer volume, burying you in 'comprehensive' content, which is really just aa bloated curriculum padded with arcane edge-case scenarios you'll never encounter. By the time you’re reaching for an advil, your $500 in and it’s too late. </p><ul class="mt-4 space-y-3 list-none">
                 <li><strong>Interview Prep:</strong> They force you through 5-7 hour accounting courses upfront. Your brain is fried by the time you're done, and you still can't visually explain how the <strong>Three Statements Connect</strong> without frantically checking your notes.</li>
                 <li><strong>Desk Prep:</strong> They boast about teaching <strong>200 Excel functions</strong> to sound rigorous. But real investment bankers only use about <strong>15-20</strong> on the job. You waste critical time mastering irrelevant complexity and end up forgetting the <strong>15 functions</strong> that actually matter.</li>
               </ul>
@@ -448,7 +432,7 @@
             <div class="relative mb-6">
               <!-- Meme Image -->
               <div class="relative w-full overflow-visible rounded-2xl">
-                <img src="images/problems/problem-2-boring-legacy-programs.jpg" alt="Static Boring Learning Meme" class="w-full h-auto object-cover rounded-2xl" loading="lazy">
+                <img src="images/problems/sundial-vs-clock.jpeg" alt="Static Boring Learning Meme" class="w-full h-auto object-cover rounded-2xl" loading="lazy">
                 <!-- Icon Overlay - Bottom Left -->
                 <div class="absolute bottom-[-10px] left-[-10px] flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-info-blue/95 to-info-blue/90 border-2 border-white/80 shadow-lg backdrop-blur-sm">
                   <i data-lucide="zap-off" class="h-8 w-8 text-white"></i>
@@ -456,11 +440,11 @@
               </div>
             </div>
 
-            <h3 class="text-xl font-bold text-deep-blue">Problem #2: Static, Outdated Content</h3>
+            <h3 class="text-xl font-medium text-deep-blue">Problem #2: Static, Outdated Content</h3>
             <div class="mt-4 space-y-3 text-base leading-relaxed text-charcoal">
               <p>Most courses teach finance like it's a <b>1995 textbook</b>: flat, text-heavy slides narrated by a late-90's style audio voiceover.</p>
-              <p>You can't "see" how the three statements connect by reading bullet points. You can't internalize accretion/dilution by staring at formulas. Your brain needs to SEE concepts in motion, not memorize static definitions.</p>
-              <p>When the interviewer throws a curveball question that isn't in the generic 400-question guide, you won't just freeze, you'll have nothing to fall back on.</p>
+              <p>You can't 'see' how the three statements connect by reading bullet points. You can't internalize accretion/dilution by staring at formulas. </p>
+                <p><strong>Your brain needs to SEE concepts in motion, not memorize static definitions.</strong></p>
             </div>
           </div>
 
@@ -469,7 +453,7 @@
             <div class="relative mb-6">
               <!-- Meme Image -->
               <div class="relative w-full overflow-visible rounded-2xl">
-                <img src="images/problems/problem-3-no-idea-what-doing.jpg" alt="Interview Only Training Meme" class="w-full h-auto object-cover rounded-2xl" loading="lazy">
+                <img src="images/problems/knowledge-gap.jpeg" alt="Interview Only Training Meme" class="w-full h-auto object-cover rounded-2xl" loading="lazy">
                 <!-- Icon Overlay - Bottom Left -->
                 <div class="absolute bottom-[-10px] left-[-10px] flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-slate/95 to-slate/90 border-2 border-white/80 shadow-lg backdrop-blur-sm">
                   <i data-lucide="help-circle" class="h-8 w-8 text-white"></i>
@@ -477,12 +461,11 @@
               </div>
             </div>
 
-            <h3 class="text-xl font-bold text-deep-blue">Problem #3: The Information Gap: Why Mechanical Training Falls Short</h3>
+            <h3 class="text-xl font-medium text-deep-blue">Problem #3: The Information Gap: Why Mechanical Training Falls Short</h3>
             <div class="mt-4 space-y-3 text-base leading-relaxed text-charcoal">
               <p>Most competitor courses are built by instructors whose experience ended after the Analyst years. They know the basic mechanical motions, but they never gained the <strong>seasoned professional's perspective</strong> that shows you what truly matters and why.</p>
               <p>What you receive is purely <strong>first-order training</strong>: a collection of facts and formulas that misses the point. You're given <strong>tools but not the context</strong> for using them.</p>
-              <p>When you hit the desk, you're not ready. You know <em>how</em> to execute certain tasks, but you don't know the most important elements: <strong>when</strong> to do them, <strong>why</strong> they matter, or <strong>what to prioritize</strong>.</p>
-              <p>This absence of senior insight prevents them from teaching the <strong>second- and third-order solutions</strong> that define an elite analyst. Most courses get you through the interview, but they leave you <strong>stranded and exposed on Day 1</strong>.</p>
+              <p>This absence of senior insight prevents them from teaching the <strong>second- and third-order solutions</strong> that define an elite analyst. </p>
             </div>
           </div>
         </div>
@@ -490,7 +473,7 @@
         <div class="mt-16 text-center">
           <div class="inline-flex items-center gap-3 rounded-full border border-deep-blue/20 bg-deep-blue/5 px-6 py-3">
             <i data-lucide="arrow-down" class="h-5 w-5 text-deep-blue"></i>
-            <p class="text-lg font-semibold text-deep-blue">That's exactly why Mike built the Investment Banking Pro Package differently.</p>
+            <p class="text-lg font-medium text-deep-blue">That's exactly why Mike built the Investment Banking Pro Package differently.</p>
           </div>
         </div>
       </div>
@@ -505,11 +488,11 @@
 
       <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-growth-green/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-growth-green">
+          <span class="inline-flex items-center gap-2 rounded-full bg-growth-green/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-growth-green">
             <i data-lucide="lightbulb" class="h-4 w-4"></i>
             The Solution <br>Dynamic Systems Approach
           </span>
-          <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl lg:text-5xl">Go Beyond Formulas. Build the Visual Intuition to Tackle Any Concept in Interviews or on the Job..<br class="hidden sm:block">90% of IB Interview Questions Answered.</h2>
+          <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl lg:text-5xl">Go Beyond Formulas. Build the Visual Intuition to Tackle Any Concept in Interviews or on the Job.</h2>
         </div>
 
         <div class="mx-auto mt-12 max-w-4xl space-y-4 text-center text-base leading-relaxed text-charcoal">
@@ -531,7 +514,7 @@
         </div>
 
         <div class="text-center mb-12">
-          <span class="inline-flex items-center gap-2 rounded-full bg-info-blue/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-info-blue">
+          <span class="inline-flex items-center gap-2 rounded-full bg-info-blue/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-info-blue">
             <i data-lucide="briefcase" class="h-4 w-4"></i>
             
           </span>
@@ -553,16 +536,16 @@
                 <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-growth-green/10">
                   <i data-lucide="activity" class="h-5 w-5 text-growth-green"></i>
                 </div>
-                <span class="text-xs font-bold uppercase tracking-wider text-growth-green">Framework #1</span>
+                <span class="text-xs font-medium uppercase tracking-wider text-growth-green">Interview Framework #1</span>
               </div>
 
-              <h3 class="text-xl font-bold text-deep-blue leading-tight">Accounting: The 3-Statement Connection Map + 4-Step Process</h3>
+              <h3 class="text-xl font-medium text-deep-blue leading-tight">Accounting: The 3-Statement Connection Map + 4-Step Process</h3>
 
               <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
                 <p>You don't need to memorize hundreds of rules. You need a framework. We give you a simple Connection Map to visualize the flow, paired with a 4-Step Process that you can apply to any 3 statement impacts accounting question. You'll go from dreading these questions to hoping they ask them.</p>
                 <div class="mt-4 rounded-xl border-2 border-premium-gold/30 bg-premium-gold/5 p-4">
-                  <p class="text-xs font-semibold uppercase tracking-wider text-premium-gold mb-2">Sample Interview Question:</p>
-                  <p class="text-sm text-charcoal italic">"Walk me through how $10 of PIK Interest flows through the three financial statements."</p>
+                  <p class="text-xs font-medium uppercase tracking-wider text-premium-gold mb-2">Sample Interview Question:</p>
+                  <p class="text-sm text-charcoal italic">'Walk me through how $10 of PIK Interest flows through the three financial statements.'</p>
                 </div>
               </div>
             </div>
@@ -581,16 +564,16 @@
                 <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-info-blue/10">
                   <i data-lucide="scale" class="h-5 w-5 text-info-blue"></i>
                 </div>
-                <span class="text-xs font-bold uppercase tracking-wider text-info-blue">Framework #2</span>
+                <span class="text-xs font-medium uppercase tracking-wider text-info-blue">Interview Framework #2</span>
               </div>
 
-              <h3 class="text-xl font-bold text-deep-blue leading-tight">Accounting: 2x2 Matrix Systems</h3>
+              <h3 class="text-xl font-medium text-deep-blue leading-tight">Accounting: 2x2 Matrix Systems</h3>
 
               <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
-                <p>Cash flow logic and Gain/Loss accounting are where most candidates spiral. We replace the confusion with a set of proprietary 2x2 Matrices. Whether it's Sources & Uses or Gains & Losses, these visual quadrants lock in the logic to make otherwise complex concepts easy.</p>
+                <p>Cash flow logic and Gain/Loss accounting are where most candidates spiral. We replace the confusion with a set of proprietary 2x2 Matrices. Whether it's sources & uses or gains & losses, these visual quadrants lock in the logic to make otherwise complex concepts easy.</p>
                 <div class="mt-4 rounded-xl border-2 border-info-blue/30 bg-info-blue/5 p-4">
-                  <p class="text-xs font-semibold uppercase tracking-wider text-info-blue mb-2">Sample Interview Questions:</p>
-                  <p class="text-sm text-charcoal italic mb-2">'If Deferred Revenue increases by $10 million, does that increase or decrease our cash flow?'</p>
+                  <p class="text-xs font-medium uppercase tracking-wider text-info-blue mb-2">Sample Interview Questions:</p>
+                  <p class="text-sm text-charcoal italic mb-2">'If deferred revenue increases by $10 million, does that increase or decrease our cash flow?'</p>
                   <p class="text-sm text-charcoal italic">'If I pay off a $100 loan at $90, what's the impact to the financial statements?'</p>
                 </div>
               </div>
@@ -612,15 +595,15 @@
                 <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-warm-coral/10">
                   <i data-lucide="git-branch" class="h-5 w-5 text-warm-coral"></i>
                 </div>
-                <span class="text-xs font-bold uppercase tracking-wider text-warm-coral">Framework #3</span>
+                <span class="text-xs font-medium uppercase tracking-wider text-warm-coral">Interview Framework #3</span>
               </div>
 
-              <h3 class="text-xl font-bold text-deep-blue leading-tight">Valuation: The DCF to Multiples Bridge</h3>
+              <h3 class="text-xl font-medium text-deep-blue leading-tight">Valuation: The DCF to Multiples Bridge</h3>
 
               <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
-                <p>Most courses teach Discounted Cash Flow (DCF) and Comparable Multiples as separate islands. In reality, they are deeply connected. We teach you to interpret them side-by-side. We teach you to instantly diagnose discrepancies by linking DCF to Multiples in a single mental map.</p>
+                <p>Most courses teach discounted cash flow (DCF) and comparable multiples as separate islands. In reality, they are deeply connected. We teach you to interpret them side-by-side. We teach you to instantly diagnose discrepancies by linking DCF to Multiples in a single mental map.</p>
                 <div class="mt-4 rounded-xl border-2 border-warm-coral/30 bg-warm-coral/5 p-4">
-                  <p class="text-xs font-semibold uppercase tracking-wider text-warm-coral mb-2">Sample Interview Question:</p>
+                  <p class="text-xs font-medium uppercase tracking-wider text-warm-coral mb-2">Sample Interview Question:</p>
                   <p class="text-sm text-charcoal italic">'Two companies are in the same industry, Company A and Company B, trade at 15x and 10x EBITDA, respectively. Please explain the discrepancy.'</p>
                 </div>
               </div>
@@ -640,16 +623,16 @@
                 <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-premium-gold/10">
                   <i data-lucide="scale" class="h-5 w-5 text-premium-gold"></i>
                 </div>
-                <span class="text-xs font-bold uppercase tracking-wider text-premium-gold">Framework #4</span>
+                <span class="text-xs font-medium uppercase tracking-wider text-premium-gold">Interview Framework #4</span>
               </div>
 
-              <h3 class="text-xl font-bold text-deep-blue leading-tight">M&A: The Accretion/Dilution Scale</h3>
+              <h3 class="text-xl font-medium text-deep-blue leading-tight">M&A: The Accretion/Dilution Scale</h3>
 
               <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
                 <p>You don't need Excel to know if an M&A deal works. You just need to weigh the factors. We teach you M&A accretion and dilution analysis through a simple visual scale with eight factors. If you can balance a scale in your head, you can run a merger model without a spreadsheet. No tricky math needed.</p>
                 <div class="mt-4 rounded-xl border-2 border-premium-gold/30 bg-premium-gold/5 p-4">
-                  <p class="text-xs font-semibold uppercase tracking-wider text-premium-gold mb-2">Sample Interview Question:</p>
-                  <p class="text-sm text-charcoal italic">"A company with a P/E of 20x acquires a company (50% Debt / 25% Cash / 25% Equity) with a P/E of 10x in an all-stock deal. Assume 5% cost of debt, 1% cost of cash, and a 20% tax rate. Is the deal accretive or dilutive?"</p>
+                  <p class="text-xs font-medium uppercase tracking-wider text-premium-gold mb-2">Sample Interview Question:</p>
+                  <p class="text-sm text-charcoal italic">'A company with a P/E of 20x acquires a company (50% Debt / 25% Cash / 25% Equity) with a P/E of 10x in an all-stock deal. Assume 5% cost of debt, 1% cost of cash, and a 20% tax rate. Is the deal accretive or dilutive?'</p>
                 </div>
               </div>
             </div>
@@ -668,16 +651,16 @@
                 <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate/10">
                   <i data-lucide="layers" class="h-5 w-5 text-slate"></i>
                 </div>
-                <span class="text-xs font-bold uppercase tracking-wider text-slate">Framework #5</span>
+                <span class="text-xs font-medium uppercase tracking-wider text-slate">Interview Framework #5</span>
               </div>
 
-              <h3 class="text-xl font-bold text-deep-blue leading-tight">LBO: The 6-Step Core Framework</h3>
+              <h3 class="text-xl font-medium text-deep-blue leading-tight">LBO: The 6-Step Core Framework</h3>
 
               <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
                 <p>LBOs can feel overwhelming at first glance. To make it worse, most courses bury you in debt schedules and pro forma balance sheets until you lose sight of the big picture. We give you a 6-step container that organizes the chaos, which is the exact mental map senior professionals use to evaluate LBOs.</p>
                 <div class="mt-4 rounded-xl border-2 border-slate/30 bg-slate/5 p-4">
-                  <p class="text-xs font-semibold uppercase tracking-wider text-slate mb-2">Sample Interview Question:</p>
-                  <p class="text-sm text-charcoal italic">"If you had to choose between a dollar of EBITDA expansion and a dollar of incremental cash flow (debt paydown) over the life of an LBO, which would you choose and why?"</p>
+                  <p class="text-xs font-medium uppercase tracking-wider text-slate mb-2">Sample Interview Question:</p>
+                  <p class="text-sm text-charcoal italic">'If you had to choose between a dollar of EBITDA expansion and a dollar of incremental cash flow (debt paydown) over the life of an LBO, which would you choose and why?'</p>
                 </div>
               </div>
             </div>
@@ -696,13 +679,13 @@
                 <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-deep-blue/10">
                   <i data-lucide="file-text" class="h-5 w-5 text-deep-blue"></i>
                 </div>
-                <span class="text-xs font-bold uppercase tracking-wider text-deep-blue">Framework #6</span>
+                <span class="text-xs font-medium uppercase tracking-wider text-deep-blue">Interview Framework #6</span>
               </div>
 
-              <h3 class="text-xl font-bold text-deep-blue leading-tight">LBO: The Paper LBO System</h3>
+              <h3 class="text-xl font-medium text-deep-blue leading-tight">LBO: The Paper LBO System</h3>
 
               <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
-                <p>The "Paper LBO" is a high-pressure test where you must calculate a full LBO with just a pen and a paper. We give you a simplified, handful-of-steps process to organize your thoughts and work through the math on the page so you can tackle these exercises with confidence.</p>
+                <p>The 'Paper LBO' is a high-pressure test where you must calculate a full LBO with just a pen and a paper. We give you a simplified, handful-of-steps process to organize your thoughts and work through the math on the page so you can tackle these exercises with confidence.</p>
               </div>
             </div>
           </div>
@@ -711,7 +694,7 @@
         <!-- DESK READY FRAMEWORKS -->
         <div class="mt-20">
           <div class="text-center mb-12">
-            <span class="inline-flex items-center gap-2 rounded-full bg-info-blue/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-info-blue">
+            <span class="inline-flex items-center gap-2 rounded-full bg-info-blue/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-info-blue">
               <i data-lucide="briefcase" class="h-4 w-4"></i>
               
             </span>
@@ -732,13 +715,13 @@
                   <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-growth-green/10">
                     <i data-lucide="grid" class="h-5 w-5 text-growth-green"></i>
                   </div>
-                  <span class="text-xs font-bold uppercase tracking-wider text-growth-green">Desk Framework #1</span>
+                  <span class="text-xs font-medium uppercase tracking-wider text-growth-green">Desk Framework #1</span>
                 </div>
 
-                <h3 class="text-xl font-bold text-deep-blue leading-tight">Excel: The Visual Function Logic</h3>
+                <h3 class="text-xl font-medium text-deep-blue leading-tight">Excel: The Visual Function Logic</h3>
 
                 <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
-                  <p>Most analysts memorize syntax (e.g., =INDEX(...,MATCH(...))) without understanding what the function is actually doing. We strip away the abstraction. We use animated diagrams to show you exactly how Excel "thinks", visualizing how the program searches, finds, and retrieves data in real-time.</p>
+                  <p>Most analysts memorize syntax (e.g., =INDEX(...,MATCH(...))) without understanding what the function is actually doing. We strip away the abstraction. We use animated diagrams to show you exactly how Excel 'thinks', visualizing how the program searches, finds, and retrieves data in real-time.</p>
                 </div>
               </div>
             </div>
@@ -756,10 +739,10 @@
                   <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-info-blue/10">
                     <i data-lucide="file-text" class="h-5 w-5 text-info-blue"></i>
                   </div>
-                  <span class="text-xs font-bold uppercase tracking-wider text-info-blue">Desk Framework #2</span>
+                  <span class="text-xs font-medium uppercase tracking-wider text-info-blue">Desk Framework #2</span>
                 </div>
 
-                <h3 class="text-xl font-bold text-deep-blue leading-tight">Filings: The Filings Navigation System</h3>
+                <h3 class="text-xl font-medium text-deep-blue leading-tight">Filings: The Filings Navigation System</h3>
 
                 <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
                   <p>Navigating a 10-K is not about reading page-by-page; it's about knowing where to find what matters and skipping over zero value-add content. We give you a mental map of the filing architecture so you can jump immediately to the critical data points.</p>
@@ -780,13 +763,13 @@
                   <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-warm-coral/10">
                     <i data-lucide="building" class="h-5 w-5 text-warm-coral"></i>
                   </div>
-                  <span class="text-xs font-bold uppercase tracking-wider text-warm-coral">Desk Framework #3</span>
+                  <span class="text-xs font-medium uppercase tracking-wider text-warm-coral">Desk Framework #3</span>
                 </div>
 
-                <h3 class="text-xl font-bold text-deep-blue leading-tight">Business Mechanics: The Business Machine Framework</h3>
+                <h3 class="text-xl font-medium text-deep-blue leading-tight">Business Mechanics: The Business Machine Framework</h3>
 
                 <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
-                  <p>Every business has the same root-level structure. We teach you the "Business Machine", a framework that reveals the three core drivers of every business. This insight forms the foundation of every assumption you will make, allowing you to build models based on how a company actually works rather than just plugging in numbers.</p>
+                  <p>Every business has the same root-level structure. We teach you the 'Business Machine', a framework that reveals the three core drivers of every business. This insight forms the foundation of every assumption you will make, allowing you to build models based on how a company actually works rather than just plugging in numbers.</p>
                 </div>
               </div>
             </div>
@@ -804,10 +787,10 @@
                   <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-premium-gold/10">
                     <i data-lucide="repeat" class="h-5 w-5 text-premium-gold"></i>
                   </div>
-                  <span class="text-xs font-bold uppercase tracking-wider text-premium-gold">Desk Framework #4</span>
+                  <span class="text-xs font-medium uppercase tracking-wider text-premium-gold">Desk Framework #4</span>
                 </div>
 
-                <h3 class="text-xl font-bold text-deep-blue leading-tight">Financial Modeling: The Modeling Loop</h3>
+                <h3 class="text-xl font-medium text-deep-blue leading-tight">Financial Modeling: The Modeling Loop</h3>
 
                 <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
                   <p>Visualize the three statement financial model as a system where every input flows logically through the Income Statement, balances the Balance Sheet, and reconciles the Cash Flow Statement.</p>
@@ -828,13 +811,13 @@
                   <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate/10">
                     <i data-lucide="layers" class="h-5 w-5 text-slate"></i>
                   </div>
-                  <span class="text-xs font-bold uppercase tracking-wider text-slate">Desk Framework #5</span>
+                  <span class="text-xs font-medium uppercase tracking-wider text-slate">Desk Framework #5</span>
                 </div>
 
-                <h3 class="text-xl font-bold text-deep-blue leading-tight">LBO Modeling: The 'Big Three' Visualized</h3>
+                <h3 class="text-xl font-medium text-deep-blue leading-tight">LBO Modeling: The 'Big Three' Visualized</h3>
 
                 <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
-                  <p>Sources & Uses, Pro Forma Balance Sheets, and the Debt Waterfall are the "Big Three" concepts that trip up almost every new analyst. We make them easy through dynamic animation. Instead of guessing and hoping your model balances, you will see these concepts in motion so you can internalize the mechanics immediately, transforming the most intimidating parts of the model into the most intuitive.</p>
+                  <p>Sources & Uses, Pro Forma Balance Sheets, and the Debt Waterfall are the 'Big Three' concepts that trip up almost every new analyst. We make them easy through dynamic animation. Instead of guessing and hoping your model balances, you will see these concepts in motion so you can internalize the mechanics immediately, transforming the most intimidating parts of the model into the most intuitive.</p>
                 </div>
               </div>
             </div>
@@ -852,13 +835,13 @@
                   <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-deep-blue/10">
                     <i data-lucide="merge" class="h-5 w-5 text-deep-blue"></i>
                   </div>
-                  <span class="text-xs font-bold uppercase tracking-wider text-deep-blue">Desk Framework #6</span>
+                  <span class="text-xs font-medium uppercase tracking-wider text-deep-blue">Desk Framework #6</span>
                 </div>
 
-                <h3 class="text-xl font-bold text-deep-blue leading-tight">M&A Modeling: M&A Model North Star Framework</h3>
+                <h3 class="text-xl font-medium text-deep-blue leading-tight">M&A Modeling: M&A Model North Star Framework</h3>
 
                 <div class="mt-4 space-y-3 text-sm leading-relaxed text-charcoal lg:flex-1">
-                  <p>Move beyond the mechanical combination of two spreadsheets and grasp the big picture. We consolidate the complex web of adjustments into a simple map that shows exactly how to get from Acquirer and Target earnings to the final Post-Deal number. Instead of plugging in data and hoping it works, you gain a "North Star" visual that allows you to navigate the accretion/dilution analysis with total clarity.</p>
+                  <p>Move beyond the mechanical combination of two spreadsheets and grasp the big picture. We consolidate the complex web of adjustments into a simple map that shows exactly how to get from Acquirer and Target earnings to the final Post-Deal number. Instead of plugging in data and hoping it works, you gain a 'North Star' visual that allows you to navigate the accretion/dilution analysis with total clarity.</p>
                 </div>
               </div>
             </div>
@@ -871,7 +854,7 @@
     <section class="bg-mocha py-12 lg:py-24">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-deep-blue">
+          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-deep-blue">
             <i data-lucide="git-compare" class="h-4 w-4"></i>
             Comparison
           </span>
@@ -883,19 +866,18 @@
             <table class="w-full min-w-[600px]">
               <thead>
                 <tr class="bg-deep-blue text-white">
-                  <th class="px-3 sm:px-6 py-3 sm:py-5 text-left text-xs sm:text-sm font-semibold uppercase tracking-[0.14em]">Feature</th>
-                  <th class="bg-growth-green/20 px-3 sm:px-6 py-3 sm:py-5 text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.14em]">Finance|able</th>
-                  <th class="px-3 sm:px-6 py-3 sm:py-5 text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.14em]">
+                  <th class="px-3 sm:px-6 py-3 sm:py-5 text-left text-xs sm:text-sm font-medium uppercase tracking-[0.14em]">Feature</th>
+                  <th class="bg-growth-green/20 px-3 sm:px-6 py-3 sm:py-5 text-center text-xs sm:text-sm font-medium uppercase tracking-[0.14em]">Finance|able</th>
+                  <th class="px-3 sm:px-6 py-3 sm:py-5 text-center text-xs sm:text-sm font-medium uppercase tracking-[0.14em]">
                     <div class="flex items-center justify-center gap-2">
                       <span>Legacy Training</span>
-                      <i data-lucide="chevron-down" class="h-3 w-3 sm:h-4 sm:w-4"></i>
                     </div>
                   </th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-light-gray text-xs sm:text-sm">
                 <tr class="transition hover:bg-mocha/50">
-                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-semibold text-deep-blue">
+                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-medium text-deep-blue">
                     <div class="flex items-center gap-2">
                       <i data-lucide="monitor" class="h-4 w-4 text-info-blue"></i>
                       Learning Method
@@ -905,7 +887,7 @@
                   <td class="px-3 sm:px-6 py-3 sm:py-5 text-left text-slate">Static slides + audio</td>
                 </tr>
                 <tr class="transition hover:bg-mocha/50">
-                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-semibold text-deep-blue">
+                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-medium text-deep-blue">
                     <div class="flex items-center gap-2">
                       <i data-lucide="brain" class="h-4 w-4 text-premium-gold"></i>
                       Mental Models
@@ -915,27 +897,27 @@
                   <td class="px-3 sm:px-6 py-3 sm:py-5 text-left text-slate">Memorize Formulas</td>
                 </tr>
                 <tr class="transition hover:bg-mocha/50">
-                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-semibold text-deep-blue">
+                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-medium text-deep-blue">
                     <div class="flex items-center gap-2">
                       <i data-lucide="message-circle" class="h-4 w-4 text-info-blue"></i>
-                      Interview Prep
+                      Interview Prep Focus
                     </div>
                   </td>
                   <td class="bg-growth-green/5 px-3 sm:px-6 py-3 sm:py-5 text-left font-medium text-charcoal">Embedded after every chapter + psychology tactics</td>
                   <td class="px-3 sm:px-6 py-3 sm:py-5 text-left text-slate">Separate Guides</td>
                 </tr>
                 <tr class="transition hover:bg-mocha/50">
-                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-semibold text-deep-blue">
+                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-medium text-deep-blue">
                     <div class="flex items-center gap-2">
                       <i data-lucide="briefcase" class="h-4 w-4 text-growth-green"></i>
                       Desk-Ready Focus
                     </div>
                   </td>
-                  <td class="bg-growth-green/5 px-3 sm:px-6 py-3 sm:py-5 text-left font-medium text-charcoal">First 5-10 years on job</td>
+                  <td class="bg-growth-green/5 px-3 sm:px-6 py-3 sm:py-5 text-left font-medium text-charcoal">Accelerate your first 5-10 years on job</td>
                   <td class="px-3 sm:px-6 py-3 sm:py-5 text-left text-slate">Training from 20 Years Ago</td>
                 </tr>
                 <tr class="transition hover:bg-mocha/50">
-                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-semibold text-deep-blue">
+                  <td class="px-3 sm:px-6 py-3 sm:py-5 font-medium text-deep-blue">
                     <div class="flex items-center gap-2">
                       <i data-lucide="video" class="h-4 w-4 text-warm-coral"></i>
                       Teaching Style
@@ -956,13 +938,14 @@
         <div class="mx-auto mt-12 max-w-3xl">
           <div class="rounded-3xl border-2 border-light-gray bg-white p-6 sm:p-8 shadow-soft">
             <div class="flex items-start gap-4">
-              <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-premium-gold/10">
-                <i data-lucide="quote" class="h-6 w-6 text-premium-gold"></i>
+              <div class="flex-shrink-0">
+                <img src="https://cdn-cakli.nitrocdn.com/tPWroFPPCbHctVuRmyRSUFBgFveYsqEw/assets/images/optimized/rev-85df6b6/finance-able.com/wp-content/uploads/2022/05/MK-Photo-12345.jpg" alt="Mike Kimpel" class="h-12 w-12 rounded-full border-2 border-premium-gold/30 object-cover shadow-sm" loading="lazy">
               </div>
-              <div>
-                <p class="text-lg italic leading-relaxed text-charcoal">"We continue to be baffled by financial analyst programs that boast about 5-10+ hours of content in a single course...in a world where attention spans are shrinking by the minute."</p>
-                <p class="mt-4 text-base leading-relaxed text-slate">As Mark Twain said: <span class="italic">"I apologize for such a long letter, I didn't have time to write a short one."</span></p>
+              <div class="flex-1">
+                <p class="text-lg italic leading-relaxed text-charcoal">'We continue to be baffled by financial analyst programs that boast about 5-10+ hours of content in a single course...in a world where attention spans are shrinking by the minute.'</p>
+                <p class="mt-4 text-base leading-relaxed text-slate">As Mark Twain said: <span class="italic">'I apologize for such a long letter, I didn't have time to write a short one.'</span></p>
                 <p class="mt-4 text-base font-medium leading-relaxed text-charcoal">Don't worry, you won't need 70+ hours to master IB fundamentals with our courses. We've done the hard work of distilling what actually matters.</p>
+                <p class="mt-4 text-sm font-medium text-charcoal">— Mike Kimpel, Founder, Finance|able</p>
               </div>
             </div>
           </div>
@@ -973,12 +956,12 @@
           <div class="rounded-3xl border-2 border-deep-blue/20 bg-gradient-to-br from-deep-blue/5 to-info-blue/5 p-6 sm:p-8 lg:p-10">
             <div class="flex items-center gap-3 mb-6">
               <i data-lucide="zap" class="h-8 w-8 text-premium-gold"></i>
-              <h3 class="text-2xl font-bold text-deep-blue">Why This Works:</h3>
+              <h3 class="text-2xl font-medium text-deep-blue">Why This Works:</h3>
             </div>
             <div class="grid gap-4 sm:grid-cols-3">
               <div class="flex items-start gap-3">
                 <i data-lucide="brain" class="h-5 w-5 mt-0.5 flex-shrink-0 text-deep-blue"></i>
-                <p class="text-sm leading-relaxed text-charcoal">Wall Street Prep will teach you the formulas. We teach you how to <strong>THINK</strong> like a banker.</p>
+                <p class="text-sm leading-relaxed text-charcoal">Legacy Wall Street training firms will teach you the formulas. We teach you how to <strong>THINK</strong> like a banker.</p>
               </div>
               <div class="flex items-start gap-3">
                 <i data-lucide="repeat" class="h-5 w-5 mt-0.5 flex-shrink-0 text-deep-blue"></i>
@@ -1007,23 +990,23 @@
               <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-growth-green/10">
                 <i data-lucide="target" class="h-6 w-6 text-growth-green"></i>
               </div>
-              <h3 class="text-2xl font-bold text-deep-blue">INTERVIEW-READY</h3>
+              <h3 class="text-2xl font-medium text-deep-blue">INTERVIEW-READY</h3>
             </div>
             <img src="images/investment-banking--interview-ready-online-course.jpg" alt="Investment Banking Interview Ready Online Course" class="w-full h-auto rounded-2xl mb-6 object-cover" loading="lazy">
-            <p class="text-base text-charcoal">Master every core concept in as little as [xx] hours. Answer technicals with confidence, not memorization. Walk into your interviews with unshakeable confidence.</p>
+            <p class="text-base text-charcoal">Master every core concept in record time. Answer technicals with confidence, not memorization. Walk into your interviews with unshakeable confidence.</p>
 
             <ul class="mt-6 space-y-3">
               <li class="flex items-start gap-3">
                 <i data-lucide="check-circle" class="h-5 w-5 mt-0.5 flex-shrink-0 text-growth-green"></i>
-                <span class="text-base font-semibold text-deep-blue">Three-statement connections? You'll see the motion in your head.</span>
+                <span class="text-base font-medium text-deep-blue">Three-statement connections? You'll see the motion in your head.</span>
               </li>
               <li class="flex items-start gap-3">
                 <i data-lucide="check-circle" class="h-5 w-5 mt-0.5 flex-shrink-0 text-growth-green"></i>
-                <span class="text-base font-semibold text-deep-blue">Accretion/dilution scenarios? You'll think in terms of the scale.</span>
+                <span class="text-base font-medium text-deep-blue">Accretion/dilution scenarios? You'll think in terms of the scale.</span>
               </li>
               <li class="flex items-start gap-3">
                 <i data-lucide="check-circle" class="h-5 w-5 mt-0.5 flex-shrink-0 text-growth-green"></i>
-                <span class="text-base font-semibold text-deep-blue">Paper LBO? Use the step-by-step flow.</span>
+                <span class="text-base font-medium text-deep-blue">Paper LBO? Use the step-by-step flow.</span>
               </li>
             </ul>
 
@@ -1039,13 +1022,19 @@
                 <i data-lucide="star" class="h-4 w-4 fill-current"></i>
               </div>
               <p class="mt-3 text-base italic text-charcoal">"Used this course to directly answer multiple questions in my bulge bracket IB superday. Anybody who wants to break into IB needs to take this course to successfully ace your interviews."</p>
-              <p class="mt-3 text-sm font-semibold text-deep-blue">— Dylan K., Analyst (J.P. Morgan)</p>
+              <div class="mt-3">
+                <p class="text-sm font-medium text-deep-blue mb-3">— Dylan K., Analyst</p>
+                <div class="flex flex-col items-start gap-2">
+                  <img src="https://logo.clearbit.com/jpmorgan.com" alt="J.P. Morgan" class="h-8 w-auto max-w-[120px] opacity-90" loading="lazy" onerror="this.style.display='none';">
+                  <p class="text-xs font-medium text-slate">J.P. Morgan</p>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- PLUS ICON -->
           <div class="flex-shrink-0 flex items-center justify-center">
-            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-warm-coral text-2xl font-bold text-white shadow-lg">
+            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-warm-coral text-2xl font-medium text-white shadow-lg">
               <i data-lucide="plus" class="h-8 w-8"></i>
             </div>
           </div>
@@ -1056,28 +1045,27 @@
               <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-info-blue/10">
                 <i data-lucide="briefcase" class="h-6 w-6 text-info-blue"></i>
               </div>
-              <h3 class="text-2xl font-bold text-deep-blue">DESK-READY</h3>
+              <h3 class="text-2xl font-medium text-deep-blue">DESK-READY</h3>
             </div>
             <img src="images/investment-banking-desk-ready-program.jpg" alt="Investment Banking Desk Ready Program" class="w-full h-auto rounded-2xl mb-6 object-cover" loading="lazy">
-            <p class="text-base text-charcoal">Learn what 80% of courses never teach: how M&A actually works on the desk.</p>
-            <p class="mt-4 text-base text-charcoal">Swap mechanical steps for a closed-loop system. You'll see every financial connection dynamically in your head, not just on the spreadsheet.</p>
+            <p class="mt-4 text-base text-charcoal">Swap mechanical steps for a closed-loop system. You'll see financial analysis and modeling dynamically in your head and not just on the spreadsheet.</p>
 
             <ul class="mt-6 space-y-3">
               <li class="flex items-start gap-3">
                 <i data-lucide="check-circle" class="h-5 w-5 mt-0.5 flex-shrink-0 text-growth-green"></i>
-                <span class="text-base font-semibold text-deep-blue">Beyond just basic Financial modeling, understand pitch books, CIMs, bid letters, bake-offs</span>
+                <span class="text-base font-medium text-deep-blue">Beyond just basic Financial modeling, understand pitch books, CIMs, bid letters, bake-offs</span>
               </li>
               <li class="flex items-start gap-3">
                 <i data-lucide="check-circle" class="h-5 w-5 mt-0.5 flex-shrink-0 text-growth-green"></i>
-                <span class="text-base font-semibold text-deep-blue">Learn how to craft thoughtful modeling assumptions</span>
+                <span class="text-base font-medium text-deep-blue">Learn how to craft thoughtful modeling assumptions</span>
               </li>
               <li class="flex items-start gap-3">
                 <i data-lucide="check-circle" class="h-5 w-5 mt-0.5 flex-shrink-0 text-growth-green"></i>
-                <span class="text-base font-semibold text-deep-blue">Go beyond memorizing templates and grasp the 'why' behind advanced concepts like Merger Models</span>
+                <span class="text-base font-medium text-deep-blue">Go beyond memorizing templates and grasp the 'why' behind advanced concepts like Merger Models</span>
               </li>
             </ul>
 
-            <p class="mt-6 text-base text-charcoal">Hit the ground running when you start. See around corners, while your peers are lost in acronyms. Quickly become the go-to analyst in your group because You'll already know how the full deal process works, from pitch to close.</p>
+            <p class="mt-6 text-base text-charcoal">Hit the ground running when you start. See around corners, while your peers are lost in acronyms. Quickly become the go-to analyst in your group because you already know how the full deal process works, from pitch to close.</p>
 
             <div class="mt-8 rounded-2xl border border-light-gray bg-white p-4 sm:p-6">
               <div class="flex gap-1 text-premium-gold">
@@ -1088,7 +1076,7 @@
                 <i data-lucide="star" class="h-4 w-4 fill-current"></i>
               </div>
               <p class="mt-3 text-base italic text-charcoal">"This simulation teaches you everything you need to know to put you miles ahead of your class."</p>
-              <p class="mt-3 text-sm font-semibold text-deep-blue">— Myles Opdahl, M&A Summer Analyst</p>
+              <p class="mt-3 text-sm font-medium text-deep-blue">— Myles Opdahl, M&A Summer Analyst</p>
             </div>
           </div>
         </div>
@@ -1099,18 +1087,18 @@
     <section class="bg-mocha scroll-mt-20 py-12 lg:py-24" id="courses">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-deep-blue">
+          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-deep-blue">
             <i data-lucide="book-open" class="h-4 w-4"></i>
             What's Included
           </span>
           <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl">Everything You Need to Get Interview Prep AND Desk Ready Training</h2>
-          <p class="mt-4 text-lg text-slate"> [15] comprehensive courses to take you from zero to interview ready</p>
+          <p class="mt-4 text-lg text-slate"> [13] comprehensive courses to take you from zero to interview ready</p>
         </div>
 
         <!-- TRACK 1: FOUNDATIONS -->
         <div class="mt-16">
           <div class="mb-8 rounded-2xl border-2 border-deep-blue/20 bg-deep-blue/5 p-4 sm:p-6">
-            <h3 class="text-2xl font-bold text-deep-blue mb-2">TRACK 1: FOUNDATIONS (Get Interview-Ready)</h3>
+            <h3 class="text-2xl font-medium text-deep-blue mb-2">TRACK 1: FOUNDATIONS (Get Interview-Ready)</h3>
             <p class="text-base text-charcoal">Master the core concepts that show up in 90% of IB interviews</p>
           </div>
 
@@ -1127,13 +1115,13 @@
                       <i data-lucide="map" class="h-5 w-5 text-growth-green"></i>
                     </div>
                     <div class="flex-1">
-                      <h3 class="text-xl font-semibold text-deep-blue">1. IB Interview Prep: Start Here</h3>
+                      <h3 class="text-xl font-medium text-deep-blue">1. IB Interview Prep: Start Here</h3>
                     </div>
                   </div>
                   <p class="text-base text-charcoal">Your roadmap to interview success. Mike walks you through the prep timeline, networking strategies, and behavioral frameworks used by students who land BB/EB/MM offers.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"></span>
-                    <a href="https://finance-able.com/courses/ib-interview-prep-start-here" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40">
+                    <a href="https://finance-able.com/courses/ib-interview-prep-start-here" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40">
                       Learn More / Watch Preview Lesson
                       <i data-lucide="external-link" class="h-4 w-4"></i>
                     </a>
@@ -1155,16 +1143,16 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">2. Accounting Fundamentals</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">2. Accounting Fundamentals</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: 2hr 15min)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal"><strong>The 3-Statement Motion System™</strong></p>
-                  <p class="mt-2 text-base text-charcoal">See debits and credits flying across the screen in real-time animations. Master how the three statements connect, not through memorization, but through visual mental models.</p>
+                  <p class="text-base text-charcoal"><strong>The 3-Statement Connection Map + 4-Step Process</strong></p>
+                  <p class="mt-2 text-base text-charcoal">See debits and credits flying across the screen with real-time animations. Master how the three statements connect, not through memorization, but through easy-to-follow visual mental models.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $89</span>
-                    <a href="https://finance-able.com/courses/accounting-concepts-series" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/accounting-concepts-series" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1187,16 +1175,16 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">3. Valuation Fundamentals</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">3. Valuation Fundamentals</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal"><strong>The Roots of Value Framework</strong></p>
+                  <p class="text-base text-charcoal"><strong>The DCF to Multiples Bridge</strong></p>
                   <p class="mt-2 text-base text-charcoal">Learn a first-principles based approach to Discounted Cash Flow Analysis (DCF) and how to interpret it side-by-side with Multiples. Navigate any variation of interview questions and explain your answers in Plain English, while others just recite memorized definitions.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $105</span>
-                    <a href="https://finance-able.com/courses/valuation-fundamentals-mastery" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/valuation-fundamentals-mastery" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1219,16 +1207,16 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">4. M&A Fundamentals</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">4. M&A Fundamentals</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal"><strong>The Accretion Scale Framework™</strong></p>
+                  <p class="text-base text-charcoal"><strong>M&A: The Accretion/Dilution Scale</strong></p>
                   <p class="mt-2 text-base text-charcoal">Stop memorizing corner case-scenarios for all-stock deals. We give you one mental model that allows you to analyze any accretion/dilution problem in your head, no matter how the deal is funded. Visualize the scale, weigh the factors, and solve it instantly.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $89</span>
-                    <a href="https://finance-able.com/courses/m-a-fundamentals" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/m-a-fundamentals" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1251,16 +1239,112 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">5. LBO Fundamentals</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">5. LBO Fundamentals</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal"><strong>The Core LBO Framework™</strong></p>
-                  <p class="mt-2 text-base text-charcoal">Learn the Core LBO Framework that organizes the chaos of a buyout into a simple step-by-step process where you simply can't get lost. You will understand the mechanics so deeply that you'll be running circles around your peers in technical interviews.</p>
+                  <p class="text-base text-charcoal"><strong>LBO: The 6-Step Core Framework</strong></p>
+                  <p class="mt-2 text-base text-charcoal">Learn the 6-Step Core Framework that organizes the chaos of a buyout into a simple step-by-step process where you simply can't get lost. You will understand the mechanics so deeply that you'll be running circles around your peers in technical interviews.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $89</span>
-                    <a href="https://finance-able.com/courses/lbo-fundamentals" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/lbo-fundamentals" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                      <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
+                      <span class="sm:hidden">Learn More</span>
+                      <i data-lucide="external-link" class="h-4 w-4"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Course 6 -->
+            <div class="rounded-3xl border-2 border-light-gray bg-white p-6 sm:p-8 shadow-soft transition hover:-translate-y-1 hover:shadow-brand">
+              <div class="flex flex-col lg:flex-row gap-6">
+                <div class="lg:w-64 lg:flex-shrink-0 order-2 lg:order-1">
+                  <img src="images/courses/Sell-Side-M&A-In-Real-Life.webp" alt="Sell-Side M&A in Real Life" class="w-full h-auto rounded-2xl object-cover" loading="lazy">
+                </div>
+                <div class="flex-1 order-1 lg:order-2">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-premium-gold/10">
+                      <i data-lucide="merge" class="h-5 w-5 text-premium-gold"></i>
+                    </div>
+                    <div class="flex-1">
+                      <div class="flex items-center gap-3">
+                        <h3 class="text-xl font-medium text-deep-blue">6. Sell-Side M&A in Real Life</h3>
+                        <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-base text-charcoal"><strong>The Deal Process Map</strong></p>
+                  <p class="mt-2 text-base text-charcoal">Get a massive advantage by understanding how the M&A process works on the job. You'll learn the deal process from front to back, pitch books to closing docs, so you can speak to the job in a way none of your peers will be able to.</p>
+                  <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
+                    <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $149</span>
+                    <a href="https://finance-able.com/courses/investment-banking-sell-side-ma" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                      <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
+                      <span class="sm:hidden">Learn More</span>
+                      <i data-lucide="external-link" class="h-4 w-4"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Course 7 -->
+            <div class="rounded-3xl border-2 border-light-gray bg-white p-6 sm:p-8 shadow-soft transition hover:-translate-y-1 hover:shadow-brand">
+              <div class="flex flex-col lg:flex-row gap-6">
+                <div class="lg:w-64 lg:flex-shrink-0 order-2 lg:order-1">
+                  <img src="images/courses/accounting-deepdive.webp" alt="Accounting Deep Dive" class="w-full h-auto rounded-2xl object-cover" loading="lazy">
+                </div>
+                <div class="flex-1 order-1 lg:order-2">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-growth-green/10">
+                      <i data-lucide="file-text" class="h-5 w-5 text-growth-green"></i>
+                    </div>
+                    <div class="flex-1">
+                      <div class="flex items-center gap-3">
+                        <h3 class="text-xl font-medium text-deep-blue">7. Accounting Deep Dive</h3>
+                        <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-base text-charcoal"><strong>Accounting: 2x2 Matrix Systems</strong></p>
+                  <p class="mt-2 text-base text-charcoal">Master the curveball topics that trip up other candidates, like Lease Accounting and Gains & Losses. We simplify confusing topics enabling you to answer these complex questions with absolute clarity.</p>
+                  <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
+                    <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $105</span>
+                    <a href="https://finance-able.com/courses/accounting-deep-dive" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                      <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
+                      <span class="sm:hidden">Learn More</span>
+                      <i data-lucide="external-link" class="h-4 w-4"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Course 8 -->
+            <div class="rounded-3xl border-2 border-light-gray bg-white p-6 sm:p-8 shadow-soft transition hover:-translate-y-1 hover:shadow-brand">
+              <div class="flex flex-col lg:flex-row gap-6">
+                <div class="lg:w-64 lg:flex-shrink-0 order-2 lg:order-1">
+                  <img src="images/courses/Investment-Banking-Interview-Fine-Tuning.png" alt="IB Interview Fine-Tuning" class="w-full h-auto rounded-2xl object-cover" loading="lazy">
+                </div>
+                <div class="flex-1 order-1 lg:order-2">
+                  <div class="flex items-center gap-3 mb-4">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-warm-coral/10">
+                      <i data-lucide="target" class="h-5 w-5 text-warm-coral"></i>
+                    </div>
+                    <div class="flex-1">
+                      <div class="flex items-center gap-3">
+                        <h3 class="text-xl font-medium text-deep-blue">8. IB Interview Fine-Tuning</h3>
+                        <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-base text-charcoal"><strong>LBO: The Paper LBO System</strong></p>
+                  <p class="mt-2 text-base text-charcoal">Tackle the advanced accounting and valuation questions that are particularly common in Elite Boutique interviews. Plus, we break down the intimidating Paper LBO into a repeatable 6-step process so you can calculate returns on a napkin without blinking.</p>
+                  <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
+                    <span class="text-sm text-slate">Exclusive to Pro Package</span>
+                    <a href="https://finance-able.com/courses/ib-interview-fine-tuning" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1275,7 +1359,7 @@
         <!-- PART 2: DESK READY -->
         <div class="mt-16">
           <div class="mb-8 rounded-2xl border-2 border-info-blue/20 bg-info-blue/5 p-4 sm:p-6">
-            <h3 class="text-2xl font-bold text-deep-blue mb-2">PART 2: DESK READY</h3>
+            <h3 class="text-2xl font-medium text-deep-blue mb-2">PART 2: DESK READY</h3>
             <p class="text-base text-charcoal">Build the practical skills you'll use every single day as an analyst</p>
           </div>
 
@@ -1293,7 +1377,7 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">1. IB Desk Ready: Start Here</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">1. IB Desk Ready: Start Here</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: [X]hr [XX]min)</span> -->
                       </div>
                     </div>
@@ -1301,7 +1385,7 @@
                   <p class="text-base text-charcoal">Get the exact blueprint to maximize your limited prep time. Secure a clear game plan for navigating the Desk Ready curriculum so you can hit the ground running and quickly become the star analyst in your group.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"></span>
-                    <a href="https://finance-able.com/courses/ib-desk-ready-start-here" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/ib-desk-ready-start-here" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1324,15 +1408,15 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">2. Excel Survival Kit</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">2. Excel Survival Kit</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: [X]hr [XX]min)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal">Legacy training courses bury you in 200 functions. We focus on the few that actually matter using a "messy data" case study, exactly what you'll face on the job. Visual function walkthroughs enable a deeper understanding of Excel formulas than you will find anywhere else.</p>
+                  <p class="text-base text-charcoal">Legacy training courses bury you in 200 functions. We focus on the few that actually matter using a 'messy data' case study, exactly what you'll face on the job. Visual function walkthroughs enable a deeper understanding of Excel formulas than you will find anywhere else.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $119</span>
-                    <a href="https://finance-able.com/courses/excel-survival-kit" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/excel-survival-kit" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1355,7 +1439,7 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">3. PowerPoint Speed</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">3. PowerPoint Speed</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: 1hr 00min)</span> -->
                       </div>
                     </div>
@@ -1363,7 +1447,7 @@
                   <p class="text-base text-charcoal">Maneuver through PowerPoint like a world-class investment banking analyst after just 1 hour of prep. Learn the shortcuts and custom setup that enables you to format slides and build decks in a fraction of the time.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate">Exclusive to Bundles</span>
-                    <a href="https://finance-able.com/courses/powerpoint-speed" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/powerpoint-speed" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1386,15 +1470,16 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">4. Navigate the Filings</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">4. Navigate the Filings</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal">Start reading filings like a seasoned pro. Quickly sift through hundreds of pages to find the critical numbers efficiently. Internalize the differences between Adjusted, Pro Forma, and Run-Rate metrics so you can interpret public and private data without the confusion that plagues most first-year analysts.</p>
+                  <p class="text-base text-charcoal"><strong>Filings: The Filings Navigation System</strong></p>
+                  <p class="mt-2 text-base text-charcoal">Start reading filings like a seasoned pro. Quickly sift through hundreds of pages to find the critical numbers efficiently. Internalize the differences between Adjusted, Pro Forma, and Run-Rate metrics so you can interpret public and private data without the confusion that plagues most first-year analysts.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $105</span>
-                    <a href="https://finance-able.com/courses/navigate-the-filings" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/navigate-the-filings" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1417,15 +1502,16 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">5. Business Mechanics</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">5. Business Mechanics</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal">Master a simple, powerful framework to break down any company, determine its core drivers and craft credible modeling assumptions. In just a few hours, you will gain the business judgment it usually takes 5-10 years to acquire on the job.</p>
+                  <p class="text-base text-charcoal"><strong>The Business Machine Framework</strong></p>
+                  <p class="mt-2 text-base text-charcoal">Master a simple, powerful framework to break down any company, determine its core drivers and craft credible modeling assumptions. In just a few hours, gain the business judgment it usually takes 5-10 years to acquire on the job.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $149</span>
-                    <a href="https://finance-able.com/courses/business-mechanics" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/business-mechanics" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1448,15 +1534,16 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">6. Financial Modeling</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">6. Financial Modeling</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal">Master a "closed loop" approach to Financial Modeling where every input flows logically through the Income Statement, Balance Sheet, and Cash Flow Statement. Nail down tricky concepts like working capital projections (e.g., DSO, DPO, etc) so you understand the underlying intuition behind the model build instead of just memorizing keystrokes.</p>
+                  <p class="text-base text-charcoal"><strong>The Modeling Loop</strong></p>
+                  <p class="mt-2 text-base text-charcoal">Master a 'closed loop' approach to Financial Modeling where every input flows logically through the Income Statement, Balance Sheet, and Cash Flow Statement. Nail down tricky concepts like working capital projections (e.g., DSO, DPO, etc) so you understand the underlying intuition behind the model build instead of just memorizing keystrokes.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $119</span>
-                    <a href="https://finance-able.com/courses/financial-modeling" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/financial-modeling" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1479,15 +1566,16 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">7. LBO Modeling</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">7. LBO Modeling</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal">Learn the ins and outs of LBO model mechanics from transaction assumptions to returns analysis using visuals that break down the trickiest concepts: sources and uses, the pro forma balance sheet, and the debt waterfall. You will gain a deep, intuitive understanding of how the model actually works, giving you a perspective that is simply not taught in legacy courses.</p>
+                  <p class="text-base text-charcoal"><strong>LBO Modeling: The 'Big Three' Visualized</strong></p>
+                  <p class="mt-2 text-base text-charcoal">Learn the ins and outs of LBO model mechanics from transaction assumptions to returns analysis using visuals that break down the trickiest concepts: sources and uses, the pro forma balance sheet, and the debt waterfall. Gain a deep, intuitive understanding of how the model actually works, giving you a perspective that is simply not taught in legacy courses.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $119</span>
-                    <a href="https://finance-able.com/courses/lbo-modeling" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/lbo-modeling" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1510,15 +1598,16 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">8. M&A Modeling</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">8. M&A Modeling</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal">Go beyond basic mechanics and master the "why" behind M&A modeling. You will learn a simple framework for what a merger model actually solves for, ensuring you always know exactly where you're headed next. You will bridge the gap between the numbers and the boardroom, understanding how CEOs and boards make decisions that lead to all the inputs that go into merger models.</p>
+                  <p class="text-base text-charcoal"><strong>M&A Modeling: M&A Model North Star Framework</strong></p>
+                  <p class="mt-2 text-base text-charcoal">Go beyond basic mechanics and master the 'why' behind M&A modeling. Learn a simple framework for what a merger model actually solves for, ensuring you always know exactly where you're headed next. Bridge the gap between the numbers and the boardroom, understanding how CEOs and boards make decisions that lead to all the inputs that go into merger models.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $135</span>
-                    <a href="https://finance-able.com/courses/m-a-modeling" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/m-a-modeling" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1541,15 +1630,15 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">9. Sell-Side M&A in Real Life</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">9. Sell-Side M&A in Real Life</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Xhr XXmin)</span> -->
                       </div>
                     </div>
                   </div>
-                  <p class="text-base text-charcoal">A walkthrough of the full deal lifecycle, from the initial pitch to closing documents. Reviewing the full process ensures you understand the context of your work and know exactly what steps and documents follow one another on a live deal. You will hit the desk understanding pitch books, CIMs, and bake-offs, allowing you to see around corners while your peers wait for instructions.</p>
+                  <p class="text-base text-charcoal">A walkthrough of the full deal lifecycle, from the initial pitch to closing documents. Reviewing the full process ensures you understand the context of your work and know exactly what steps and documents follow one another on a live deal. Hit the desk understanding pitch books, CIMs, and bake-offs, allowing you to see around corners while your peers wait for instructions.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"><span class="text-charcoal">Normally</span> $149</span>
-                    <a href="https://finance-able.com/courses/investment-banking-sell-side-ma" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-growth-green/20 bg-white px-4 py-2.5 text-sm font-semibold text-growth-green transition hover:bg-growth-green/5 hover:border-growth-green/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/investment-banking-sell-side-ma" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-growth-green/20 bg-white px-4 py-2.5 text-sm font-medium text-growth-green transition hover:bg-growth-green/5 hover:border-growth-green/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1572,7 +1661,7 @@
                     </div>
                     <div class="flex-1">
                       <div class="flex items-center gap-3">
-                        <h3 class="text-xl font-semibold text-deep-blue">BONUS: Valuation Fundamentals</h3>
+                        <h3 class="text-xl font-medium text-deep-blue">BONUS: Valuation Fundamentals</h3>
                         <!-- <span class="text-sm text-slate">(Lesson Time: Refresher)</span> -->
                       </div>
                     </div>
@@ -1580,7 +1669,7 @@
                   <p class="text-base text-charcoal">A supplementary resource to keep your mental models sharp. Use these modules to quickly refresh your memory on DCF mechanics, multiples, and common valuation pitfalls.</p>
                   <div class="mt-4 flex items-center justify-between gap-4 flex-wrap">
                     <span class="text-sm text-slate"></span>
-                    <a href="https://finance-able.com/courses/valuation-fundamentals-mastery" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-semibold text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
+                    <a href="https://finance-able.com/courses/valuation-fundamentals-mastery" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-deep-blue/20 bg-white px-4 py-2.5 text-sm font-medium text-deep-blue transition hover:bg-deep-blue/5 hover:border-deep-blue/40 min-h-[44px]">
                       <span class="hidden sm:inline">Learn More / Watch Preview Lesson</span>
                       <span class="sm:hidden">Learn More</span>
                       <i data-lucide="external-link" class="h-4 w-4"></i>
@@ -1594,7 +1683,7 @@
 
         <!-- PLUS Section -->
         <div class="mt-12 rounded-3xl border-2 border-light-gray bg-white p-8 shadow-soft">
-          <h3 class="text-2xl font-bold text-deep-blue">PLUS: You Also Get</h3>
+          <h3 class="text-2xl font-medium text-deep-blue">PLUS: You Also Get</h3>
           <ul class="mt-6 grid gap-3 sm:grid-cols-2">
             <li class="flex items-center gap-3">
               <i data-lucide="check-circle" class="h-5 w-5 flex-shrink-0 text-growth-green"></i>
@@ -1622,10 +1711,10 @@
         <!-- Value Calculation -->
         <div class="mt-8 text-center">
           <p class="text-lg text-slate">Total Value: <span class="line-through">[$1,282]</span> if purchased individually</p>
-          <p class="mt-2 text-2xl font-bold text-deep-blue">Bundle Price: $830 lifetime / $475 yearly</p>
-          <p class="mt-2 text-xl font-semibold text-growth-green">Your Savings: $807 yearly</p>
+          <p class="mt-2 text-2xl font-medium text-deep-blue">Bundle Price: $830 lifetime / $475 yearly</p>
+          <p class="mt-2 text-xl font-medium text-growth-green">Your Savings: $807 yearly</p>
           <div class="mt-8">
-            <a href="#pricing" class="group inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-6 py-3.5 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
+            <a href="#pricing" class="group inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-6 py-3.5 sm:px-8 sm:py-4 text-base sm:text-lg font-medium text-white shadow-lg shadow-warm-coral/30 transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
               <span class="hidden sm:inline">Get Started with the Investment Banking: Pro Package</span>
               <span class="sm:hidden">Get Started with the IB Pro Package</span>
               <i data-lucide="arrow-right" class="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1"></i>
@@ -1639,7 +1728,7 @@
     <section class="bg-white py-12 lg:py-24">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-premium-gold/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-premium-gold">
+          <span class="inline-flex items-center gap-2 rounded-full bg-premium-gold/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-premium-gold">
             <i data-lucide="award" class="h-4 w-4"></i>
             Certificate
           </span>
@@ -1650,22 +1739,22 @@
           <!-- Left: Certificate Visual -->
           <div class="rounded-3xl border-2 border-premium-gold/40 bg-gradient-to-br from-white via-white to-premium-gold/20 p-10 shadow-lg">
             <div class="text-center">
-              <span class="inline-flex items-center gap-2 rounded-full border border-premium-gold bg-premium-gold/10 px-4 py-2 text-xs font-bold uppercase tracking-wider text-premium-gold mb-6">
+              <span class="inline-flex items-center gap-2 rounded-full border border-premium-gold bg-premium-gold/10 px-4 py-2 text-xs font-medium uppercase tracking-wider text-premium-gold mb-6">
                 CERTIFICATE INCLUDED
               </span>
               <div class="my-8">
                 <i data-lucide="award" class="mx-auto h-20 w-20 text-premium-gold"></i>
               </div>
-              <h3 class="text-xl font-bold text-deep-blue">Certificate of Completion</h3>
+              <h3 class="text-xl font-medium text-deep-blue">Certificate of Completion</h3>
               <p class="mt-2 text-base text-slate">Investment Banking Pro Package</p>
-              <p class="mt-1 text-sm text-slate">Finance-able • Instructed by Mike Kimpel</p>
+              <p class="mt-1 text-sm text-slate">Financ|eable • Instructed by Mike Kimpel</p>
               <p class="mt-6 text-sm leading-relaxed text-charcoal">Add to LinkedIn, include in networking outreach, and demonstrate structured, practitioner-led preparation.</p>
             </div>
           </div>
 
           <!-- Right: Why It Matters -->
           <div>
-            <h3 class="text-2xl font-bold text-deep-blue">Why the certificate matters</h3>
+            <h3 class="text-2xl font-medium text-deep-blue">Why the certificate matters</h3>
             <p class="mt-4 text-base leading-relaxed text-charcoal">Top-tier banks receive hundreds of applications from lookalike candidates. Your certificate signals:</p>
             
             <ul class="mt-6 space-y-4">
@@ -1674,7 +1763,7 @@
                   <i data-lucide="check-circle" class="h-5 w-5 text-deep-blue"></i>
                 </div>
                 <div>
-                  <p class="font-semibold text-charcoal">Structured preparation:</p>
+                  <p class="font-medium text-charcoal">Structured preparation:</p>
                   <p class="mt-1 text-sm text-slate">You invested in a comprehensive, practitioner-built curriculum, not random YouTube playlists.</p>
                 </div>
               </li>
@@ -1683,7 +1772,7 @@
                   <i data-lucide="check-circle" class="h-5 w-5 text-deep-blue"></i>
                 </div>
                 <div>
-                  <p class="font-semibold text-charcoal">Practitioner mentorship:</p>
+                  <p class="font-medium text-charcoal">Practitioner mentorship:</p>
                   <p class="mt-1 text-sm text-slate">Mike's background across IB, PE, and hedge funds, and nine years at Columbia, backs your story.</p>
                 </div>
               </li>
@@ -1692,22 +1781,22 @@
                   <i data-lucide="check-circle" class="h-5 w-5 text-deep-blue"></i>
                 </div>
                 <div>
-                  <p class="font-semibold text-charcoal">Desk-ready commitment:</p>
+                  <p class="font-medium text-charcoal">Desk-ready commitment:</p>
                   <p class="mt-1 text-sm text-slate">You've gone beyond interview hacks by mastering how deals work in practice.</p>
                 </div>
               </li>
             </ul>
 
             <div class="mt-8 rounded-2xl bg-mocha p-6">
-              <p class="font-semibold text-deep-blue mb-3">How students use it:</p>
+              <p class="font-medium text-deep-blue mb-3">How students use it:</p>
               <ul class="space-y-2 text-sm text-charcoal">
                 <li class="flex items-start gap-2">
                   <span class="text-premium-gold">•</span>
-                  <span>Add to LinkedIn's "Licenses & Certifications" section with the verification link.</span>
+                  <span>Add to LinkedIn's 'Licenses & Certifications' section with the verification link.</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-premium-gold">•</span>
-                  <span>Mention in outreach emails: "I completed Finance-able's IB Pro Package to ensure I'm desk-ready from day one."</span>
+                  <span>Mention in outreach emails: 'I completed Finance-able's IB Pro Package to ensure I'm desk-ready from day one.'</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-premium-gold">•</span>
@@ -1725,7 +1814,7 @@
     <section class="bg-mocha scroll-mt-20 py-12 lg:py-24" id="pricing">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-deep-blue">
+          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-deep-blue">
             <i data-lucide="credit-card" class="h-4 w-4"></i>
             Pricing | Investment Banking Pro Package: Interview + Desk Ready
           </span>
@@ -1736,8 +1825,8 @@
         <div class="mt-12 grid gap-8 lg:grid-cols-2">
           <!-- YEARLY ACCESS -->
           <div class="rounded-3xl border-2 border-light-gray bg-white p-6 sm:p-8 lg:p-10 shadow-soft">
-            <h3 class="text-xl sm:text-2xl font-bold text-deep-blue">YEARLY ACCESS</h3>
-            <p class="mt-4 text-4xl sm:text-5xl font-bold text-deep-blue">$475<span class="text-lg sm:text-xl font-normal text-slate">/year</span></p>
+            <h3 class="text-xl sm:text-2xl font-medium text-deep-blue">YEARLY ACCESS</h3>
+            <p class="mt-4 text-4xl sm:text-5xl font-medium text-deep-blue">$475<span class="text-lg sm:text-xl font-normal text-slate">/year</span></p>
 
             <ul class="mt-8 space-y-4">
               <li class="flex items-start gap-3">
@@ -1770,7 +1859,7 @@
               </li>
             </ul>
 
-            <a href="http://app.finance-able.com/enroll?price_id=price_1RHd6fBossYdHpFZqCtnW5ej" class="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-warm-coral px-6 py-3.5 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
+            <a href="http://app.finance-able.com/enroll?price_id=price_1RHd6fBossYdHpFZqCtnW5ej" class="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-warm-coral px-6 py-3.5 sm:px-8 sm:py-4 text-base sm:text-lg font-medium text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
               Get Yearly Access
               <i data-lucide="arrow-right" class="h-4 w-4 sm:h-5 sm:w-5"></i>
             </a>
@@ -1779,15 +1868,15 @@
           <!-- LIFETIME ACCESS - HIGHLIGHTED -->
           <div class="relative rounded-3xl border-2 border-growth-green bg-growth-green/5 p-6 sm:p-8 lg:p-10 shadow-brand lg:transform lg:-translate-y-2">
             <div class="absolute -top-3 sm:-top-4 right-4 sm:right-8">
-              <span class="inline-flex items-center gap-2 rounded-full bg-premium-gold px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-lg">
+              <span class="inline-flex items-center gap-2 rounded-full bg-premium-gold px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium uppercase tracking-wider text-white shadow-lg">
                 <i data-lucide="star" class="h-3 w-3 sm:h-4 sm:w-4 fill-current"></i>
                 <span class="hidden sm:inline">MOST POPULAR</span>
                 <span class="sm:hidden">POPULAR</span>
               </span>
             </div>
 
-            <h3 class="text-xl sm:text-2xl font-bold text-deep-blue">LIFETIME ACCESS</h3>
-            <p class="mt-4 text-4xl sm:text-5xl font-bold text-deep-blue">$830<span class="text-lg sm:text-xl font-normal text-slate"> one-time</span></p>
+            <h3 class="text-xl sm:text-2xl font-medium text-deep-blue">LIFETIME ACCESS</h3>
+            <p class="mt-4 text-4xl sm:text-5xl font-medium text-deep-blue">$830<span class="text-lg sm:text-xl font-normal text-slate"> one-time</span></p>
 
             <ul class="mt-8 space-y-4">
               <li class="flex items-start gap-3">
@@ -1820,11 +1909,11 @@
               </li>
               <li class="flex items-start gap-3">
                 <i data-lucide="check-circle" class="h-5 w-5 mt-0.5 flex-shrink-0 text-growth-green"></i>
-                <span class="text-base font-semibold text-charcoal">Best value for serious students</span>
+                <span class="text-base font-medium text-charcoal">Best value for serious students</span>
               </li>
             </ul>
 
-            <a href="http://app.finance-able.com/enroll?price_id=price_1RJZ7TBossYdHpFZLUaN8Epj" class="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-warm-coral px-6 py-3.5 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
+            <a href="http://app.finance-able.com/enroll?price_id=price_1RJZ7TBossYdHpFZLUaN8Epj" class="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-warm-coral px-6 py-3.5 sm:px-8 sm:py-4 text-base sm:text-lg font-medium text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-xl">
               Get Lifetime Access
               <i data-lucide="arrow-right" class="h-4 w-4 sm:h-5 sm:w-5"></i>
             </a>
@@ -1839,13 +1928,13 @@
       
         <!-- The Math Is Simple -->
         <div class="mx-auto mt-12 max-w-2xl rounded-3xl bg-gradient-to-br from-deep-blue to-deep-blue-light p-8 text-center text-white shadow-brand">
-          <h3 class="text-2xl font-bold">The Math Is Simple:</h3>
+          <h3 class="text-2xl font-medium">The Math Is Simple:</h3>
           <div class="mt-6 space-y-3 text-lg">
             <p><i data-lucide="dollar-sign" class="inline h-6 w-6"></i> IB Analyst Year 1 Comp: <strong class="text-premium-gold">$150K-200k average</strong></p>
             <p><i data-lucide="trending-up" class="inline h-6 w-6"></i> Investment: <strong class="text-premium-gold">$830 one-time</strong></p>
             <p><i data-lucide="chart-line" class="inline h-6 w-6"></i> ROI: <strong class="text-premium-gold">180x in Year 1 alone</strong></p>
           </div>
-          <p class="mt-6 text-xl font-semibold">This might be the best investment you ever make.</p>
+          <p class="mt-6 text-xl font-medium">This might be the best investment you ever make.</p>
         </div>
 
         <!-- Trust Bar -->
@@ -1877,7 +1966,7 @@
     <section class="bg-mocha scroll-mt-20 py-12 lg:py-24" id="testimonials">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-deep-blue">
+          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-deep-blue">
             <i data-lucide="star" class="h-4 w-4"></i>
             Student Success
           </span>
@@ -1895,7 +1984,7 @@
                 <div class="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div class="flex items-center gap-2 text-white">
                     <i data-lucide="zoom-in" class="h-5 w-5"></i>
-                    <span class="text-sm font-semibold">Click to enlarge</span>
+                    <span class="text-sm font-medium">Click to enlarge</span>
                   </div>
                 </div>
               </div>
@@ -1909,7 +1998,7 @@
                 <div class="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div class="flex items-center gap-2 text-white">
                     <i data-lucide="zoom-in" class="h-5 w-5"></i>
-                    <span class="text-sm font-semibold">Click to enlarge</span>
+                    <span class="text-sm font-medium">Click to enlarge</span>
                   </div>
                 </div>
               </div>
@@ -1923,7 +2012,7 @@
                 <div class="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div class="flex items-center gap-2 text-white">
                     <i data-lucide="zoom-in" class="h-5 w-5"></i>
-                    <span class="text-sm font-semibold">Click to enlarge</span>
+                    <span class="text-sm font-medium">Click to enlarge</span>
                   </div>
                 </div>
               </div>
@@ -1937,7 +2026,7 @@
                 <div class="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div class="flex items-center gap-2 text-white">
                     <i data-lucide="zoom-in" class="h-5 w-5"></i>
-                    <span class="text-sm font-semibold">Click to enlarge</span>
+                    <span class="text-sm font-medium">Click to enlarge</span>
                   </div>
                 </div>
               </div>
@@ -1951,7 +2040,7 @@
                 <div class="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div class="flex items-center gap-2 text-white">
                     <i data-lucide="zoom-in" class="h-5 w-5"></i>
-                    <span class="text-sm font-semibold">Click to enlarge</span>
+                    <span class="text-sm font-medium">Click to enlarge</span>
                   </div>
                 </div>
               </div>
@@ -1965,7 +2054,7 @@
                 <div class="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div class="flex items-center gap-2 text-white">
                     <i data-lucide="zoom-in" class="h-5 w-5"></i>
-                    <span class="text-sm font-semibold">Click to enlarge</span>
+                    <span class="text-sm font-medium">Click to enlarge</span>
                   </div>
                 </div>
               </div>
@@ -1979,7 +2068,7 @@
                 <div class="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div class="flex items-center gap-2 text-white">
                     <i data-lucide="zoom-in" class="h-5 w-5"></i>
-                    <span class="text-sm font-semibold">Click to enlarge</span>
+                    <span class="text-sm font-medium">Click to enlarge</span>
                   </div>
                 </div>
               </div>
@@ -1993,7 +2082,7 @@
                 <div class="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div class="flex items-center gap-2 text-white">
                     <i data-lucide="zoom-in" class="h-5 w-5"></i>
-                    <span class="text-sm font-semibold">Click to enlarge</span>
+                    <span class="text-sm font-medium">Click to enlarge</span>
                   </div>
                 </div>
               </div>
@@ -2007,7 +2096,7 @@
                 <div class="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div class="flex items-center gap-2 text-white">
                     <i data-lucide="zoom-in" class="h-5 w-5"></i>
-                    <span class="text-sm font-semibold">Click to enlarge</span>
+                    <span class="text-sm font-medium">Click to enlarge</span>
                   </div>
                 </div>
               </div>
@@ -2025,9 +2114,15 @@
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
             </div>
-            <p class="mb-2 font-semibold text-deep-blue">"Helped me get a bulge bracket offer"</p>
+            <p class="mb-2 font-medium text-deep-blue">"Helped me get a bulge bracket offer"</p>
             <p class="mb-4 text-base leading-relaxed text-slate">"Used this course to directly answer multiple questions in my bulge bracket IB superday. Anybody who wants to break into IB needs to take this course to successfully ace your interviews."</p>
-            <p class="text-sm font-semibold text-charcoal"> Dylan Kay</p>
+            <div class="mt-4">
+              <p class="text-sm font-medium text-charcoal mb-3">Dylan Kay</p>
+              <div class="flex flex-col items-start gap-2">
+                <img src="https://logo.clearbit.com/jpmorgan.com" alt="J.P. Morgan" class="h-8 w-auto max-w-[120px] opacity-90" loading="lazy" onerror="this.style.display='none';">
+                <p class="text-xs font-medium text-slate">J.P. Morgan</p>
+              </div>
+            </div>
           </div>
 
           <div class="rounded-2xl border-2 border-light-gray bg-white p-8 shadow-soft">
@@ -2038,9 +2133,15 @@
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
             </div>
-            <p class="mb-2 font-semibold text-deep-blue">"Best Prep For Superdays"</p>
+            <p class="mb-2 font-medium text-deep-blue">"Best Prep For Superdays"</p>
             <p class="mb-4 text-base leading-relaxed text-slate">"Coming from a non finance background, this course truly helped me get up to speed on valuation methodologies. Mike does an incredible job with explaining key concepts at a high level and challenging you along the way."</p>
-            <p class="text-sm font-semibold text-charcoal"> Marcelo Shockey</p>
+            <div class="mt-4">
+              <p class="text-sm font-medium text-charcoal mb-3">Marcelo Shockey</p>
+              <div class="flex flex-col items-start gap-2">
+                <img src="https://logo.clearbit.com/carlyle.com" alt="Carlyle Group" class="h-8 w-auto max-w-[120px] opacity-90" loading="lazy" onerror="this.style.display='none';">
+                <p class="text-xs font-medium text-slate">Carlyle Group</p>
+              </div>
+            </div>
           </div>
 
           <div class="rounded-2xl border-2 border-light-gray bg-white p-8 shadow-soft">
@@ -2051,9 +2152,9 @@
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
             </div>
-            <p class="mb-2 font-semibold text-deep-blue">"BEST CONTENT TO PREP FOR IB"</p>
+            <p class="mb-2 font-medium text-deep-blue">"BEST CONTENT TO PREP FOR IB"</p>
             <p class="mb-4 text-base leading-relaxed text-slate">"Have worked two summers in M&A (one in PE and one with MM IB). This simulation teaches you everything you need to know to put you miles ahead of your class."</p>
-            <p class="text-sm font-semibold text-charcoal"> Myles Opdahl</p>
+            <p class="text-sm font-medium text-charcoal"> Myles Opdahl</p>
           </div>
 
           <div class="rounded-2xl border-2 border-light-gray bg-white p-8 shadow-soft">
@@ -2064,9 +2165,9 @@
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
             </div>
-            <p class="mb-2 font-semibold text-deep-blue">"Best Accounting Introduction Course"</p>
+            <p class="mb-2 font-medium text-deep-blue">"Best Accounting Introduction Course"</p>
             <p class="mb-4 text-base leading-relaxed text-slate">"Coming from a non traditional academic background, this was for me the best course on the market. Anyone interested in deepening their understanding and beginning their professional development should start here!"</p>
-            <p class="text-sm font-semibold text-charcoal"> Jonathan Alexandre</p>
+            <p class="text-sm font-medium text-charcoal"> Jonathan Alexandre</p>
           </div>
 
           <div class="rounded-2xl border-2 border-light-gray bg-white p-8 shadow-soft">
@@ -2077,9 +2178,15 @@
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
             </div>
-            <p class="mb-2 font-semibold text-deep-blue">"In Layman's term"</p>
+            <p class="mb-2 font-medium text-deep-blue">"In Layman's term"</p>
             <p class="mb-4 text-base leading-relaxed text-slate">"This was the first course that really explained valuation concepts to me, where I was able to understand them! Never experienced something like this."</p>
-            <p class="text-sm font-semibold text-charcoal"> Michael Pedoeem</p>
+            <div class="mt-4">
+              <p class="text-sm font-medium text-charcoal mb-3">Michael Pedoeem</p>
+              <div class="flex flex-col items-start gap-2">
+                <img src="https://logo.clearbit.com/barclays.com" alt="Barclays" class="h-8 w-auto max-w-[120px] opacity-90" loading="lazy" onerror="this.style.display='none';">
+                <p class="text-xs font-medium text-slate">Barclays</p>
+              </div>
+            </div>
           </div>
 
           <div class="rounded-2xl border-2 border-light-gray bg-white p-8 shadow-soft">
@@ -2090,9 +2197,15 @@
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
             </div>
-            <p class="mb-2 font-semibold text-deep-blue">"So thorough!"</p>
+            <p class="mb-2 font-medium text-deep-blue">"So thorough!"</p>
             <p class="mb-4 text-base leading-relaxed text-slate">"This course does a great job on expanding basic accounting principles in a way that is comprehendible and thorough. I was able to learn so much new content without getting overwhelmed!"</p>
-            <p class="text-sm font-semibold text-charcoal"> Rashmi Majjigapu</p>
+            <div class="mt-4">
+              <p class="text-sm font-medium text-charcoal mb-3">Rashmi Majjigapu</p>
+              <div class="flex flex-col items-start gap-2">
+                <img src="https://logo.clearbit.com/jpmorgan.com" alt="J.P. Morgan" class="h-8 w-auto max-w-[120px] opacity-90" loading="lazy" onerror="this.style.display='none';">
+                <p class="text-xs font-medium text-slate">J.P. Morgan</p>
+              </div>
+            </div>
           </div>
 
           <div class="rounded-2xl border-2 border-light-gray bg-white p-8 shadow-soft">
@@ -2103,9 +2216,9 @@
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
             </div>
-            <p class="mb-2 font-semibold text-deep-blue">"Most easy to understand valuation course I've ever used!"</p>
+            <p class="mb-2 font-medium text-deep-blue">"Most easy to understand valuation course I've ever used!"</p>
             <p class="mb-4 text-base leading-relaxed text-slate">"This course helped me prepare for interviews. It is so easy to follow, engaging, and makes valuation an easy concept to grasp. I watched this before an interview to remind myself about the fundamentals and it helped me so much!"</p>
-            <p class="text-sm font-semibold text-charcoal"> Finance-able Student</p>
+            <p class="text-sm font-medium text-charcoal"> Financ|eable Student</p>
           </div>
 
           <div class="rounded-2xl border-2 border-light-gray bg-white p-8 shadow-soft">
@@ -2116,9 +2229,15 @@
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
               <i data-lucide="star" class="h-5 w-5 fill-premium-gold text-premium-gold"></i>
             </div>
-            <p class="mb-2 font-semibold text-deep-blue">"Hands down the best way to learn!"</p>
+            <p class="mb-2 font-medium text-deep-blue">"Hands down the best way to learn!"</p>
             <p class="mb-4 text-base leading-relaxed text-slate">"Mike's simple, step-by-step teaching process helped simplify intimidating LBO concepts and made learning much more digestible compared to other courses I have taken."</p>
-            <p class="text-sm font-semibold text-charcoal"> Connor Nazarian</p>
+            <div class="mt-4">
+              <p class="text-sm font-medium text-charcoal mb-3">Connor Nazarian</p>
+              <div class="flex flex-col items-start gap-2">
+                <img src="https://logo.clearbit.com/bankofamerica.com" alt="Bank of America" class="h-8 w-auto max-w-[120px] opacity-90" loading="lazy" onerror="this.style.display='none';">
+                <p class="text-xs font-medium text-slate">Bank of America</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2153,7 +2272,7 @@
     <section class="bg-deep-blue py-12 lg:py-24 text-white">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm">
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm">
             <i data-lucide="user" class="h-4 w-4"></i>
             Founder Story
           </span>
@@ -2162,13 +2281,13 @@
 
         <div class="mt-12 grid gap-12 lg:grid-cols-2 lg:items-center">
           <div class="space-y-6 text-lg leading-relaxed">
-            <p class="text-xl font-bold">Finance changed my life...full stop.</p>
+            <p class="text-xl font-medium">Finance changed my life...full stop.</p>
             <p>I wasn't supposed to make it on Wall Street. Non-target school, no family connections, had to figure it all out myself.</p>
             <p>But once I got in, UBS Investment Banking, Golden Gate Capital, HIG Capital, a hedge fund that grew to $2B, I saw something clearly:</p>
-            <p class="text-xl font-semibold">The way finance is taught is broken.</p>
+            <p class="text-xl font-medium">The way finance is taught is broken.</p>
             <p>Static slides. Formula memorization. Zero focus on how the job actually works.</p>
             <p>I spent 15 years building pitch books, running deals, analyzing companies across every industry you can imagine. I taught at Columbia Business School for nearly a decade and have trained 10,000+ students across a variety of roles, including as Managing Partner at Wall Street Prep.</p>
-            <p>And I kept hearing the same thing: <em>"This is the first time someone explained it so I actually GET it."</em></p>
+            <p>And I kept hearing the same thing: <em>'This is the first time someone explained it so I actually GET it.'</em></p>
             <p>That's why Finance|able exists. To teach finance the way it SHOULD be taught, visually, practically, and in Plain English.</p>
             <p>Not because I'm a genius. Because I've been in the trenches. And I know what you actually need to succeed.</p>
           </div>
@@ -2188,7 +2307,7 @@
 
         <!-- Unique Perspective Venn Diagram -->
         <div class="mt-12">
-          <h3 class="text-2xl font-bold mb-8 text-center">A Unique Perspective</h3>
+          <h3 class="text-2xl font-medium mb-8 text-center">A Unique Perspective</h3>
           <div class="relative mx-auto max-w-2xl">
             <!-- Venn Diagram Container with dotted border -->
             <div class="relative mx-auto rounded-2xl border-2 border-dashed border-white/30 bg-white/5 p-8 backdrop-blur-sm">
@@ -2196,25 +2315,25 @@
                 <!-- Circle 1: Investment Banking (Top Left) -->
                 <div class="absolute left-[10%] top-[10%] h-56 w-56 rounded-full border-2 border-white/60 bg-deep-blue/25 backdrop-blur-sm mix-blend-screen"></div>
                 <div class="absolute left-[10%] top-[10%] flex h-56 w-56 items-center justify-center">
-                  <p class="text-center text-base font-bold text-white drop-shadow-lg">Investment<br>Banking</p>
+                  <p class="text-center text-base font-medium text-white drop-shadow-lg">Investment<br>Banking</p>
                 </div>
 
                 <!-- Circle 2: Private Equity (Top Right) -->
                 <div class="absolute right-[10%] top-[10%] h-56 w-56 rounded-full border-2 border-white/60 bg-info-blue/25 backdrop-blur-sm mix-blend-screen"></div>
                 <div class="absolute right-[10%] top-[10%] flex h-56 w-56 items-center justify-center">
-                  <p class="text-center text-base font-bold text-white drop-shadow-lg">Private<br>Equity</p>
+                  <p class="text-center text-base font-medium text-white drop-shadow-lg">Private<br>Equity</p>
                 </div>
 
                 <!-- Circle 3: Mutual Fund (Bottom Left) -->
                 <div class="absolute bottom-[10%] left-[10%] h-56 w-56 rounded-full border-2 border-white/60 bg-growth-green/25 backdrop-blur-sm mix-blend-screen"></div>
                 <div class="absolute bottom-[10%] left-[10%] flex h-56 w-56 items-center justify-center">
-                  <p class="text-center text-base font-bold text-white drop-shadow-lg">Mutual<br>Fund</p>
+                  <p class="text-center text-base font-medium text-white drop-shadow-lg">Mutual<br>Fund</p>
                 </div>
 
                 <!-- Circle 4: Hedge Fund (Bottom Right) -->
                 <div class="absolute bottom-[10%] right-[10%] h-56 w-56 rounded-full border-2 border-white/60 bg-warm-coral/25 backdrop-blur-sm mix-blend-screen"></div>
                 <div class="absolute bottom-[10%] right-[10%] flex h-56 w-56 items-center justify-center">
-                  <p class="text-center text-base font-bold text-white drop-shadow-lg">Hedge<br>Fund</p>
+                  <p class="text-center text-base font-medium text-white drop-shadow-lg">Hedge<br>Fund</p>
                 </div>
 
                 <!-- Central Intersection Point (Diamond) -->
@@ -2227,7 +2346,7 @@
             </div>
 
             <!-- Bottom Text -->
-            <p class="mt-8 text-center text-xl font-bold text-white">Professor + Professional Trainer</p>
+            <p class="mt-8 text-center text-xl font-medium text-white">Professor + Professional Trainer</p>
           </div>
         </div>
 
@@ -2239,35 +2358,35 @@
             </div>
             <!-- Text content on right (desktop) / below (mobile) -->
             <div class="flex-1">
-              <p class="text-lg font-semibold mb-4">I have accumulated a unique range of experiences as a practitioner and teacher across the core areas of top-tier Finance.</p>
+              <p class="text-lg font-medium mb-4">I have accumulated a unique range of experiences as a practitioner and teacher across the core areas of top-tier Finance.</p>
               <p class="text-base leading-relaxed">In Finance|able's courses, I tie these experiences together to help students see each situation from buy-side, sell-side, and operating roles using time-tested methods from over a decade and a half working and teaching on Wall Street.</p>
-              <p class="mt-4 text-lg font-semibold">You'll learn to be much more than just Mechanics with our training.</p>
+              <p class="mt-4 text-lg font-medium">You'll learn to be much more than just Mechanics with our training.</p>
             </div>
           </div>
         </div>
 
         <div class="mt-12">
-          <h3 class="text-2xl font-bold mb-6 text-center">Mike's Background:</h3>
+          <h3 class="text-2xl font-medium mb-6 text-center">Mike's Background:</h3>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <div class="rounded-2xl border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
               <div class="mb-4 flex h-12 items-center justify-center">
                 <img src="https://logo.clearbit.com/ubs.com" alt="UBS" class="h-10 w-auto max-w-[120px] opacity-90" loading="lazy" />
               </div>
-              <p class="font-semibold text-premium-gold mb-2">Investment Banking</p>
+              <p class="font-medium text-premium-gold mb-2">Investment Banking</p>
               <p class="text-sm">UBS LA (run by Ken Moelis)</p>
             </div>
             <div class="rounded-2xl border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
               <div class="mb-4 flex h-12 items-center justify-center">
                 <img src="https://logo.clearbit.com/goldengatecap.com" alt="Golden Gate Capital" class="h-10 w-auto max-w-[120px] opacity-90" loading="lazy" />
               </div>
-              <p class="font-semibold text-premium-gold mb-2">Private Equity</p>
+              <p class="font-medium text-premium-gold mb-2">Private Equity</p>
               <p class="text-sm">Golden Gate Capital ($15B AUM) - Principal</p>
             </div>
             <div class="rounded-2xl border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
               <div class="mb-4 flex h-12 items-center justify-center">
                 <img src="https://logo.clearbit.com/higcapital.com" alt="HIG Capital" class="h-10 w-auto max-w-[120px] opacity-90" loading="lazy" />
               </div>
-              <p class="font-semibold text-premium-gold mb-2">Private Equity</p>
+              <p class="font-medium text-premium-gold mb-2">Private Equity</p>
               <p class="text-sm">HIG Capital ($42B AUM) - Vice President</p>
             </div>
             <div class="rounded-2xl border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
@@ -2276,25 +2395,25 @@
                   <i data-lucide="trending-up" class="h-6 w-6 text-premium-gold"></i>
                 </div>
               </div>
-              <p class="font-semibold text-premium-gold mb-2">Hedge Funds</p>
+              <p class="font-medium text-premium-gold mb-2">Hedge Funds</p>
               <p class="text-sm">Long/short equity fund (grew to $2B)</p>
             </div>
             <div class="rounded-2xl border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
               <div class="mb-4 flex h-12 items-center justify-center">
                 <img src="https://logo.clearbit.com/gsb.columbia.edu" alt="Columbia Business School" class="h-10 w-auto max-w-[120px] opacity-90" loading="lazy" />
               </div>
-              <p class="font-semibold text-premium-gold mb-2">Columbia Business School</p>
+              <p class="font-medium text-premium-gold mb-2">Columbia Business School</p>
               <p class="text-sm">Adjunct Faculty (9 years)</p>
             </div>
             <div class="rounded-2xl border border-white/20 bg-white/5 p-6 backdrop-blur-sm">
               <div class="mb-4 flex h-12 items-center justify-center">
                 <img src="https://logo.clearbit.com/wallstreetprep.com" alt="Wall Street Prep" class="h-10 w-auto max-w-[120px] opacity-90" loading="lazy" />
               </div>
-              <p class="font-semibold text-premium-gold mb-2">Wall Street Prep</p>
+              <p class="font-medium text-premium-gold mb-2">Wall Street Prep</p>
               <p class="text-sm">Managing Partner</p>
             </div>
           </div>
-          <p class="mt-8 text-center text-xl font-semibold">Total AUM Across Firms: $49B+</p>
+          <p class="mt-8 text-center text-xl font-medium">Total AUM Across Firms: $49B+</p>
         </div>
 
         <!-- Professional & Teaching Experience Tables -->
@@ -2302,7 +2421,7 @@
           <!-- Professional Experience Table -->
           <div class="rounded-3xl border border-white/20 bg-white/5 backdrop-blur-sm overflow-hidden">
             <div class="bg-deep-blue-light px-6 py-4">
-              <h3 class="text-xl font-bold text-white">Professional Experience</h3>
+              <h3 class="text-xl font-medium text-white">Professional Experience</h3>
             </div>
             <div class="p-6">
               <table class="w-full">
@@ -2345,7 +2464,7 @@
           <!-- Teaching Experience Table -->
           <div class="rounded-3xl border border-white/20 bg-white/5 backdrop-blur-sm overflow-hidden">
             <div class="bg-deep-blue-light px-6 py-4">
-              <h3 class="text-xl font-bold text-white">Teaching Experience</h3>
+              <h3 class="text-xl font-medium text-white">Teaching Experience</h3>
             </div>
             <div class="p-6">
               <table class="w-full">
@@ -2410,7 +2529,7 @@
     <section class="bg-white py-12 lg:py-24">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-growth-green/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-growth-green">
+          <span class="inline-flex items-center gap-2 rounded-full bg-growth-green/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-growth-green">
             <i data-lucide="brain" class="h-4 w-4"></i>
             Science-Backed Learning
           </span>
@@ -2423,10 +2542,10 @@
             <p>Research shows that visuals and animations are far more effective when you're dealing with holistic systems.</p>
             <p>When you <strong>SEE</strong> debits and credits flying across the screen in our accounting course, your brain builds a mental map. The concept sticks.</p>
             <p>When you <strong>WATCH</strong> the accretion scale tip from benefits to costs in real-time, you internalize how M&A deals work. You don't just memorize, you understand.</p>
-            <p>This isn't just "pretty animations" for the sake of design. It's empirically-backed learning that ensures you learn faster and retain more than with other programs.</p>
+            <p>This isn't just 'pretty animations' for the sake of design. It's empirically-backed learning that ensures you learn faster and retain more than with other programs.</p>
             <p>And when you're sitting in that Goldman Sachs superday and the VP twists the question?</p>
-            <p class="font-semibold">You don't panic. You don't freeze. You don't fumble through memorized facts.</p>
-            <p class="font-semibold">You see the framework in your head. And you answer with confidence.</p>
+            <p class="font-medium">You don't panic. You don't freeze. You don't fumble through memorized facts.</p>
+            <p class="font-medium">You see the framework in your head. And you answer with confidence.</p>
           </div>
 
           <div class="space-y-4">
@@ -2465,10 +2584,7 @@
               <div class="relative lg:absolute lg:top-20 lg:left-1/4 z-10 transform rotate-[1deg] w-full lg:w-[75%]">
                 <img src="images/Static_vs_Rigid.png" alt="Static vs Dynamic Mental Framework" class="w-full rounded-2xl border-2 lg:border-4 border-white shadow-2xl" loading="lazy">
               </div>
-              <!-- Back Layer - wacc-meme.jpg -->
-              <div class="relative lg:absolute lg:top-0 lg:right-0 z-0 transform rotate-[5deg] lg:rotate-[5deg] w-full lg:w-[65%] lg:-m-[40px]">
-                <img src="images/wacc-meme.jpg" alt="WACC Meme" class="w-full rounded-2xl border-2 lg:border-4 border-white shadow-2xl" loading="lazy">
-              </div>
+            
               <!-- Additional Layer - lesson-example-2.png -->
               <div class="relative lg:absolute lg:top-[30px] lg:right-8 z-5 w-full lg:w-[60%]">
                 <img src="images/lesson-example-2.png" alt="Lesson Example 2" class="w-full rounded-2xl border-2 lg:border-4 border-white shadow-2xl" loading="lazy">
@@ -2483,17 +2599,17 @@
     <section class="bg-mocha py-24" id="preview">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-deep-blue">
+          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-deep-blue">
             <i data-lucide="play-circle" class="h-4 w-4"></i>
             Preview
           </span>
           <h2 class="mt-6 font-heading text-3xl text-deep-blue sm:text-4xl">See The Difference For Yourself</h2>
-          <p class="mt-4 text-lg text-slate">Don't take our word for it. Watch actual samples from the course and see why students call our approach "unlike anything else."</p>
+          <p class="mt-4 text-lg text-slate">Don't take our word for it. Watch actual samples from the course and see why students call our approach 'unlike anything else.'</p>
         </div>
 
         <div class="mt-12 space-y-8">
           <div class="rounded-3xl border-2 border-light-gray bg-white p-6 sm:p-8 shadow-soft">
-            <h3 class="text-xl font-bold text-deep-blue mb-4">Sample Lesson #1: The Three Financial Statements</h3>
+            <h3 class="text-xl font-medium text-deep-blue mb-4">Sample Lesson #1: The Three Financial Statements</h3>
             <div class="aspect-video border border-light-gray bg-black/40">
               <span contenteditable="false" draggable="true" style="padding-bottom: 56.25%; padding-top: 25px; display: block; position: relative;"><iframe src="https://platform.thinkific.com/videoproxy/v1/play/c5aelp9fbubgms0molk0" style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;" scrolling="no" name="videoproxy_embed" allowfullscreen="true"></iframe></span>
             </div>
@@ -2501,7 +2617,7 @@
           </div>
 
           <div class="rounded-3xl border-2 border-light-gray bg-white p-6 sm:p-8 shadow-soft">
-            <h3 class="text-xl font-bold text-deep-blue mb-4">Sample Lesson #2: DCF Basics</h3>
+            <h3 class="text-xl font-medium text-deep-blue mb-4">Sample Lesson #2: DCF Basics</h3>
             <div class="aspect-video border border-light-gray bg-black/40">
               <span contenteditable="false" draggable="true" style="padding-bottom: 56.25%; padding-top: 25px; display: block; position: relative;"><iframe src="https://platform.thinkific.com/videoproxy/v1/play/c5fhl39gr1b4pjqe9pr0" style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;" scrolling="no" name="videoproxy_embed" allowfullscreen="true"></iframe></span>
             </div>
@@ -2510,8 +2626,8 @@
         </div>
 
         <div class="mt-12 rounded-3xl border-2 border-light-gray bg-white p-8 shadow-soft">
-          <p class="text-base italic leading-relaxed text-charcoal">"When you mentioned that there's nothing out there like this, I thought you meant you just had a better understanding of accounting than others, but the Finance-able platform is actually one of a kind. The mini quizzes and visuals are amazing and they're a perfect way to learn."</p>
-          <p class="mt-4 text-sm font-semibold text-slate"> Early Finance-able User</p>
+          <p class="text-base italic leading-relaxed text-charcoal">"When you mentioned that there's nothing out there like this, I thought you meant you just had a better understanding of accounting than others, but the Financ|eable platform is actually one of a kind. The mini quizzes and visuals are amazing and they're a perfect way to learn."</p>
+          <p class="mt-4 text-sm font-medium text-slate"> Early Financ|eable User</p>
         </div>
       </div>
     </section>
@@ -2521,7 +2637,7 @@
     <section class="bg-white scroll-mt-20 py-24" id="faq">
       <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-deep-blue">
+          <span class="inline-flex items-center gap-2 rounded-full bg-deep-blue/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-deep-blue">
             <i data-lucide="help-circle" class="h-4 w-4"></i>
             FAQ
           </span>
@@ -2531,41 +2647,41 @@
         <div class="mt-12 space-y-8">
           <!-- FAQ 1 -->
           <div class="rounded-2xl border-2 border-light-gray bg-mocha p-8">
-            <h3 class="text-lg font-bold text-deep-blue">Q: How is this different from Wall Street Prep or Breaking Into Wall Street?</h3>
+            <h3 class="text-lg font-medium text-deep-blue">Q: How is this different from Wall Street Prep or Breaking Into Wall Street?</h3>
             <div class="mt-4 space-y-3 text-base text-charcoal">
               <p><strong>A:</strong> Four major differences:</p>
               <p>(1) <strong>Visual, animated learning.</strong> You see concepts in motion rather than staring at static slides from the 90s.</p>
-              <p>(2) <strong>Unrivaled Practitioner Experience.</strong> The only curriculum refined by an instructor with a background in IB, PE, and Hedge Funds, showing you exactly what matters and why.</p>
+              <p>(2) <strong>Unrivaled Practitioner Experience.</strong> The only curriculum hollistically crafted by an instructor with a background in IB, PE, and Hedge Funds, showing you exactly what matters and why.</p>
               <p>(3) <strong>Dynamic Frameworks.</strong> You gain the ability to tackle any scenario through logic, rather than relying on memorized facts and corner-case rules.</p>
-              <p>(4) <strong>Full Desk-Readiness.</strong> In addition to mechanics, you will learn the "Why" behind everything LBO and M&A modeling, plus the M&A process steps usually left out of training: pitch books, CIMs, data rooms, and bid letters.</p>
+              <p>(4) <strong>Full Desk-Readiness.</strong> In addition to mechanics, you will learn the 'Why' behind everything LBO and M&A modeling, plus the M&A process steps usually left out of training: pitch books, CIMs, data rooms, and bid letters.</p>
             </div>
           </div>
 
           <!-- FAQ 2 -->
           <div class="rounded-2xl border-2 border-light-gray bg-white p-8">
-            <h3 class="text-lg font-bold text-deep-blue">Q: I'm from a non-target school. Will this help me compete?</h3>
-            <p class="mt-4 text-base text-charcoal">Absolutely. The vast majority of our prior students come from non-target schools and regularly beat out candidates from target schools (e.g., Wharton, Harvard, etc.) for roles at Goldman Sachs, Morgan Stanley, and Evercore and many others.</p>
+            <h3 class="text-lg font-medium text-deep-blue">Q: I'm from a non-target school. Will this help me compete?</h3>
+            <p class="mt-4 text-base text-charcoal">Absolutely. The vast majority of our prior students come from non-target schools and regularly beat out candidates from target schools (e.g., Wharton, Harvard, etc.) for roles at Goldman Sachs, Morgan Stanley, Evercore and many others.</p>
             <p class="mt-3 text-base text-charcoal">But this isn't just for the underdog. It works for everyone.</p>
-            <p class="mt-3 text-base text-charcoal">This visual learning approach levels the playing field for everyone, replacing "pedigree" with a deeper level of ability than you'll have with any other prep program.</p>
+            <p class="mt-3 text-base text-charcoal">This visual learning approach levels the playing field for everyone, replacing 'pedigree' with a deeper level of ability than you'll gain with any other prep program.</p>
           </div>
 
           <!-- FAQ 3 -->
           <div class="rounded-2xl border-2 border-light-gray bg-mocha p-8">
-            <h3 class="text-lg font-bold text-deep-blue">Q: Do I need any prior finance knowledge?</h3>
+            <h3 class="text-lg font-medium text-deep-blue">Q: Do I need any prior finance knowledge?</h3>
             <p class="mt-4 text-base text-charcoal"><strong>A:</strong> No. All of our courses are built with beginners in mind. The only assumption we make is that you can handle basic arithmetic, we take care of the rest.</p>
             <p class="mt-3 text-base text-charcoal">We explain everything in Plain English without the jargon walls, creating a learning experience that students actually enjoy rather than dread.</p>
           </div>
 
           <!-- FAQ 4 -->
           <div class="rounded-2xl border-2 border-light-gray bg-white p-8">
-            <h3 class="text-lg font-bold text-deep-blue">Q: Will this prepare me for both BB and boutique banks?</h3>
+            <h3 class="text-lg font-medium text-deep-blue">Q: Will this prepare me for both BB and boutique banks?</h3>
             <p class="mt-4 text-base text-charcoal"><strong>A:</strong> Yes. The frameworks work universally, Goldman Sachs, Morgan Stanley, Lazard, Evercore, Houlihan Lokey, doesn't matter.</p>
             <p class="mt-3 text-base text-charcoal">The fundamentals are the same. The interview styles may vary slightly (some banks love paper LBOs, others focus on case studies), but the technical foundation is identical.</p>
           </div>
 
           <!-- FAQ 5 -->
           <div class="rounded-2xl border-2 border-light-gray bg-mocha p-8">
-            <h3 class="text-lg font-bold text-deep-blue">Q: Do I get lifetime access?</h3>
+            <h3 class="text-lg font-medium text-deep-blue">Q: Do I get lifetime access?</h3>
             <p class="mt-4 text-base text-charcoal"><strong>A:</strong> With the $830 option, yes, lifetime access to all courses, any updates we make, and any new content we add to the bundle.</p>
             <p class="mt-3 text-base text-charcoal">The $475/year option gives you 12 months of access with the ability to renew annually.</p>
           </div>
@@ -2581,18 +2697,18 @@
             <div class="flex items-center gap-4 mb-4">
               <i data-lucide="clock" class="h-12 w-12 text-premium-gold flex-shrink-0"></i>
               <div>
-                <p class="text-xl font-bold">IB Recruiting Timeline: Next Wave Starts in 6-8 Weeks</p>
+                <p class="text-xl font-medium">IB Recruiting Timeline: Next Wave Starts in 4-6 Weeks</p>
               </div>
             </div>
             <div class="space-y-4 text-base leading-relaxed">
               <p><strong>For undergraduates:</strong> Junior year spring recruiting begins January-April for summer analyst roles. This year however some recruiting will occur in December.</p>
               <p><strong>For MBA students:</strong> Fall recruiting kicks off October-November for summer associate roles.</p>
               <p>If you're recruiting this cycle, starting prep now gives you the runway you need to be competitive.</p>
-              <p>The students who land offers at Goldman, Morgan Stanley, and Evercore? They started prepping 8-12 weeks before interviews. They didn't wait until the week before superdays.</p>
+              <p>The students who land offers at Goldman, Morgan Stanley, and Evercore? They started prepping 6 weeks or more before interviewing. They didn't wait until the week before superdays.</p>
             </div>
           </div>
           <div class="flex-shrink-0 lg:ml-8">
-            <a href="#pricing" class="inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-8 py-4 text-lg font-semibold text-white shadow-xl transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-2xl">
+            <a href="#pricing" class="inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-8 py-4 text-lg font-medium text-white shadow-xl transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-2xl">
               Start Your Prep Now
               <i data-lucide="arrow-right" class="h-5 w-5"></i>
             </a>
@@ -2613,13 +2729,13 @@
         <p class="mx-auto mt-4 max-w-2xl text-lg text-white/90" style="line-height: 1.8;">
           Learn from someone who's actually been there, UBS, Golden Gate Capital, HIG Capital. Visual frameworks, dynamic mental models, and desk-ready training. All in 15-20 hours.
         </p>
-        <p class="mx-auto mt-4 max-w-2xl text-lg font-semibold text-white" style="line-height: 1.8;">
+        <p class="mx-auto mt-4 max-w-2xl text-lg font-medium text-white" style="line-height: 1.8;">
           You don't need a perfect background. You don't need connections. You just need the right training and the drive to succeed.
         </p>
-        <p class="mt-6 text-xl font-bold">Let's get you interview and desk ready.</p>
+        <p class="mt-6 text-xl font-medium">Let's get you interview and desk ready.</p>
 
         <div class="mt-10">
-          <a href="#pricing" class="group inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-10 py-5 text-xl font-semibold text-white shadow-xl transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-2xl">
+          <a href="#pricing" class="group inline-flex items-center justify-center gap-2 rounded-full bg-warm-coral px-10 py-5 text-xl font-medium text-white shadow-xl transition hover:-translate-y-1 hover:bg-[#ff4e4e] hover:shadow-2xl">
             Get IB Interview + Desk Ready
             <i data-lucide="arrow-right" class="h-5 w-5 transition-transform group-hover:translate-x-1"></i>
           </a>
@@ -2643,7 +2759,7 @@
     <!-- FOOTER -->
     <footer class="border-t border-white/10 bg-deep-blue py-12 text-white">
       <div class="mx-auto max-w-6xl px-6 text-center lg:px-8">
-        <h3 class="font-heading text-xl font-bold">Finance|able</h3>
+        <h3 class="font-heading text-xl font-medium">Finance|able</h3>
         <p class="mt-2 text-sm text-white/70">Learn finance the way it should be taught, visually, practically, and in Plain English.</p>
         <p class="mt-6 text-xs text-white/60">© 2025 Finance|able. All rights reserved.</p>
         <div class="mt-4 flex flex-wrap items-center justify-center gap-4 text-xs text-white/70">
